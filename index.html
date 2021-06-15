@@ -172,6 +172,7 @@ $(".flipbook").bind("turning", function(event, page, view) {
         this.currentTime = 0; // Reset time
     });    
     
+    // detener videos de youtube
     jQuery('iframe[src*="https://www.youtube.com/embed/"]').addClass("youtube-iframe");
       $('.youtube-iframe').each(function(index) {
         $(this).attr('src', $(this).attr('src'));
