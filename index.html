@@ -8,8 +8,7 @@
 <!--<![endif]-->
 
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width = 1050, user-scalable = no" />
     <script type="text/javascript" src="extras/jquery.min.1.7.js"></script>
 
     <!-- Remember to include jQuery :) 
@@ -19,38 +18,27 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <script type="text/javascript" src="extras/modernizr.2.5.3.min.js"></script>
-
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-
 </head>
 
-<body style="background-image:url(img/sunrise.jpg)">
+<body style="background-image: linear-gradient(to top, rgba(210, 153, 194, 0.5) 0%, rgba(254, 249, 215, 0.5) 100%),url(/pics/sunrise.jpg);">
+
     <div class="flipbook-viewport">
+        <!-- Previous button -->
+        <div class="previous-button" id="previous-button"></div>
+
         <div class="container">
-            <div class="btn-background prev-btn" id="prev-btn"><i class='bx bxs-chevron-left'></i></div>
 
             <div class="flipbook" id="flipbook">
 
                 <div style="background-image:url(pages/1.png)"></div>
 
-                <div style="background-image:url(pages/2.png)">
-                    <iframe width="400" height="200" src="https://www.youtube.com/embed/_U70aUAI_CY" title="Video Damas Dorcas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: relative; 
-                    top: 350px; 
-                    left: 50px;"></iframe>
+                <div class="p2" style="background-image:url(pages/2.png)">
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/_U70aUAI_CY" title="Video Damas Dorcas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                 </div>
 
                 <div style="background-image:url(pages/3.png)">
-                    <em style="position: relative;
-                                top: 32px;
-                                left: 210px;"> Escuchar artículo:</em>
-
-                    <audio controls style="position: relative;
-                                            top: 100px;
-                                            left: 80px;
-                                            width: 160px;">
-                        <source src="audio/mp3esposa.mp3" type="audio/mpeg">
-                    </audio>
-
                     <div id="ex1" class="modal">
                         <h2>LA ESPOSA DEL PASTOR Y SUS DESAFíOS EN LAS MISIONES</h2>
                         <p>
@@ -90,82 +78,78 @@
                     </div>
 
                     <!-- Link to open the modal -->
-                    <p style="position:absolute; top:260px; left:30px;">
-                        <a href="#ex1" rel="modal:open"><img src="img/leermas.png" width="150px" height="auto"></a>
+                    <p class="btn-modal">
+                        <a href="#ex1" rel="modal:open"><img src="pics/leermas.png"></a>
                     </p>
+
+                    <div class="column-2">
+                        <div class="content-2">
+                            <em> Escuchar artículo:</em>
+
+                            <audio controls class="audio">
+                            <source src="audio/mp3esposa.mp3" type="audio/mpeg">
+                         </audio>
+                        </div>
+                    </div>
                 </div>
 
                 <div style="background-image:url(pages/4.png)"></div>
+
             </div>
 
-            <div class="btn-background next-btn" id="next-btn"><i class='bx bxs-chevron-right'></i></div>
         </div>
+        <!-- Next button -->
+        <div class="next-button" id="next-button"></div>
     </div>
 
-
     <div class="loader-page"></div>
-
-
 
     <script type="text/javascript">
         function loadApp() {
 
             // Create the flipbook
-
             $('.flipbook').turn({
 
                 //Width
-
                 width: 1000,
 
                 //Height
-
                 height: 700,
 
 
                 // Elevation
-
                 elevation: 50,
 
                 // Enable gradients
-
                 gradients: true,
 
                 // Auto center this flipbook
+                autoCenter: true,
 
-                // autoCenter: true
+                // Duration in millisecond
+                duration: 1000,
 
-                accelaration: true,
+                // Hardware acceleration
+                acceleration: true,
 
             });
+
+            //Function that detects mobile devices to adjust the magazine
+            function checkMobile() {
+                return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            }
+            if (!checkMobile()) { // not mobile
+                $('.flipbook').turn('display', 'double');
+
+            } else {
+                $('.flipbook').turn('display', 'single');
+                $('.flipbook').turn('size', 1050, 1400);
+                stylesMobile();
+            }
 
         }
 
-
-        $(".flipbook").bind("turning", function(event, page, view) {
-
-            // detener audios
-            $('audio').each(function() {
-                this.pause(); // Stop playing
-                this.currentTime = 0; // Reset time
-            });
-
-            // detener videos de youtube
-            jQuery('iframe[src*="https://www.youtube.com/embed/"]').addClass("youtube-iframe");
-            $('.youtube-iframe').each(function(index) {
-                $(this).attr('src', $(this).attr('src'));
-                return false;
-            });
-
-
-            // sonido de cambio de página
-            var audio = new Audio('audio/changepage.mp3');
-            audio.volume = 0.5;
-            audio.play();
-        });
-
         // Load the HTML4 version if there's not CSS transform
-
         yepnope({
             test: Modernizr.csstransforms,
             yep: ['lib/turn.js'],
@@ -174,7 +158,6 @@
             complete: loadApp
         });
     </script>
-
 </body>
 
 </html>

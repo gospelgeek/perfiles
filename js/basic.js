@@ -1,6 +1,34 @@
-/*
- * Basic sample
- */
+/*Styles that will be applied on mobile screens*/
+function stylesMobile() {
+    $('.container').css({
+        margin: '-50% 0 0 -50%'
+    });
+    $('.flipbook').css({
+        left: '0px',
+        top: '-180px'
+    });
+    $('.next-button').css({
+        'background-position': '21px center',
+        width: '123px',
+        height: '211px',
+        'z-index': 10,
+        'background-size': '91px',
+    });
+    $('.previous-button').css({
+        'background-position': '8px center',
+        width: '123px',
+        height: '211px',
+        'z-index': 10,
+        'background-size': '91px',
+    });
+    $('.content-2').css({
+        'margin-top': '39%'
+    });
+    $('.modal').css({
+        'max-width': 'none'
+    });
+
+}
 
 function addPage(page, book) {
 
@@ -94,15 +122,15 @@ function isChrome() {
 
 /*Events to book's pagination*/
 
-
-const prevBtn = document.querySelector("#prev-btn");
-const nextBtn = document.querySelector("#next-btn");
+const prevBtn = document.querySelector("#previous-button");
+const nextBtn = document.querySelector("#next-button");
 const book = document.querySelector("#flipbook");
 
 prevBtn.addEventListener("click", goPrevPage);
 nextBtn.addEventListener("click", goNextPage);
 book.addEventListener("click", hiddenBtn);
 book.addEventListener("mouseover", hiddenBtn);
+
 
 //Method to go to the next page
 function goNextPage() {
@@ -132,13 +160,82 @@ function hiddenBtn() {
         nextBtn.style.visibility = "visible";
     }
 
-}
+} // Using arrow keys to turn the page
+
+$(document).keydown(function(e) {
+
+    var previous = 37,
+        next = 39,
+        esc = 27;
+
+    switch (e.keyCode) {
+        case previous:
+
+            // left arrow
+            $('#flipbook').turn('previous');
+            e.preventDefault();
+
+            break;
+        case next:
+
+            //right arrow
+            $('#flipbook').turn('next');
+            e.preventDefault();
+
+            break;
+        case esc:
+
+            $('.flipbook-viewport').zoom('zoomOut');
+            e.preventDefault();
+
+            break;
+    }
+});
 
 /*Loader */
 
 $(window).on('load', function() {
     setTimeout(function() {
-        $(".loader-page").css({ visibility: "hidden", opacity: "0" })
+        $(".loader-page").css({
+            visibility: "hidden",
+            opacity: "0"
+        });
     }, 1500);
 
+});
+
+//Stop media
+function pausedMultimedia() {
+    $('audio').on('play', function() {
+        var current = this;
+        $('audio').each(function() {
+            if (this !== current) {
+                this.pause();
+                this.currentTime = 0;
+            }
+        });
+    });
+}
+
+/*Functions to stop the audios and page turning sounds */
+$(".flipbook").bind("turning", function(event, page, view) {
+
+    // stop audios
+    $('audio').each(function() {
+        this.pause(); // Stop playing
+        this.currentTime = 0; // Reset time
+    });
+
+    // stop Youtube videos
+    jQuery('iframe[src*="https://www.youtube.com/embed/"]').addClass("youtube-iframe");
+    $('.youtube-iframe').each(function(index) {
+        $(this).attr('src', $(this).attr('src'));
+        return false;
+    });
+
+
+    // Page turning sounds
+    var audio = new Audio('audio/changepage.mp3');
+    audio.volume = 0.5;
+    audio.play();
 });

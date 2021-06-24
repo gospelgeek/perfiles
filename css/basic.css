@@ -1,5 +1,3 @@
-/* Basic sample */
-
 * {
     margin: 0;
     padding: 0;
@@ -16,26 +14,27 @@ body {
 
 .flipbook-viewport {
     overflow: hidden;
-    background-image: linear-gradient(to top, rgba(210, 153, 194, 0.5) 0%, rgba(254, 249, 215, 0.5) 100%);
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 .flipbook-viewport .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: auto;
 }
 
 .flipbook-viewport .flipbook {
     width: 1000px;
     height: 700px;
+    left: -500px;
+    top: -350px;
 }
 
 .flipbook-viewport .page {
-    width: 100%;
-    height: 100%;
+    width: 500px;
+    height: 700px;
     background-color: white;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -74,43 +73,48 @@ body {
 
 /*Buttons pagination*/
 
-.btn-background {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    background-color: rgba(102, 102, 102, 0.3);
-    width: 120px;
-    height: 120px;
-    overflow: visible;
-    border-radius: 80px;
+.next-button,
+.previous-button {
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    top: 50%;
+    z-index: 1;
+    transform: translate(0, -50%);
+    background-color: rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    padding: 0 10px;
 }
 
-.prev-btn {
-    display: flex;
-    justify-content: flex-end;
-    left: -55px;
-    box-shadow: 3px 1px 8px rgba(0, 0, 0, 0.493);
-    visibility: hidden;
+.next-button:hover,
+.previous-button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.next-btn {
-    display: flex;
-    justify-content: flex-start;
-    right: -55px;
-    box-shadow: -3px 1px 8px rgba(0, 0, 0, 0.493);
+.next-button {
+    right: 0;
+    background-image: url("/pics/Chevron-right.svg");
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 40px;
+    -webkit-border-radius: 100px 0 0 100px;
+    -moz-border-radius: 100px 0 0 100px;
+    -ms-border-radius: 100px 0 0 100px;
+    -o-border-radius: 100px 0 0 100px;
+    border-radius: 100px 0 0 100px;
     visibility: visible;
 }
 
-.btn-background i {
-    font-size: 50px;
-    color: rgb(92, 92, 92);
-}
-
-.btn-background i:hover {
-    color: rgb(255, 255, 255);
+.previous-button {
+    background-image: url("/pics/Chevron-left.svg");
+    background-repeat: no-repeat;
+    background-position: 2px center;
+    background-size: 40px;
+    -webkit-border-radius: 0 100px 100px 0;
+    -moz-border-radius: 0 100px 100px 0;
+    -ms-border-radius: 0 100px 100px 0;
+    -o-border-radius: 0 100px 100px 0;
+    border-radius: 0 100px 100px 0;
+    visibility: hidden;
 }
 
 
@@ -118,6 +122,7 @@ body {
 
 .loader-page {
     position: fixed;
+    display: block;
     z-index: 25000;
     background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
     left: 0px;
@@ -165,4 +170,72 @@ body {
     border-top: 2px solid rgba(50, 150, 176, 0);
     animation: rotarload 1s ease-out infinite;
     transform: rotate(0deg);
+}
+
+
+/*Page 2*/
+
+.flipbook .p2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.video {
+    width: 80%;
+    height: 35%;
+    margin-bottom: 20%;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*Page 3*/
+
+.flipbook .p3 {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.btn-modal {
+    margin: 0;
+    padding: 0;
+    width: 42%;
+    text-align: center;
+}
+
+.btn-modal img {
+    width: 70%;
+    height: auto;
+    margin-top: 125% !important;
+}
+
+.blocker {
+    z-index: 5!important;
+}
+
+.column-2 {
+    position: relative;
+    width: 38%;
+    margin: 0;
+    padding: 0;
+}
+
+.column-2 .content-2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 38%;
+}
+
+.column-2 em {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.column-2 .audio {
+    width: 100%;
 }
