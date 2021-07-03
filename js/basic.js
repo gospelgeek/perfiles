@@ -1,35 +1,3 @@
-/*Styles that will be applied on mobile screens*/
-function stylesMobile() {
-    $('.container').css({
-        margin: '-50% 0 0 -50%'
-    });
-    $('.flipbook').css({
-        left: '0px',
-        top: '-180px'
-    });
-    $('.next-button').css({
-        'background-position': '21px center',
-        width: '123px',
-        height: '211px',
-        'z-index': 10,
-        'background-size': '91px',
-    });
-    $('.previous-button').css({
-        'background-position': '8px center',
-        width: '123px',
-        height: '211px',
-        'z-index': 10,
-        'background-size': '91px',
-    });
-    $('.content-2').css({
-        'margin-top': '39%'
-    });
-    $('.modal').css({
-        'max-width': 'none'
-    });
-
-}
-
 function addPage(page, book) {
 
     var id, pages = book.turn('pages');
@@ -173,6 +141,7 @@ $(document).keydown(function(e) {
 
             // left arrow
             $('#flipbook').turn('previous');
+            hiddenBtn();
             e.preventDefault();
 
             break;
@@ -180,12 +149,7 @@ $(document).keydown(function(e) {
 
             //right arrow
             $('#flipbook').turn('next');
-            e.preventDefault();
-
-            break;
-        case esc:
-
-            $('.flipbook-viewport').zoom('zoomOut');
+            hiddenBtn();
             e.preventDefault();
 
             break;
@@ -206,20 +170,27 @@ $(window).on('load', function() {
 
 //Stop media
 function pausedMultimedia() {
+
     $('audio').on('play', function() {
-        var current = this;
-        $('audio').each(function() {
-            if (this !== current) {
-                this.pause();
-                this.currentTime = 0;
-            }
+        // var current = this;
+        // $('audio').each(function() {
+        //     if (this !== current) {
+        //         this.pause();
+        //         $("#player")[0].src += "?autoplay=0";
+        //         this.currentTime = 0;
+        //     }
+        // });
+
+        jQuery('iframe[src*="https://www.youtube.com/embed/"]').addClass("youtube-iframe");
+        $('.youtube-iframe').each(function(index) {
+            $(this).attr('src', $(this).attr('src'));
+            return false;
         });
     });
 }
 
 /*Functions to stop the audios and page turning sounds */
 $(".flipbook").bind("turning", function(event, page, view) {
-
     // stop audios
     $('audio').each(function() {
         this.pause(); // Stop playing
@@ -233,9 +204,96 @@ $(".flipbook").bind("turning", function(event, page, view) {
         return false;
     });
 
-
     // Page turning sounds
     var audio = new Audio('audio/changepage.mp3');
     audio.volume = 0.5;
     audio.play();
 });
+
+
+/*Navegation */
+
+var btnNav = document.querySelector('.btn-nav');
+var menu = document.querySelector('.navigation');
+
+btnNav.addEventListener('click', () => {
+    btnNav.classList.toggle('hidde-menu');
+    menu.classList.toggle('hidde-menu');
+});
+
+/*Set width and height to PC */
+function resizeViewport() {
+
+    var width = $(window).width(),
+        height = $(window).height(),
+        options = $('.flipbook').turn('options');
+
+    $('.flipbook-viewport').css({
+        width: width,
+        height: height
+    });
+
+
+    if ($('.flipbook').turn('zoom') == 1) {
+        var bound = calculateBound({
+            width: options.width,
+            height: options.height,
+            boundWidth: Math.min(options.width, width),
+            boundHeight: Math.min(options.height, height)
+        });
+
+        if (bound.width % 2 !== 0)
+            bound.width -= 1;
+
+
+        if (bound.width != $('.flipbook').width() || bound.height != $('.flipbook').height()) {
+
+            $('.flipbook').turn('size', bound.width, bound.height);
+
+            if ($('.flipbook').turn('page') == 1)
+                $('.flipbook').turn('peel', 'br');
+        }
+
+        $('.flipbook').css({ top: -bound.height / 2, left: -bound.width / 2 });
+    }
+}
+
+
+function calculateBound(d) {
+
+    var bound = { width: d.width, height: d.height };
+
+    if (bound.width > d.boundWidth || bound.height > d.boundHeight) {
+        var rel = bound.width / bound.height;
+        if (d.boundWidth / rel > d.boundHeight && d.boundHeight * rel <= d.boundWidth) {
+
+            bound.width = Math.round(d.boundHeight * rel);
+            bound.height = d.boundHeight;
+
+        } else {
+            bound.width = d.boundWidth;
+            bound.height = Math.round(d.boundWidth / rel);
+        }
+    }
+    return bound;
+}
+
+$(window).resize(function() {
+
+    //Function that detects mobile devices to adjust the magazine
+    function checkMobile() {
+        return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    }
+    if (!checkMobile()) { // not mobile
+        resizeViewport();
+
+    }
+}).bind('orientationchange', function() {
+    resizeViewport();
+});
+
+/*Redirect page of the flipbook*/
+function goPage(page) {
+    $("#hideThumb").modal('hide');
+    $('#flipbook').turn('page', page);
+}

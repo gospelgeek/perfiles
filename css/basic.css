@@ -1,10 +1,6 @@
-* {
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
     overflow: hidden;
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,11 +8,66 @@ body {
     background-position: center;
 }
 
-.flipbook-viewport {
+
+/*Navigation*/
+
+.bar {
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80px;
     width: 100%;
-    height: 100%;
 }
+
+.navigation {
+    width: 300px;
+    height: 65px;
+    display: flex;
+    z-index: 12;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0, -100%);
+    transition: 0.5s;
+    background-color: rgba(78, 78, 78, 0.5);
+    border-radius: 0 0 10px 10px;
+}
+
+.navigation .options {
+    font-size: 30px;
+    margin-right: 40px;
+    color: #ffffff;
+}
+
+.navigation a:last-child {
+    margin-right: 0;
+}
+
+.btn-nav {
+    width: 100px;
+    height: 50px;
+    background-color: rgba(78, 78, 78, 0.5);
+    z-index: 10;
+    transform: translate(0, -130%);
+    transition: 0.5s;
+    border-radius: 0 0 10px 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-nav #icon {
+    font-size: 25px;
+}
+
+.hidde-menu {
+    transform: translate(0, 0);
+}
+
+
+/*Flipbook*/
 
 .flipbook-viewport .container {
     position: absolute;
@@ -26,14 +77,14 @@ body {
 }
 
 .flipbook-viewport .flipbook {
-    width: 1000px;
-    height: 700px;
-    left: -500px;
-    top: -350px;
+    width: 922px;
+    height: 600px;
+    left: -461px;
+    top: -300px;
 }
 
 .flipbook-viewport .page {
-    width: 500px;
+    width: 461px;
     height: 700px;
     background-color: white;
     background-repeat: no-repeat;
@@ -91,8 +142,10 @@ body {
 }
 
 .next-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     right: 0;
-    background-image: url("/pics/Chevron-right.svg");
     background-repeat: no-repeat;
     background-position: 10px center;
     background-size: 40px;
@@ -104,8 +157,14 @@ body {
     visibility: visible;
 }
 
+.next-button i {
+    font-size: 30px;
+}
+
 .previous-button {
-    background-image: url("/pics/Chevron-left.svg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-repeat: no-repeat;
     background-position: 2px center;
     background-size: 40px;
@@ -115,6 +174,10 @@ body {
     -o-border-radius: 0 100px 100px 0;
     border-radius: 0 100px 100px 0;
     visibility: hidden;
+}
+
+.previous-button i {
+    font-size: 30px;
 }
 
 
@@ -211,7 +274,7 @@ iframe {
 .btn-modal img {
     width: 70%;
     height: auto;
-    margin-top: 125% !important;
+    margin-top: 120% !important;
 }
 
 .blocker {
@@ -228,7 +291,7 @@ iframe {
 .column-2 .content-2 {
     display: flex;
     flex-direction: column;
-    margin-top: 38%;
+    margin-top: 34%;
 }
 
 .column-2 em {
@@ -238,4 +301,107 @@ iframe {
 
 .column-2 .audio {
     width: 100%;
+}
+
+
+/*thumbnails*/
+
+.thumbnails-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid #d6d6d6;
+    margin-bottom: 10px;
+}
+
+.thumbnails-head .tittle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 12px;
+    width: 80%;
+}
+
+.thumbnails-head .close-thum {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+}
+
+.thumbnails-head .close-thum i {
+    font-size: 25px;
+}
+
+.gallery {
+    max-width: 1000px;
+    max-height: 370px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.table-thum {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 10px;
+}
+
+.fila-thum td {
+    padding-bottom: 10px;
+}
+
+.fila-thum .page-1 {
+    float: right;
+    padding-right: 5px;
+}
+
+.pag {
+    display: inline-block;
+    padding: 5px;
+    width: 100%;
+    -webkit-box-shadow: 0 0 2px 2px rgb(0 0 0 / 10%);
+}
+
+.leftThumb {
+    right: 5px;
+}
+
+.afd {
+    float: right;
+    position: relative;
+}
+
+.pag-number {
+    position: absolute;
+    padding: 3px;
+    padding-left: 8px;
+    background-color: #ffffff;
+    font-size: 11px;
+}
+
+.number-right {
+    bottom: 0;
+    right: 0;
+}
+
+.number-left {
+    bottom: 0;
+    left: 0;
+}
+
+.fila-thum .page-2-3 {
+    float: left;
+}
+
+.ain {
+    position: relative;
+    float: left;
+}
+
+.rightThumb {
+    left: 5px;
+}
+
+.modal a.close-modal {
+    display: none !important;
 }
