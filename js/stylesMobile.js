@@ -26,7 +26,7 @@ function stylesMobile() {
         'margin-top': '39%'
     });
     $('.modal').css({
-        'max-width': 'none'
+        'max-width': '100%'
     });
     $('.btn-nav').css({
         display: 'none'
@@ -35,7 +35,8 @@ function stylesMobile() {
         width: '70%',
         height: '120px',
         transform: 'translate(0,0)',
-        'border-radius': '100px'
+        'border-radius': '100px',
+        'z-index': 5
     });
     $('.bar').css({
         'height': '230px'
@@ -54,8 +55,8 @@ function stylesMobile() {
         'font-size': '70px'
     });
     $('.imgThumb').css({
-        width: '183px',
-        height: '213px',
+        width: '200px',
+        height: '250px',
     });
 
     $('.gallery').css({
@@ -69,7 +70,12 @@ function stylesMobile() {
 
     });
     $('.closeT').css({
-        'font-size': '50px'
+        'font-size': '70px'
+    });
+
+    $('.imgVideo').css({
+        width: '360px',
+        height: '140px',
     });
 
 }

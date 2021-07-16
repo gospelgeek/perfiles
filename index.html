@@ -12,102 +12,51 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <script type="text/javascript" src="extras/modernizr.2.5.3.min.js"></script>
+    <script type="text/javascript" src="lib/hash.js"></script>
 
     <!--Iocns-->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
 
-<body style="background-image: linear-gradient(to top, rgba(210, 153, 194, 0.5) 0%, rgba(254, 249, 215, 0.5) 100%),url(/pics/sunrise.jpg);">
-    <div class="container-flipbook">
-        <div class="bar">
-            <nav class="navigation">
-                <a class="options" href="#thumbnails" rel="modal:open"><i class='bx bxs-category'></i></a>
-                <a class="options" href="#"><i class='bx bxs-message-detail'></i></a>
-                <a class="options" href="#"><i class='bx bxs-search'></i></a>
-            </nav>
-            <div class="btn-nav"><i id="icon" class='bx bxs-chevron-down' style='color:#ffffff'></i></div>
-        </div>
-        <!-- Previous button -->
-        <div class="previous-button" id="previous-button"><i class='hola bx bxs-chevron-left' style='color:#ffffff'></i></div>
+<!--Preloader-->
+<!-- <div class="loader-page"></div> -->
 
-        <div class="flipbook-viewport">
-            <div class="container">
-                <div class="flipbook" id="flipbook">
-                    <div style="background-image:url(pages/1.png)"></div>
+<body>
+    <div class="fondo">
+        <div class="container-flipbook">
 
-                    <div class="p2" style="background-image:url(pages/2.png)">
-                        <div class="video">
-                            <iframe id="player" src="https://www.youtube.com/embed/_U70aUAI_CY" width="100%" height="100%" title="Video Damas Dorcas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
+            <!--Navigation bar-->
+            <div class="bar">
+                <nav class="navigation">
+                    <a class="options" href="#thumbnails" rel="modal:open"><i class='bx bx-grid-vertical' style='color:#ffffff'></i></a>
+                    <a class="options" href="#"><i class='bx bxs-message-detail' style='color:#ffffff'></i></a>
+                    <a class="options" href="#search" rel="modal:open"><i class='bx bx-search-alt-2' style='color:#ffffff'></i></i></a>
+                </nav>
+                <div class="btn-nav"><i id="icon" class='bx bxs-chevron-down' style='color:#ffffff'></i></div>
+            </div>
+
+            <!-- Previous button -->
+            <div class="previous-button" id="previous-button"><i class='bx bxs-chevron-left' style='color:#ffffff'></i></div>
+
+            <!--Flipbook-->
+            <div class="flipbook-viewport">
+                <div class="container">
+                    <div class="flipbook" id="flipbook">
+
                     </div>
-
-                    <div style="background-image:url(pages/3.png)">
-                        <div id="ex1" class="modal">
-                            <h2>LA ESPOSA DEL PASTOR Y SUS DESAFíOS EN LAS MISIONES</h2>
-                            <p>
-                                <h4>Geográfico:</h4>
-                                Desde mi perspectiva como misionero en el Amazonas, creo que puedo ofrecer un panorama muy cercano a la realidad de las vivencias en la entrega, pasión y compromiso de la esposa del pastor en el área misionera dentro de nuestro contexto nacional, sobre
-                                todo, en una zona como esta de nuestro país que adiciona grandes desafíos que van desde lo climático de tipo ecuatorial con una humedad que sobrepasa el 90% en la mayoría del territorio, y distancias muy grandes tanto por
-                                vía área como fluvial; algunas hasta de un día en la navegación por ríos.
-                            </p>
-                            <p>
-                                <h4>La salud:</h4>
-                                Una de las situaciones que se puede apreciar, es que ellas generalmente han sido y son las más afectadas debido a las condiciones climáticas de altas temperaturas y la humedad asfixiante propia de las zonas selváticas. Adicional a esto, la salubridad
-                                del agua es mínima lo que facilita la proliferación de infecciones y hongos en diversas áreas del cuerpo, sin dejar de lado la malaria y el paludismo de las cuales tenemos algunas de ellas que han sido afectadas hasta en
-                                cinco ocasiones, también, ver como sus Comité nacional de Asesoría y Acompañamiento Damas Dorcas 51 hijos enferman y no tener un médico que los atienda o un medicamento a la mano, debido al lugar donde se encuentran, sin
-                                embargo, se ha evidenciado que su amor por la obra del Señor es mayor a sus dificultades.
-                            </p>
-                            <p>
-                                <h4>La cultura:</h4>
-                                Otro factor determinante en su pasión y entrega por la obra de Dios ha sido el esfuerzo para asimilar las costumbres y culturas étnicas, que son obviamente muy distintas a las propias, y que solo si se tiene amor por el servicio se puede lograr la asimilación
-                                y adaptación. Escases de servidores: También, tienen que lidiar algunas veces con el desánimo de su esposo, pues el trabajo misionero no siempre rinde frutos como en el resto de las obras en el país, Además tienen que desempeñar
-                                las labores de los distintos comités, pues en varios de los lugares de trabajo en las misiones no hay servidores locales, y cuando el pastor sale a las giras o reuniones tienen que quedarse a cargo de la obra.
-                            </p>
-                            <p>
-                                <h4>Informe misionero:</h4>
-                                En la actualidad el Distrito 23 cuenta con doce congregaciones repartidas así: En Colombia: Leticia Central, Segunda y Tercera, Pedrera, Trapacá, Santa Sofía y Puerto Nariño. En Perú: Caballo Cocha, Huapapa, Vista Alegre, Islandia y Santa Rosa. Con una
-                                membresía de aproximadamente trecientos cincuenta hermanos bautizados y con un número igual de simpatizantes, además de unos doscientos cincuenta niños y niñas.
-                            </p>
-                            <p>
-                                <h4>Perspectiva de la obra:</h4>
-                                En el proyecto misionero se encuentra la apertura de dos nuevas obras a corto plazo, además el discipulado de los nuevos convertidos para la perfilación al servicio, pues la necesidad de obreros raizales es muy evidente, por ello rogamos sus oraciones
-                                al Señor para lograr la consolidación del trabajo misionero. (…) Y el señor añadía cada día a la iglesia los que habían de ser salvos. Hechos 2:47
-                            </p>
-                            <p>
-                                <em>Henry Antonio Corrales</em><br> Pastor misionero del Amazonas<br> Distrito 23
-                            </p>
-
-                            <a href="#" rel="modal:close">Close</a>
-                        </div>
-
-                        <!-- Link to open the modal -->
-                        <p class="btn-modal">
-                            <a href="#ex1" rel="modal:open"><img src="pics/leermas.png"></a>
-                        </p>
-
-                        <div class="column-2">
-                            <div class="content-2">
-                                <em> Escuchar artículo:</em>
-                                <audio controls class="audio">
-                                <source src="audio/mp3esposa.mp3" type="audio/mpeg">
-                            </audio>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div style="background-image:url(pages/4.png)"></div>
                 </div>
             </div>
-        </div>
-        <!-- Next button -->
-        <div class="next-button" id="next-button"><i class='bx bxs-chevron-right' style='color:#ffffff'></i></div>
 
+            <!-- Next button -->
+            <div class="next-button" id="next-button"><i class='bx bxs-chevron-right' style='color:#ffffff'></i></div>
+
+        </div>
         <!-- Thumbnails -->
         <div id="thumbnails" class="modal">
             <div class="thumbnails-head">
-                <div class="tittle">Thumbnails</div>
-                <div class="close-thum"> <a id="hideThumb" href="#" rel="modal:close"><i class='bx bx-x-circle closeT'></i></a></div>
+                <div class="tittle">Páginas</div>
+                <div class="close-modal"> <a id="hideThumb" href="#" rel="modal:close"><i class='bx bx-x closeT'></i></a></div>
             </div>
             <div class="gallery">
                 <table class="table-thum">
@@ -116,7 +65,7 @@
                             <td class="page-1">
                                 <div class="pag">
                                     <div class="afd leftThumb" onclick="goPage(1)">
-                                        <img src="pages/1.png" width="80" height="100" class="imgThumb">
+                                        <img src="pages/1.png" class="imgThumb">
                                         <div class="pag-number number-right">1</div>
                                     </div>
                                 </div>
@@ -125,22 +74,21 @@
                             <td class="page-2-3">
                                 <div class="pag">
                                     <div class="ain" onclick="goPage(2)">
-                                        <img src="pages/2.png" width="80" height="100" class="imgThumb ">
+                                        <img src="pages/2.png" class="imgThumb ">
                                         <div class="pag-number number-left ">2</div>
                                     </div>
                                     <div class="afd" onclick="goPage(3)">
-                                        <img src="pages/3.png " width="80 " height="100 " class="imgThumb ">
+                                        <img src="pages/3.png " class="imgThumb ">
                                         <div class="pag-number number-right ">3</div>
                                     </div>
                                 </div>
                             </td>
                         </tr>
-
                         <tr class="fila-thum">
                             <td class="page-1">
                                 <div class="pag">
                                     <div class="ain rightThumb " onclick="goPage(4)">
-                                        <img src="pages/4.png " width="80 " height="100 " class="imgThumb ">
+                                        <img src="pages/4.png " class="imgThumb ">
                                         <div class="pag-number number-right ">4</div>
                                     </div>
                                 </div>
@@ -152,58 +100,62 @@
         </div>
     </div>
 
-    <div class="loader-page "></div>
+    <!--Search-->
+    <div id="search" class="modal" style="top: -30%">
+        <div class="search-head">
+            <div class="input-search">
+                <div class="tittle">Buscar</div>
+                <input class="input" type="text" name="" id="form-search" placeholder="Ingresar texto">
+                <div id="btn-form" class="input"><a href="#"><i class='bx bx-search-alt-2 lupa'></i></a></div>
+            </div>
+            <div class="close-modal"> <a id="hideThumb" href="#" rel="modal:close"><i class='bx bx-x closeT'></i></a></div>
+        </div>
+    </div>
 
+
+
+    <script src="https://www.youtube.com/iframe_api"></script>
     <script type="text/javascript ">
         function loadApp() {
-
+            var book = $(this),
+                currentPage = book.turn('page');
             // Create the flipbook
             $('.flipbook').turn({
-
-                //Width
                 width: 922,
-
-                //Height
                 height: 600,
-
-
-                // Elevation
                 elevation: 50,
-
-                // Enable gradients
                 gradients: true,
-
-                // Auto center this flipbook
                 autoCenter: true,
-
-                // Duration in millisecond
-
                 duration: 1000,
-
-                // Hardware acceleration
-
                 acceleration: !isChrome(),
-
-
-                // Hardware acceleration
                 acceleration: true,
+                pages: 4,
 
+                when: {
+                    turning: function(event, page, view) {
+                        if (navigator.cookieEnabled == true) {
+                            document.cookie = "pagina =" + encodeURIComponent(page);
+                        }
+
+                        Hash.go('page/' + page).update();
+
+                    },
+                    missing: function(event, pages) {
+
+                        // Add pages that aren't in the magazine
+
+                        for (var i = 0; i < pages.length; i++)
+                            addPage(pages[i], $(this));
+
+                    }
+                }
             });
 
+            var cookie = readCookie("pagina");
+            if (cookie != null) {
+                $('#flipbook').turn('page', cookie);
+            }
             pausedMultimedia();
-
-            //Function that detects mobile devices to adjust the magazine
-            function checkMobile() {
-                return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-            }
-            if (!checkMobile()) { // not mobile
-                $('.flipbook').turn('display', 'double');
-
-            } else {
-                $('.flipbook').turn('display', 'single');
-                $('.flipbook').turn('size', 1050, 1400);
-                stylesMobile();
-            }
         }
 
         // Load the HTML4 version if there's not CSS transform
