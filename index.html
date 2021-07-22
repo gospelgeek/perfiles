@@ -19,13 +19,9 @@
 
 </head>
 
-<!--Preloader-->
-<!-- <div class="loader-page"></div> -->
-
 <body>
     <div class="fondo">
         <div class="container-flipbook">
-
             <!--Navigation bar-->
             <div class="bar">
                 <nav class="navigation">
@@ -42,16 +38,14 @@
             <!--Flipbook-->
             <div class="flipbook-viewport">
                 <div class="container">
-                    <div class="flipbook" id="flipbook">
-
-                    </div>
+                    <div class="flipbook" id="flipbook"></div>
                 </div>
             </div>
 
             <!-- Next button -->
             <div class="next-button" id="next-button"><i class='bx bxs-chevron-right' style='color:#ffffff'></i></div>
-
         </div>
+
         <!-- Thumbnails -->
         <div id="thumbnails" class="modal">
             <div class="thumbnails-head">
@@ -101,18 +95,20 @@
     </div>
 
     <!--Search-->
-    <div id="search" class="modal" style="top: -30%">
+    <div id="search" class="modal modalSearch">
         <div class="search-head">
             <div class="input-search">
                 <div class="tittle">Buscar</div>
                 <input class="input" type="text" name="" id="form-search" placeholder="Ingresar texto">
                 <div id="btn-form" class="input"><a href="#"><i class='bx bx-search-alt-2 lupa'></i></a></div>
             </div>
-            <div class="close-modal"> <a id="hideThumb" href="#" rel="modal:close"><i class='bx bx-x closeT'></i></a></div>
+            <div class="close-modal"> <a class="closeSearch" id="hideThumb" href="#" rel="modal:close"><i class='bx bx-x closeT'></i></a></div>
+        </div>
+
+        <div id="contentSearch" style="overflow:auto; height:0px">
+            <table id="resultado"></table>
         </div>
     </div>
-
-
 
     <script src="https://www.youtube.com/iframe_api"></script>
     <script type="text/javascript ">
@@ -136,17 +132,11 @@
                         if (navigator.cookieEnabled == true) {
                             document.cookie = "pagina =" + encodeURIComponent(page);
                         }
-
                         Hash.go('page/' + page).update();
-
                     },
                     missing: function(event, pages) {
-
-                        // Add pages that aren't in the magazine
-
                         for (var i = 0; i < pages.length; i++)
                             addPage(pages[i], $(this));
-
                     }
                 }
             });
@@ -158,7 +148,6 @@
             pausedMultimedia();
         }
 
-        // Load the HTML4 version if there's not CSS transform
         yepnope({
             test: Modernizr.csstransforms,
             yep: ['lib/turn.js'],

@@ -77,5 +77,23 @@ function stylesMobile() {
         width: '360px',
         height: '140px',
     });
+    $('.modalSearch').css({
+        left: '29%'
+    });
+    $('.input-search input').css({
+        width: '416px',
+        height: '81px',
+        'font-size': '30px'
+    });
+    $('.search-head').css({
+        'margin-top': '28px',
+        'margin-bottom': '31px'
+    });
+    $('.input a .lupa').css({
+        'font-size': '70px'
+    });
+    $('.input-search .input').css({
+        'margin-right': '27px'
+    });
 
 }
