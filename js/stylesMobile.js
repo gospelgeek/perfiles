@@ -2,7 +2,7 @@
 function stylesMobile() {
     $('.flipbook').css({
         top: '-688px',
-        left: '-523px'
+        left: '0px'
     });
     $('.next-button').css({
         width: '123px',
@@ -21,9 +21,6 @@ function stylesMobile() {
     });
     $('.bxs-chevron-left').css({
         'font-size': '70px'
-    });
-    $('.content-2').css({
-        'margin-top': '39%'
     });
     $('.modal').css({
         'max-width': '100%'
@@ -95,5 +92,21 @@ function stylesMobile() {
     $('.input-search .input').css({
         'margin-right': '27px'
     });
+    $('.audioContent em').css({
+        'font-size': '3.1vw',
+        'margin-bottom': '15px'
+    });
+
+    $('.flipbook-viewport').css({
+        position: 'unset'
+    })
+    $('.flipbook-viewport .container').css({
+        top: '50%',
+        transform: 'translate(-50%, -50%)'
+    })
+    $('.modal-p').css({
+        'overflow-y': 'hidden',
+        height: 'unset'
+    })
 
 }

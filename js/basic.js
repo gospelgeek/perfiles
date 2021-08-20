@@ -9,23 +9,21 @@
 
        if (book.turn('addPage', element, page)) {
            element.css({ 'background-image': 'url("pages/' + page + '.png")' });
-           loadContentPage(page, element);
-       }
-   }
-
-   function loadContentPage(page, element) {
-       $.getJSON('json/page-' + page + '.json').done(function(data) {
-           $.each(data, function(key, region) {
-               addContentPage(page, region, element);
-               if (!checkMobile()) {
-                   $('.flipbook').turn('display', 'double');
-               } else {
-                   $('.flipbook').turn('display', 'single');
-                   $('.flipbook').turn('size', 1050, 1400);
-                   stylesMobile();
-               }
+           $.getJSON('json/pages.json').done(function(data) {
+               $.each(data, function(key, region) {
+                   if (page == region.page) {
+                       addContentPage(region.page, region, element);
+                       if (!checkMobile()) {
+                           $('.flipbook').turn('display', 'double');
+                       } else {
+                           $('.flipbook').turn('display', 'single');
+                           $('.flipbook').turn('size', 1050, 1400);
+                           stylesMobile();
+                       }
+                   }
+               });
            });
-       });
+       }
    }
 
    function addContentPage(page, region, element) {
@@ -33,80 +31,17 @@
            case 1:
                break;
            case 2:
-               $('.p2').append(
-                   $('<div/>', {
-                       'id': 'playermodal',
-                       'class': 'modal'
-                   }).append(
-                       $('<div/>', { 'class': 'close-modal' }).append(
-                           $('<a/>', {
-                               'id': 'closePlayer',
-                               'href': '#',
-                               'rel': 'modal:close'
-                           }).append(
-                               $('<i/>', { 'class': 'bx bx-x closeT' }))),
-                       $('<div/>', { 'id': 'player' })
-                   ),
-                   $('<a/>', {
-                       'id': 'openPlayer',
-                       'class': 'video',
-                       'href': '#playermodal',
-                       'rel': "modal:open"
-                   }).append(
-                       $('<img/>', {
-                           'class': 'imgVideo',
-                           'src': region.btn_video_p2
-                       }))
-               );
+               element = createHtml(region.pageContent)
+               for (let i = 0; i < element.length; i++) {
+                   $('.p2').append(element[i]);
+               }
                break;
            case 3:
-               $('.p3').append(
-                   $('<div/>', {
-                       'id': 'ex1',
-                       'class': 'modal'
-                   }).append(
-                       $('<div/>', { 'class': 'close-modal' }).append(
-                           $('<a/>', {
-                               'id': 'closePlayer',
-                               'href': '#',
-                               'rel': 'modal:close'
-                           }).append(
-                               $('<i/>', { 'class': 'bx bx-x closeT' }))),
-                       $('<h2/>').text(region.tittle_modal_p3),
-                       $('<h4/>').text(region.subtittle1_modal_p3),
-                       $('<p/>').text(region.parrafo1_modal_p3),
-                       $('<h4/>').text(region.subtittle2_modal_p3),
-                       $('<p/>').text(region.parrafo2_modal_p3),
-                       $('<h4/>').text(region.subtittle3_modal_p3),
-                       $('<p/>').text(region.parrafo3_modal_p3),
-                       $('<h4/>').text(region.subtittle4_modal_p3),
-                       $('<p/>').text(region.parrafo4_modal_p3),
-                       $('<h4/>').text(region.subtittle5_modal_p3),
-                       $('<p/>').text(region.parrafo5_modal_p3),
-                       $('<p/>').text(region.parrafo6_modal_p3)
-                   ),
-                   $('<p/>', { 'class': 'btn-modal' }).append(
-                       $('<a/>', {
-                           'href': '#ex1',
-                           'rel': 'modal:open'
-                       }).append(
-                           $('<img/>', { 'src': region.btn_modal_p3 }))),
-                   $('<div/>', { 'class': 'column-2' }).append(
-                       $('<div/>', { 'class': 'content-2' }).append(
-                           $('<em/>').text(region.text_audio_p3),
-                           $('<audio/>', {
-                               'controls': 'true',
-                               'class': 'audio'
-                           }).append(
-                               $('<source/>', {
-                                   'src': region.audio_p3,
-                                   'type': 'audio/mpeg'
-                               })
-                           )
-                       )
-                   )
-               );
-               break;
+               element = createHtml(region.pageContent)
+               for (let i = 0; i < element.length; i++) {
+                   $('.p3').append(element[i]);
+               }
+               break
        }
    }
 
@@ -210,10 +145,7 @@
            return false;
        });
 
-       // Page turning sounds
-       var audio = new Audio('audio/changepage.mp3');
-       audio.volume = 0.5;
-       audio.play();
+
    });
 
    /*Navegation bar*/
@@ -224,7 +156,7 @@
        btnNav.classList.toggle('hidde-menu');
        menu.classList.toggle('hidde-menu');
 
-       if (YT.PlayerState.PLAYING || YT.PlayerState.PAUSED || YT.PlayerState.ENDED) {
+       if (player) {
            player.destroy();
            $('#playermodal').hide();
            $('.blocker').css({
@@ -257,7 +189,7 @@
 
            if (bound.width != $('.flipbook').width() || bound.height != $('.flipbook').height()) {
 
-               $('.flipbook').turn('size', bound.width, bound.height);
+               $('.flipbook').turn('size', bound.width, height);
 
                if ($('.flipbook').turn('page') == 1)
                    $('.flipbook').turn('peel', 'br');
@@ -299,6 +231,7 @@
        $('#flipbook').turn('page', page);
    }
 
+
    function readCookie(name) {
 
        var nameEQ = name + "=";
@@ -318,7 +251,12 @@
    /*API to control videos*/
    var player;
    $(document).on('click', '#openPlayer', function() {
-       console.log('holaaa video');
+       $('#playermodal').modal({
+           escapeClose: false,
+           clickClose: false,
+           showClose: false
+       });
+
        player = new YT.Player('player', {
            height: '360',
            width: '100%',
@@ -328,16 +266,10 @@
                    event.target.playVideo();
                },
                'onStateChange': function(event) {
-
                    if (event.data == YT.PlayerState.PLAYING) {
                        $('audio').each(function() {
                            this.pause();
                            this.currentTime = 0;
-                       });
-                       $('#playermodal').modal({
-                           escapeClose: false,
-                           clickClose: false,
-                           showClose: false
                        });
                    }
                }
@@ -349,67 +281,78 @@
        player.destroy();
    });
 
+
    /*Search*/
    var formulario = document.querySelector('#form-search');
    var btnSearch = document.querySelector('#btn-form');
    var resultado = document.querySelector('#resultado');
    var search = document.querySelector('#contentSearch');
 
+
+   function funcRecursiva(data, texto, page, elem) {
+       data.forEach(element => {
+           if (typeof(element) == 'object') {
+               if (element.page != null) {
+                   page = element.page;
+               }
+               elem = [element.tittle, element.textModal, element.textAudio]
+               funcRecursiva(Object.values(element), texto, page, elem)
+
+           } else {
+               for (let i = 0; i < elem.length; i++) {
+                   var textElement = JSON.stringify(elem[i])
+                   if (textElement != null) {
+                       textElement = textElement.normalize('NFD').replace(/[\u0300-\u036f]/g, "").toLowerCase()
+                       if (textElement.indexOf(texto) !== -1) {
+                           if (!checkMobile()) {
+                               resultado.innerHTML += `
+                             <tbody>
+                                <tr class='b-trSearch' onclick="goPage(${page})">
+                                    <td><p>Pág.${page}</p></td>
+                                        <td class='p-tdSearch'>${elem[i]}</td>
+                                </tr>
+                             </tbody>
+                             `
+                           } else {
+                               resultado.innerHTML += `
+                             <tbody>
+                                <tr class='b-trSearch' onclick="goPage(${page})">
+                                    <td><p style='font-size:40px;'>Pág.${page}</p></td>
+                                    <td>${elem[i]}</td>
+                                </tr>
+                             </tbody>
+                             `
+                           }
+                       }
+                   }
+               }
+               elem = []
+           }
+       });
+   }
+
    const filter = () => {
        resultado.innerHTML = '';
        const texto = formulario.value.normalize('NFD').replace(/[\u0300-\u036f]/g, "").toLowerCase();
 
        if (texto === '') {
-           if (!checkMobile()) { // not mobile
+           if (!checkMobile()) {
                resultado.innerHTML += `<tbody> <tr><td style='font-size:16px'>Ingrese una palabra</td></tr> </tbody>`
            } else {
                resultado.innerHTML += `<tbody> <tr><td style='font-size:40px'>Ingrese una palabra</td></tr> </tbody>`
            }
        } else {
-           for (let l = 1; l < $('#flipbook').turn("pages"); l++) {
-               $.getJSON('json/page-' + l + '.json').done(function(data) {
-                   $.each(data, function(key, region) {
-                       var matriz = Object.values(region);
-                       for (let i = 1; i < matriz.length; i++) {
-                           if (matriz[i].normalize('NFD').replace(/[\u0300-\u036f]/g, "").toLowerCase().indexOf('mp3') !== -1 || matriz[i].normalize('NFD').replace(/[\u0300-\u036f]/g, "").toLowerCase().indexOf('png') !== -1 || matriz[i].normalize('NFD').replace(/[\u0300-\u036f]/g, "").toLowerCase().indexOf('jpg') !== -1) {
+           $.getJSON('json/pages.json').done(function(data) {
+               funcRecursiva(data, texto)
 
-
-                           } else
-                           if (matriz[i].normalize('NFD').replace(/[\u0300-\u036f]/g, "").toLowerCase().indexOf(texto) !== -1) {
-                               if (!checkMobile()) { // not mobile
-                                   resultado.innerHTML += `
-                             <tbody>
-                                <tr class='b-trSearch' onclick="goPage(${l})">
-                                    <td><p>Pág.${l}</p></td>
-                                        <td class='p-tdSearch'>${matriz[i]}</td>
-                                </tr>
-                             </tbody>
-                             `
-                               } else {
-                                   resultado.innerHTML += `
-                             <tbody>
-                                <tr class='b-trSearch' onclick="goPage(${l})">
-                                    <td><p style='font-size:40px;'>Pág.${l}</p></td>
-                                    <td>${matriz[i]}</td>
-                                </tr>
-                             </tbody>
-                             `
-                               }
-                           }
-                       }
-
-                       if (resultado.innerHTML === '' && l == ($('#flipbook').turn("pages") - 1)) {
-
-                           if (!checkMobile()) { // not mobile
-                               resultado.innerHTML += `<tbody><tr><td style='font-size:16px'>No encontrado</td></tr></tbody>`
-                           } else {
-                               resultado.innerHTML += `<tbody><tr><td style='font-size:40px'>No encontrado</td></tr></tbody>`
-                           }
-
-                       }
-                   });
-               });
-           }
+               if (resultado.innerHTML === '') {
+                   if (!checkMobile()) { // not mobile
+                       resultado.innerHTML += `<tbody><tr><td style='font-size:16px'>No encontrado</td></tr></tbody>`
+                   } else {
+                       resultado.innerHTML += `<tbody><tr><td style='font-size:40px'>No encontrado</td></tr></tbody>`
+                   }
+               }
+           });
        }
    };
 

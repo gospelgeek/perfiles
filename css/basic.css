@@ -68,25 +68,29 @@ body {
 .fondo {
     margin: 0;
     height: 100vh;
-    background-image: url(/pics/fondo.png);
+    background-image: url('../pics/fondo.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
 }
 
+.flipbook-viewport {
+    position: relative;
+    top: -80px;
+}
+
 .flipbook-viewport .container {
     position: absolute;
-    top: 50%;
+    top: 0px;
     left: 50%;
     margin: auto;
 }
 
 .flipbook-viewport .flipbook {
     width: 922px;
-    height: 600px;
-    left: -461px;
-    top: -300px;
+    left: -550px;
+    top: 0!important;
 }
 
 .flipbook-viewport .page {
@@ -190,19 +194,17 @@ body {
 /*Page 2*/
 
 .flipbook .p2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    width: 100%;
 }
 
-.video {
-    margin: auto;
+.btn-video {
+    text-align: center;
+    margin-top: 60%;
 }
 
 .imgVideo {
-    width: 130px;
-    height: 50px;
-    margin-bottom: 100%;
+    width: 25%;
 }
 
 .p2 .close-modal {
@@ -220,9 +222,26 @@ body {
 /*Page 3*/
 
 .flipbook .p3 {
-    display: flex;
-    justify-content: flex-start;
+    position: relative;
     width: 100%;
+}
+
+.audioContent {
+    width: 50%;
+    position: absolute;
+    right: 8%;
+    top: 10%;
+}
+
+.audioContent em {
+    width: 100%;
+    font-size: 1.1vw;
+    margin-bottom: 10px;
+}
+
+.audioContent audio {
+    width: 80% !important;
+    display: block;
 }
 
 .btn-modal {
@@ -242,26 +261,14 @@ body {
     z-index: 5!important;
 }
 
-.column-2 {
-    position: relative;
-    width: 38%;
-    margin: 0;
-    padding: 0;
+.modal h2 {
+    padding: 0 20px;
 }
 
-.column-2 .content-2 {
-    display: flex;
-    flex-direction: column;
-    margin-top: 34%;
-}
-
-.column-2 em {
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.column-2 .audio {
-    width: 100%;
+.modal-p {
+    overflow-y: auto;
+    height: 450px;
+    padding: 0 20px;
 }
 
 
@@ -456,4 +463,62 @@ body {
     position: absolute !important;
     left: 50%;
     margin-left: -250px;
+}
+
+
+/*Loader*/
+
+.containerLoader {
+    background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+    transition: all 1.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader,
+.loader::before,
+.loader::after {
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    animation: loader 1.5s infinite ease-in-out;
+}
+
+.loader {
+    color: #ffffff;
+    font-size: 13px;
+    position: relative;
+    animation-delay: -0.16s;
+}
+
+.loader::before,
+.loader::after {
+    content: '';
+    position: absolute;
+    top: 0;
+}
+
+.loader::before {
+    left: -3.5em;
+    animation-delay: -0.32s;
+}
+
+.loader::after {
+    left: 3.5em;
+}
+
+@keyframes loader {
+    0%,
+    80%,
+    100% {
+        box-shadow: 0 2.5em 0 -1.3em;
+    }
+    40% {
+        box-shadow: 0 2.5em 0 0;
+    }
 }
