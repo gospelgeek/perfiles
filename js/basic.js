@@ -76,7 +76,7 @@
 
        pictures = document.querySelectorAll('.img-gallery')
        pictureSLight = document.querySelector('.add-imgs')
-       containerLight = document.querySelector('.img-light')    
+       containerLight = document.querySelector('.img-light')
        pictures.forEach(imagen => {
            imagen.addEventListener('click', () => {
                console.log(imagen.getAttribute('src'))
@@ -224,7 +224,8 @@
    function resizeViewport() {
        var width = $(window).width(),
            height = $(window).height(),
-           options = $('.flipbook').turn('options');
+           options = $('.flipbook').turn('options'),
+           ancho = height * (8.5 / 11);
 
        $('.flipbook-viewport').css({
            width: width,

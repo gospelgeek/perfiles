@@ -88,13 +88,11 @@ body {
 }
 
 .flipbook-viewport .flipbook {
-    left: -550px;
+    left: -565px;
     top: 0!important;
 }
 
 .flipbook-viewport .page {
-    width: 461px;
-    height: 700px;
     background-color: white;
     background-repeat: no-repeat;
     background-size: 100% 100%;

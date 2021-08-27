@@ -131,10 +131,11 @@
         function loadApp() {
             var book = $(this),
                 currentPage = book.turn('page');
-            var height = $(window).height();
+            var height = $(window).height(),
+                width = $(window).width();
             // Create the flipbook
             $('.flipbook').turn({
-                width: 1100,
+                width: width - 400,
                 height: height,
                 elevation: 50,
                 gradients: true,
