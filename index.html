@@ -19,7 +19,6 @@
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
-
 <body style="background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%); height:100vh">
     <div class="containerLoader">
         <div class="loader"></div>
@@ -30,7 +29,7 @@
             <div class="bar">
                 <nav class="navigation">
                     <a class="options" href="#thumbnails" rel="modal:open"><i class='bx bx-grid-vertical' style='color:#ffffff'></i></a>
-                    <a class="options" href="#"><i class='bx bxs-message-detail' style='color:#ffffff'></i></a>
+                    <a class="options" href="#"><i class='bx bxs-help-circle' style='color:#ffffff' ></i></a>
                     <a class="options" href="#search" rel="modal:open"><i class='bx bx-search-alt-2' style='color:#ffffff'></i></i></a>
                 </nav>
                 <div class="btn-nav"><i id="icon" class='bx bxs-chevron-down' style='color:#ffffff'></i></div>
@@ -114,6 +113,14 @@
         </div>
     </div>
 
+    <!--Gallery modal-->
+    <section class="img-light">
+        <a href="#" class="close-imgs"><i class='bx bx-x closeImg' style='color:#ffffff' ></i></a>
+        <img src="" class="add-imgs" alt="">
+    </section>
+
+    <script type="text/javascript" src="js/wordfind.js"></script>
+    <script type="text/javascript" src="js/wordfindgame.js"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
     <script>
         $(window).load(function() {
@@ -135,7 +142,7 @@
                 duration: 1000,
                 acceleration: !isChrome(),
                 acceleration: true,
-                pages: 4,
+                pages: 6,
 
                 when: {
                     turning: function(event, page, view) {
@@ -167,7 +174,7 @@
             test: Modernizr.csstransforms,
             yep: ['lib/turn.js'],
             nope: ['lib/turn.html4.min.js'],
-            both: ['js/basic.js', 'css/basic.css', 'js/stylesMobile.js', 'js/structHtml.js', 'json/pages.json'],
+            both: ['js/basic.js', 'css/basic.css', 'css/styleWordFind.css', 'js/stylesMobile.js', 'js/structHtml.js', 'json/pages.json'],
             complete: loadApp
         });
     </script>

@@ -109,4 +109,32 @@ function stylesMobile() {
         height: 'unset'
     })
 
+    $('#puzzle').css({
+        'margin': '255px 30px 0 30px'
+    })
+
+    $('.puzzleSquare').css({
+        'height': '60px',
+        'font': '2em sans-serif'
+    })
+    $('#words').css({
+        'font': '1.7em sans-serif',
+        'margin': '0 110px',
+        'colum-gap': '13%'
+    })
+    $('#solve').css({
+        'font-size': '33px',
+        'padding': '3%'
+    })
+    $('.add-imgs').css({
+        'width': '90%'
+    })
+    $('.close-imgs').css({
+        'top': '108px',
+        'right': '50px'
+    })
+    $('.closeImg').css({
+        'font-size': '100px'
+    })
+
 }

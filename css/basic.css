@@ -26,7 +26,7 @@ body {
     align-items: center;
     transform: translate(0, -100%);
     transition: 0.5s;
-    background-color: rgba(78, 78, 78, 0.5);
+    background-color: rgba(78, 78, 78, 0.8);
     border-radius: 0 0 10px 10px;
 }
 
@@ -43,7 +43,7 @@ body {
 .btn-nav {
     width: 100px;
     height: 50px;
-    background-color: rgba(78, 78, 78, 0.5);
+    background-color: rgba(78, 78, 78, 0.8);
     z-index: 10;
     transform: translate(0, -130%);
     transition: 0.5s;
@@ -88,7 +88,6 @@ body {
 }
 
 .flipbook-viewport .flipbook {
-    width: 922px;
     left: -550px;
     top: 0!important;
 }
@@ -123,7 +122,7 @@ body {
     -webkit-transition: -webkit-box-shadow 0.5s;
     -moz-transition: -moz-box-shadow 0.5s;
     -o-transition: -webkit-box-shadow 0.5s;
-    -ms-transition: -ms-box-shadow 0.5s;
+    transition: -ms-box-shadow 0.5s;
     -webkit-box-shadow: 0 0 20px #ccc;
     -moz-box-shadow: 0 0 20px #ccc;
     -o-box-shadow: 0 0 20px #ccc;
@@ -142,7 +141,7 @@ body {
     top: 50%;
     z-index: 1;
     transform: translate(0, -50%);
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
     cursor: pointer;
 }
 
@@ -331,7 +330,7 @@ body {
     display: inline-block;
     padding: 5px;
     width: 100%;
-    -webkit-box-shadow: 0 0 2px 2px rgb(0 0 0 / 10%);
+    box-shadow: 0 0 2px 2px rgb(0 0 0 / 10%);
 }
 
 .leftThumb {
@@ -521,4 +520,54 @@ body {
     40% {
         box-shadow: 0 2.5em 0 0;
     }
+}
+
+
+/*Imgs*/
+
+.div-img {
+    display: flex;
+    justify-content: center;
+}
+
+.img-gallery {
+    width: 70%;
+    cursor: pointer;
+}
+
+.img-light {
+    position: fixed;
+    background: rgba(0, 0, 0, .8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+    z-index: 100;
+}
+
+.show {
+    transform: translate(0);
+}
+
+.add-imgs {
+    width: 60%;
+    transition: transform .3s .2s;
+    transform: scale(0);
+}
+
+.showImage {
+    transform: scale(1);
+}
+
+.close-imgs {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    cursor: pointer;
 }

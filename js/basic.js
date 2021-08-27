@@ -35,14 +35,69 @@
                for (let i = 0; i < element.length; i++) {
                    $('.p2').append(element[i]);
                }
+               showImg();
                break;
            case 3:
                element = createHtml(region.pageContent)
                for (let i = 0; i < element.length; i++) {
                    $('.p3').append(element[i]);
                }
+               var words = ['Magdalena', 'Maria', 'Guadalupe', 'Carme', 'Luz', 'Esperanza', 'Socorro', 'Estrella', 'Cielo', 'Eva', 'Marta', 'Loida', 'Sara', 'sonia']
+               createWordsGame(words)
+
                break
+           case 4:
+               break;
+           case 5:
+               element = createHtml(region.pageContent)
+               for (let i = 0; i < element.length; i++) {
+                   $('.p5').append(element[i]);
+               }
+               break;
+           case 6:
+               break;
+
        }
+   }
+
+   function createWordsGame(words) {
+       var gamePuzzle = wordfindgame.create(words, '#puzzle', '#words')
+       var puzzle = wordfind.newPuzzle(words, { width: 18, height: 18, fillBlanks: false })
+       wordfind.print(puzzle)
+
+       $('#solve').click(function() { wordfindgame.solve(gamePuzzle, words) })
+   }
+
+   /*Imgs */
+   var pictures, pictureSLight, containerLight;
+
+
+   function showImg() {
+
+       pictures = document.querySelectorAll('.img-gallery')
+       pictureSLight = document.querySelector('.add-imgs')
+       containerLight = document.querySelector('.img-light')    
+       pictures.forEach(imagen => {
+           imagen.addEventListener('click', () => {
+               console.log(imagen.getAttribute('src'))
+               showImgs(imagen.getAttribute('src'))
+           })
+       })
+
+       containerLight.addEventListener('click', (e) => {
+           if (e.target !== pictureSLight) {
+               containerLight.classList.toggle('show')
+               pictureSLight.classList.toggle('showImage')
+           }
+       })
+   }
+
+
+
+   const showImgs = (imagen) => {
+       pictureSLight.src = imagen
+       containerLight.classList.toggle('show')
+       pictureSLight.classList.toggle('showImage')
    }
 
    // http://code.google.com/p/chromium/issues/detail?id=128488

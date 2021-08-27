@@ -22,7 +22,7 @@ function createHtml(pageContent) {
                             }).append(
                                 $('<i/>', { 'class': 'bx bx-x closeT' }))),
                         $('<h2/>').text(jsonData.tittle),
-                        $('<p/>', { 'class': 'modal-p' }).text(jsonData.textModal)
+                        $('<p/>', { 'class': 'modal-p' }).html(jsonData.textModal)
                     ), $('<p/>', { 'class': jsonData.class }).append(
                         $('<a/>', {
                             'href': '#' + jsonData.id,
@@ -68,11 +68,27 @@ function createHtml(pageContent) {
                             }))))
                     break;
 
+                case 'wordsGame':
+                    struct[pos] = $('<div/>', { 'class': 'div-words' }).html("<div id='puzzle'> </div>" +
+                        "<div id='words'></div>" +
+                        "<div class='btn-words'><button id='solve'>Resolver el juego</button></div>")
+                    break;
 
+                case 'imgs':
+                    jsonData = region.imgs;
+                    for (var i = 0; i < jsonData.length; i++) {
+                        struct[pos] = $('<div/>', { 'class': 'div-img' }).append(
+                            $('<img/>', {
+                                'id': jsonData[i].id,
+                                'src': jsonData[i].url,
+                                'class': jsonData[i].class
+                            }))
+                        pos++;
+                    }
+                    break;
             }
             pos++;
         }
     })
     return struct
-
 }
