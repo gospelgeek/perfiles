@@ -6,9 +6,6 @@
     <script type="text/javascript" src="extras/jquery.min.1.7.js"></script>
     <link rel="shortcut icon" href="#">
 
-    <!-- Remember to include jQuery :) 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script> -->
-
     <!-- jQuery Modal -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
@@ -17,6 +14,9 @@
 
     <!--Iocns-->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body style="background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%); height:100vh">
@@ -29,7 +29,7 @@
             <div class="bar">
                 <nav class="navigation">
                     <a class="options" href="#thumbnails" rel="modal:open"><i class='bx bx-grid-vertical' style='color:#ffffff'></i></a>
-                    <a class="options" href="#"><i class='bx bxs-help-circle' style='color:#ffffff' ></i></a>
+                    <a class="options" href="#instructions" rel="modal:open"><i class='bx bxs-help-circle' style='color:#ffffff' ></i></a>
                     <a class="options" href="#search" rel="modal:open"><i class='bx bx-search-alt-2' style='color:#ffffff'></i></i></a>
                 </nav>
                 <div class="btn-nav"><i id="icon" class='bx bxs-chevron-down' style='color:#ffffff'></i></div>
@@ -51,7 +51,7 @@
 
         <!-- Thumbnails -->
         <div id="thumbnails" class="modal">
-            <div class="thumbnails-head">
+            <div class="head-modal">
                 <div class="tittle">Páginas</div>
                 <div class="close-modal"> <a id="hideThumb" href="#" rel="modal:close"><i class='bx bx-x closeT'></i></a></div>
             </div>
@@ -97,6 +97,21 @@
         </div>
     </div>
 
+    <!--Instructions-->
+    <div id="instructions" class="modal">
+        <div class="head-modal">
+            <div class="tittle">Cuadro de Ayuda</div>
+            <div class="close-modal"> <a id="hideThumb" href="#" rel="modal:close"><i class='bx bx-x closeT'></i></a></div>
+        </div>
+        <div class="instructions">
+            <ul>
+                <li> Pasar las páginas usando las flechas o haciendo clic y arrastrando las esquinas de la página
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
     <!--Search-->
     <div id="search" class="modal modalSearch">
         <div class="search-head">
@@ -119,6 +134,12 @@
         <img src="" class="add-imgs" alt="">
     </section>
 
+    <!--Game Modal-->
+    <div id="gameModal" class="modal" style="display: none;">
+        <div class="close-modal"> <a href="#" rel="modal:close"><i class='bx bx-x closeT'></i></a></div>
+        <div class="message"><span>Felicidades!!!</span></div>
+    </div>
+
     <script type="text/javascript" src="js/wordfind.js"></script>
     <script type="text/javascript" src="js/wordfindgame.js"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
@@ -134,8 +155,9 @@
             var height = $(window).height(),
                 width = $(window).width();
             // Create the flipbook
+
             $('.flipbook').turn({
-                width: width - 400,
+                width: 1200,
                 height: height,
                 elevation: 50,
                 gradients: true,
@@ -143,19 +165,18 @@
                 duration: 1000,
                 acceleration: !isChrome(),
                 acceleration: true,
-                pages: 6,
-
+                pages: 62,
                 when: {
                     turning: function(event, page, view) {
                         if (navigator.cookieEnabled == true) {
                             document.cookie = "pagina =" + encodeURIComponent(page);
-
                         }
                         Hash.go('page/' + page).update();
                         // Page turning sounds
                         var audio = new Audio('audio/changepage.mp3');
                         audio.volume = 0.5;
                         audio.play();
+
                     },
                     missing: function(event, pages) {
                         for (var i = 0; i < pages.length; i++)

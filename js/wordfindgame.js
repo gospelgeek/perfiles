@@ -25,7 +25,9 @@
     var WordFindGame = function() {
 
         // List of words for this game
-        var wordList;
+        var wordList, wordListPrueba = wordList;
+
+
 
         /**
          * Draws the puzzle by inserting rows of buttons into el.
@@ -61,12 +63,13 @@
          * @param {String} el: The jQuery element to write the words to
          * @param {[String]} words: The words to draw
          */
+
         var drawWords = function(el, words) {
 
             var output = '<ul>';
             for (var i = 0, len = words.length; i < len; i++) {
                 var word = words[i];
-                output += '<li class="word ' + word + '">' + word;
+                output += '<li class="word ' + word + '" >' + word;
             }
             output += '</ul>';
 
@@ -97,6 +100,8 @@
             selectedSquares.push(this);
             curWord = $(this).text();
         };
+
+
 
 
 
@@ -212,6 +217,7 @@
          * resets the game state to start a new word.
          *
          */
+        var audio;
         var endTurn = function() {
 
             // see if we formed a valid word
@@ -221,10 +227,18 @@
                     $('.selected').addClass('found');
                     wordList.splice(i, 1);
                     $('.' + curWord).addClass('wordFound');
+                    audio = new Audio('audio/wordFound.wav');
+                    audio.volume = 0.5;
+                    audio.play();
+                    console.log(wordList)
                 }
 
                 if (wordList.length === 0) {
                     $('.puzzleSquare').addClass('complete');
+                    audio = new Audio('audio/wordComplete.mpeg');
+                    audio.volume = 0.5;
+                    audio.play();
+                    $('#gameModal').modal('toggle')
                 }
             }
 
@@ -235,6 +249,7 @@
             curWord = '';
             curOrientation = null;
         };
+
 
         /**
          * Given two points, ensure that they are adjacent and determine what
@@ -274,7 +289,7 @@
             create: function(words, puzzleEl, wordsEl, options) {
 
                 wordList = words.slice(0).sort();
-
+                wordListPrueba = words
                 var puzzle = wordfind.newPuzzle(words, options);
 
                 // draw out all of the words
@@ -294,6 +309,7 @@
                     $('.puzzleSquare').on("touchstart", startTurn);
                     $('.puzzleSquare').on("touchmove", touchMove);
                     $('.puzzleSquare').on("touchend", endTurn);
+
                 }
 
                 return puzzle;
@@ -326,6 +342,14 @@
                     }
                 }
 
+            },
+            clean: function() {
+                wordList = wordListPrueba.slice(0).sort();
+                $('.found').removeClass('found');
+                $('.wordFound').removeClass('wordFound');
+                $('.solved').removeClass('solved');
+                $('.complete').removeClass('complete');
+                $('.selected').removeClass('selected');
             }
         };
     };
@@ -334,6 +358,10 @@
     /**
      * Allow game to be used within the browser
      */
+
+
     window.wordfindgame = WordFindGame();
+
+
 
 }(document, jQuery, wordfind));

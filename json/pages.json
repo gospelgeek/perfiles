@@ -5,44 +5,330 @@
     {
         "page": 2,
         "pageContent": [{
-            "video": {
-                "id": "player",
-                "class": "btn-video"
-            },
-            "imgs": [{
-                "id": "imgPrueba1",
-                "class": "img-gallery",
-                "url": "pics/paisaje.jpg"
-            }]
+            "tittle": "<h1>CONTENIDO</h1>"
         }]
     },
     {
         "page": 3,
         "pageContent": [{
-            "wordsGame": {}
+
         }]
     },
     {
         "page": 4,
-        "pageContent": [{}]
+        "pageContent": [{
+            "tittle": "<h1>PARA TI MUJER</h1>"
+        }]
     },
     {
         "page": 5,
+        "pageContent": [{}]
+    },
+    {
+        "page": 6,
+        "pageContent": [{}]
+    },
+    {
+        "page": 7,
         "pageContent": [{
-            "modal": {
-                "id": "modalPage1",
-                "class": "btn-modal",
-                "tittle": "LA ESPOSA DEL PASTOR Y SUS DESAFíOS EN LAS MISIONES",
-                "textModal": "<h3>Geográfico:</h3> Desde mi perspectiva como misionero en el Amazonas, creo que puedo ofrecer un panorama muy cercano a la realidad de las vivencias en la entrega, pasión y compromiso de la esposa del pastor en el área misionera dentro de nuestro contexto nacional, sobre todo,en una zona como esta de nuestro país que adiciona grandes desafíos que van desde lo climático de tipo ecuatorial con una humedad que sobrepasa el 90 % en la mayoría del territorio, y distancias muy grandes tanto por vía área como fluvial;algunas hasta de un día en la navegación por ríos. <h3>La salud:</h3> Una de las situaciones que se puede apreciar, es que ellas generalmente han sido y son las más afectadas debido a las condiciones climáticas de altas temperaturas y la humedad asfixiante propia de las zonas selváticas. Adicional a esto, la salubridad del agua es mínima lo que facilita la proliferación de infecciones y hongos en diversas áreas del cuerpo, sin dejar de lado la malaria y el paludismo de las cuales tenemos algunas de ellas que han sido afectadas hasta en cinco ocasiones, también, ver como sus Comité nacional de Asesoría y Acompañamiento Damas Dorcas 51 hijos enferman y no tener un médico que los atienda o un medicamento a la mano, debido al lugar donde se encuentran, sin embargo, se ha evidenciado que su amor por la obra del Señor es mayor a sus dificultades. <h3>La cultura:</h3> Otro factor determinante en su pasión y entrega por la obra de Dios ha sido el esfuerzo para asimilar las costumbres y culturas étnicas, que son obviamente muy distintas a las propias, y que solo si se tiene amor por el servicio se puede lograr la asimilación y adaptación. Escases de servidores: También, tienen que lidiar algunas veces con el desánimo de su esposo, pues el trabajo misionero no siempre rinde frutos como en el resto de las obras en el país, Además tienen que desempeñar las labores de los distintos comités, pues en varios de los lugares de trabajo en las misiones no hay servidores locales, y cuando el pastor sale a las giras o reuniones tienen que quedarse a cargo de la obra. <h3>Informe misionero: </h3>En la actualidad el Distrito 23 cuenta con doce congregaciones repartidas así: En Colombia: Leticia Central, Segunda y Tercera, Pedrera, Trapacá, Santa Sofía y Puerto Nariño. En Perú: Caballo Cocha, Huapapa, Vista Alegre, Islandia y Santa Rosa. Con una membresía de aproximadamente trecientos cincuenta hermanos bautizados y con un número igual de simpatizantes, además de unos doscientos cincuenta niños y niñas. <h3>Perspectiva de la obra:</h3> En el proyecto misionero se encuentra la apertura de dos nuevas obras a corto plazo, además el discipulado de los nuevos convertidos para la perfilación al servicio, pues la necesidad de obreros raizales es muy evidente, por ello rogamos sus oraciones al Señor para lograr la consolidación del trabajo misionero. (…) Y el señor añadía cada día a la iglesia los que habían de ser salvos. Hechos 2:47. <br><br>Henry Antonio Corrales <br>Pastor misionero del Amazonas <br>Distrito 23"
+            "tittle": "<h1>MUJER VIVE TU FE EN CRISTO</h1>",
+            "textResaltado": {
+                "class": "text7",
+                "p": "Cuando la escritura dice que el justo por la fe vivirá, me hace comprender que la verdadera fe, trasciende a todas las esferas de la vida, vivimos una vida de fe, por fe y en fe, pero ¿Cómo trasciende esa fe a todas las áreas de nuestra vida?"
             },
-            "audio": {
-                "class": "audioContent",
-                "textAudio": "Escuche este audio",
-                "url": "audio/mp3esposa.mp3"
+            "modal": {
+                "id": "modalPage7",
+                "class": "btn-modal",
+                "tittle": "MUJER VIVE TU FE EN CRISTO",
+                "textModal": "Cuando la escritura dice que el justo por la fe vivirá, me hace comprender que la verdadera fe, trasciende a todas las esferas de la vida, vivimos una vida de fe, por fe y en fe, pero ¿Cómo trasciende esa fe a todas las áreas de nuestra vida?<br><br> La fe produce muchos frutos en el hijo de Dios, una justificación que es por fe y genera paz para con Dios, mujer, vive en paz. Por la fe en Él, nos es abierta la puerta de la gracia, mujer, disfruta el gran regalo de la gracia de Dios. Además, la fe también opera en la salvación del creyente, pues por gracia somos salvos por medio de la fe; mujer, la fe nos da certeza de nuestra salvación, y esa misma fe nos permite agradar a Dios, pues sin ella es imposible hacerlo. Mujer, Dios es galardonador de los que le buscan, búscale ahora. <br><br> La fe es el instrumento por excelencia con el que Dios ha dotado a su pueblo, hace parte de la armadura de Dios como escudo y nos permite apagar todos los dardos de fuego del maligno, úsala, ningún dardo jamás atravesará el escudo de la fe. Es don del Espíritu Santo y también fruto del Él, por la misma fe heredamos las promesas. Es la fe la que en medio de cualquier situación nos permite ver futuros de victoria. <br><br> Cómo no hablar de los milagros, la fe es la llave que abre los cielos, cuando alguien clama con fe todo es posible, en la iglesia, en la casa, en la vida, en medio de cualquier circunstancia he aprendido que la fe y las oraciones cambian las cosas, que el dolor no te mate la fe, la angustia no te impida creer ni la prueba te obligue a callar; mujer, clama, clama, Él dijo: “YO TE RESPONDERÉ”. <br><br> Hoy alimentamos nuestra fe con las historias de mujeres que decidieron creer: <br><br> <span>La fe de Sara</span>: <em>“Por la fe también la misma Sara siendo estéril, recibió fuerza para concebir...”</em> (Hebreos 11: 11). Mujer, Dios no solo gestará el milagro, te dará fuerzas para concebirlo. <br><br> <span>La fe de Rahab</span>: <em>“Por la fe Rahab la ramera no pereció…”</em> (Hebreos 11:31). No era la mejor mujer, pero decidió creer y no perdió su recompensa, atrévete a creer. <br><br> <span>La fe de Ana</span>: Mujer estéril y afligida, pero pidió a Dios un hijo y lo pidió varón. Dios se lo otorgó. Yo le llamaría milagro a la carta, ser mamá ya era milagroso, pero concederle un hijo varón es extraordinario. Tenemos un Dios con la capacidad de hacer el milagro a tu medida, según tu deseo. PÍDELE AHORA. <br><br> <span>La fe de la mujer cananea</span>: Ante la negativa de Jesús, ella se humilló y pidió migajas, su actitud llevó al Maestro a exclamar: “OH MUJER GRANDE ES TU FE, hágase contigo como quieres”. Dos grandes enseñanzas quedan de este milagro, persistencia y humillación, dos aliados de la fe. Mujer, no desmayes.<br><br> La mujer del flujo de sangre: Lo que no pudo hacer en doce años pasó en un instante, se acercó a Jesús, le tocó, la fuente de su sangre se secó. Hay quienes se acercan a Dios, pero no le tocan, a Dios hay que acercarse y tocarle por la fe, te aseguro que no regresarás con las manos vacías. <br><br> Hoy nos enseñan, ver para creer, el principio bíblico es totalmente opuesto, si crees, verás la gloria de Dios; no podemos basar nuestra fe en lo que vemos, recuerda siempre que la fe no niega la realidad, pero está por encima de ella. En mi vida con Cristo, Él me llevó a un escenario donde todo lo que se veía era desalentador, una leucemia, dos años de quimioterapia, un trasplante de médula ósea y cero garantías de que el tratamiento funcionase. Pero decidí creer y Dios me mostró su gloria, aquí estoy completamente sana cinco años después, <span>bienaventurados los que no vieron y creyeron.</span> <br><br> Por último, quiero recordarte mujer que la fe debe ser probada, muchas de las cosas que vivimos, Dios las permite para ver que tenemos en el corazón, es fácil confesar una fe con la boca, pero en el sequedal de la prueba, brota la fe o la incredulidad, la confianza o la duda, que hermoso sería que nuestra fe no se marchite, sino que en medio de la sequía siga dando fruto. No importa cuántos desiertos tengas que cruzar, pasarás al otro lado en fe, Abraham se fortaleció en fe dando gloria a Dios, haz tú lo mismo, no estamos llamadas a tirar la toalla, abandonar el hogar, permitir que los hijos tomen el rumbo incorrecto, vamos a dar la guerra, recuerda: No me rendiré sin dar una pelea. Eres de las que pelea sus batallas de rodillas, edifica su casa en sabiduría, cree a las promesas de Dios y pelea la buena batalla de la fe.<br><br> El testimonio es el legado que trasciende a la vida y a la muerte ¿Cómo nos recordarán? ¿Qué será lo primero que vendrá a la mente de aquellos que nos conocieron cuando alguien mencione nuestro nombre? ¿Qué quieres que sea? Yo quiero que los que siguen mis pasos tengan que decir: Le creyó a Dios y me enseñó a creerle a Dios. Así que MUJER, VIVE TU FE EN CRISTO y deja un legado imborrable para las futuras generaciones. <br><br> Por Jacibe de Campuzano. Esposa de Pastor <br><br><br>"
             }
         }]
     },
     {
+        "page": 8,
+        "pageContent": [{}]
+    },
+    {
+        "page": 9,
+        "pageContent": [{
+            "tittle": "<h1>FE PARA LA CONSERVACIÓN DEL ALMA</h1>",
+            "textResaltado": {
+                "class": "text7",
+                "p": "La fe en Cristo fortalece nuestra alma en momentos difíciles. Al enfrentarnos a diferentes situaciones actuando con fe, seremos capaces de tomar decisiones dirigidas por Dios, siendo instrumentos de Él, lo que se verá reflejado en la victoria que Dios nos concederá, y no miraremos atrás"
+            },
+            "textBiblico": {
+                "class": "text7",
+                "p": "<em>“Pero nosotros no somos de los que retroceden para perdición, sino de los que tienen fe para preservación del alma”</em> (Hebreos 10:39)."
+            },
+            "modal": {
+                "id": "modalPage9",
+                "class": "btn-modal",
+                "tittle": "FE PARA LA CONSERVACIÓN DEL ALMA",
+                "textModal": "<em>“Pero nosotros no somos de los que retroceden para perdición, sino de los que tienen fe para preservación del alma” (Hebreos 10:39).</em><br><br>En la Biblia podemos encontrar relatos de hombres que no retrocedieron ante diferentes circunstancias, en las cuales se puso a prueba su fe para preservación de su propia vida. <br><br>El caso de Nehemías, quien a pesar de haber sido amenazado de muerte, no se escondió ni retrocedió ante dicha circunstancia, permaneció firme en su fe en Dios.<br><br> <em>“Entonces dije: ¿Un hombre como yo ha de huir? ¿Y quién, que fuera como yo, entraría al templo para salvarse la vida? No entraré”</em> (Nehemías 6:11). De esta manera Nehemías comprendió que el enemigo le había tendido una trampa. “Y entendí que Dios no lo había enviado, sino que hablaba aquella profecía contra mí porque Tobías y Sanbalat lo habían sobornado” (Nehemías 6:12).<br><br>David no retrocedió ante las amenazas desafiantes del gigante Goliat, a quien nadie se atrevía a hacerle frente porque aparentemente era invencible, pero David tenía fe no solo para preservación de su vida, sino la de todo Israel. Enfrentó al gigante y corrió hacia él porque sabía que de Dios es la victoria contra el enemigo.<br><br><em> “Y aconteció que cuando el filisteo se levantó y echó a andar para ir al encuentro de David, David se dio prisa, y corrió a la línea de batalla contra el filisteo. Y metiendo David su mano en la bolsa, tomó de allí una piedra, y la tiró con la honda, e hirió al filisteo en la frente; y la piedra quedó clavada en la frente, y cayó sobre su rostro en tierra” (1 Samuel 17:48-49).</em><br><br>David pudo haber retrocedido dudando de la protección de Dios, pero él se enfrentó a la batalla pues conocía que su victoria dependía de Dios y no de sus habilidades y experiencia.<br><br>Trayendo a memoria el caso de Ester, una mujer de fe en Dios, que se enfrentó a la cruel decisión del rey y su aliado Amán, de destruir a todos los judíos que habitaban en su territorio.<br><br><em> “Ve y reúne a todos los judíos que se hallan en Susa, y ayunad por mí, y no comáis ni bebáis en tres días, noche y día; yo también con mis doncellas ayunaré igualmente, y entonces entraré a ver al rey, aunque no sea conforme a la ley; y si perezco, que perezca”</em> (Ester 4:16). <br><br>De esta manera actuando con fe, Ester fue recibida por el rey, y Dios a través de ella libró a todos los judíos de la muerte. Esta mujer llena de fe no tuvo miedo a su propia muerte, sino que enfrentó la crisis tan difícil que vivieron en ese momento. Este es el resultado de una fe para preservación de la vida. Ester 7:1-10.<br><br>Así mismo dice la historia, de Policarpo, quien era un hombre de Dios, sufrió la persecución en los tiempos de los emperadores a causa del Evangelio, se mantuvo firme en la fe que es en Cristo Jesús, dio su vida antes que negar al Señor Jesucristo, y declaró antes de morir: “he servido al Señor durante 86 años y me ha provisto de grandes beneficios y favores inmerecidos. ¿Cómo podría negar su nombre?”.<br><br><em>“Porque el que se avergonzare de mí y de mis palabras, de éste se avergonzará el Hijo del Hombre cuando venga en su gloria, y en la del Padre, y de los santos ángeles”</em> (Lucas 9:26). <br><br>Si alguno de estos hombres hubiera negado al Señor, esto significaría apostatar de la fe en Dios, y hubiera sido una falta de conocimiento, de haber vivido una experiencia real y sobrenatural en la transformación de la vida de pecado a una vida nueva en Cristo Jesús, más se mantuvieron firmes creyendo que Dios es Todopoderoso.<br><br>Por eso, cuando una persona no está segura de lo que Dios ha hecho en su vida, es fácil que sea arrastrada por la corriente pecaminosa de este mundo que engaña, pues es débil en la fe y retrocede fácilmente.<br><br>En el caso de los tres jóvenes hebreos, ellos manifestaron la firmeza de su fe en Dios, resueltos a morir antes que cambiar su creencia en el Dios que todo lo puede, a quien servían y ofrecían su adoración.<br><br><em>“He aquí nuestro Dios a quien servimos puede librarnos del horno de fuego ardiendo; y de tu mano, oh rey, nos librará. Y si no, sepas, oh rey, que no serviremos a tus dioses, ni tampoco adoraremos la estatua que has levantado”</em> (Daniel 3: 17-18). No cambiaremos nuestra fe en el único Dios que vive y permanece para siempre.<br><br>De esta manera, Dios los salvó de la muerte, pues no dieron un paso atrás en la fe que profesaban.<br><br>Fortalecer nuestra fe en el Señor Jesucristo es la manera de preservar nuestra alma para salvación.<br><br>Al poner la fe en acción afirmamos los cimientos de esta; es decir, es una gran bendición que las costumbres, estilo de vida y forma de pensar, estén impregnados de una fe verdadera.<br><br><em>“con tal de que se mantengan firmes en la fe, bien cimentados y estables, sin abandonar la esperanza que ofrece el evangelio…” (Colosenses 1:23 NVI). Que “… es poder de Dios para salvación a todo aquel que cree…” (Romanos 1:16).</em><br></br>La fe en Cristo fortalece nuestra alma en momentos difíciles. Al enfrentarnos a diferentes situaciones actuando con fe, seremos capaces de tomar decisiones dirigidas por Dios, siendo instrumentos de Él, lo que se verá reflejado en la victoria que Dios nos concederá, y no miraremos atrás.<br><br><em>“¿Por qué voy a inquietarme? ¿Por qué me voy a angustiar? En Dios pondré mi esperanza, y todavía lo alabaré. ¡Él es mi Salvador y mi Dios!”</em> (Salmo 42:5 NVI).<br><br><em>“Mas el justo vivirá por fe; Y si retrocediere, no agradará a mi alma”</em> (Hebreos 10:38). Es lo que dice nuestro Dios respecto a la firmeza de sus hijos que han creído en Él y permanecen firmes hasta el final.<br><br><span>¡Seamos de los que no retroceden!</span><br><br>Por Edilberto Ortiz Sanmartín. Primer Vicepresidente IPUC<br><br>"
+            }
+        }]
+    },
+    {
+        "page": 10,
+        "pageContent": [{}]
+    },
+    {
+        "page": 11,
+        "pageContent": [{
+            "tittle": "<h1>SOPA DE LETRAS</h1>",
+            "wordsGame": {}
+        }]
+    },
+    {
+        "page": 12,
+        "pageContent": [{
+            "tittle": "<h1>FÉ PARA MIS GENERACIONES</h1>"
+        }]
+    },
+    {
+        "page": 13,
+        "pageContent": [{
+            "tittle": "<h1>EL LEGADO DE UNA FE NO FINGIDA</h1>",
+            "textResaltado": {
+                "class": "text7",
+                "p": "Los padres de familia con su forma de vivir trascienden para bien o para mal, quieran o no, en la vida de sus hijos. Tienen en sus manos una tremenda oportunidad de sembrar con sus enseñanzas y ejemplo, en la vida de cada pequeño que llega al hogar."
+            },
+            "textBiblico": {
+                "class": "text7",
+                "p": "<em>“Trayendo a la memoria la fe no fingida que hay en ti, la cual habitó primero en tu abuela Loida, y en tu madre Eunice, y estoy seguro que en ti también”</em> <br><br>(2 Timoteo 1:5)"
+            },
+            "modal": {
+                "id": "modalPage13",
+                "class": "btn-modal",
+                "tittle": "EL LEGADO DE UNA FE NO FINGIDA",
+                "textModal": "<em>“Trayendo a la memoria la fe no fingida que hay en ti, la cual habitó primero en tu abuela Loida, y en tu madre Eunice, y estoy seguro que en ti también” </em><br><br>(2 Timoteo 1:5). <br><br>Los padres de familia con su forma de vivir trascienden para bien o para mal, quieran o no, en la vida de sus hijos. Tienen en sus manos una tremenda oportunidad de sembrar con sus enseñanzas y ejemplo, en la vida de cada pequeño que llega al hogar. Esta oportunidad fue la que aprovecharon la abuela Loida y Eunice madre de Timoteo, de quienes el apóstol Pablo decía que tenían una <em>“fe no fingida”</em>. Podemos imaginarlas como unas creyentes con una fe verdadera, gozosas, diligentes, sin apariencia. Seguramente en su casa, Loida y Eunice vivieron de tal forma el Evangelio, que impactaron de una manera muy positiva al joven Timoteo, quien ahora se deleitaba sirviendo a Dios con esa misma fe.<br><br>Como madres tenemos una gran responsabilidad; la Palabra del Señor dice: <em>“La mujer sabia edifica su casa; Mas la necia con sus manos la derriba”</em> (Proverbios 14:1). Podemos ser instrumentos de Dios en la edificación de la vida de cada hijo, pero se requiere de sabiduría: <em>“El principio de la sabiduría es el temor de Jehová …” </em>(Proverbios 1:7). Por lo tanto, cuando hay temor a Dios en el corazón, cuando hay ese profundo anhelo de ser aprobadas por Él, y de caminar en rectitud, tenemos mucho a nuestro favor para realizar esta labor. <br><br>Estamos viviendo en un mundo donde se promueve la apariencia y la superficialidad, por encima de la esencia, pero esto no puede tener cabida en la vida de alguien que quiere agradar a Dios.  Encontramos en 1 Reyes 14, la mujer de Jeroboam, quien pretendió al disfrazarse, engañar al profeta de Dios, a quien se le habían oscurecido sus ojos a causa de su vejez; fue puesta en evidencia por Dios mismo ante el profeta, de tal forma que cuando ella llega, el profeta le dice:<em> “… Entra, mujer de Jeroboam. ¿Por qué te finges otra? He aquí yo soy enviado a ti con revelación dura”</em> (1 Reyes 14:6). Esta mujer no tuvo en cuenta que a Dios nadie lo puede engañar, la Escritura dice: <em>“Oh Jehová, tú me has examinado y conocido. Tú has conocido mi sentarme y mi levantarme; Has entendido desde lejos mis pensamientos. Has escudriñado mi andar y mi reposo, Y todos mis caminos te son conocidos”</em> (Salmos 139:1-3). Por lo tanto, una vida de mentira y apariencia es algo que nuestro Dios aborrece; este estilo de vida elimina toda autoridad espiritual para instruir a nuestros hijos en el conocimiento de Dios, pues son ellos los que mejor nos conocen y saben qué clase de cristianos somos. El peor mensaje que podemos transmitir a nuestros hijos, es cuando nos ven llevando una vida cristiana a medias o liviana; no habrá un ejemplo que les inspire a ser cristianos íntegros, recuerda: <em>“Bástale al discípulo ser como su maestro…”</em> (Mateo 10:25). Lamentablemente en este caso el legado que estará quedando en el corazón de los hijos será una vida de apariencia, sin santidad y sin salvación. <br><br> No pierdas la oportunidad que Dios pone en tus manos, no hay tiempo que perder, vive un Evangelio auténtico y siembra la Palabra. Un día que pase sin sembrar, será un fruto que mañana dejarás de recoger y será una lágrima que añadirás a tu vida. <br><br><span>Enseña con tus obras</span>, es la más grande enseñanza. Cuando ya tus hijos no estén junto a ti y te recuerden, cada uno de tus actos hablará por ti: Cómo orabas y te quebrantabas, tu amor y disciplina en el estudio de la Palabra del Señor, tu vida íntegra en santidad, tu alegría y disposición para el servicio a Dios; estos valores espirituales serán un referente que los inspire a ser verdaderos hijos de Dios.<br><br><span>Enseña con eficiencia</span>: Aprovecha al máximo los recursos que tienes a tu disposición. La Escritura nos habla ampliamente sobre estos recursos: <em>“y las repetirás a tus hijos, y hablarás de ellas estando en tu casa, y andando por el camino, y al acostarte, y cuando te levantes. Y las atarás como una señal en tu mano, y estarán como frontales entre tus ojos; y las escribirás en los postes de tu casa, y en tus puertas”</em> (Deuteronomio 6:7-9).<br><br><span>Enseña con eficacia</span>: Necesitamos resultados, hay que lograr el objetivo. Para esto empieza temprano: <em>“Instruye al niño en su camino, Y aun cuando fuere viejo no se apartará de él”</em> (Proverbios 22:6). También tenemos dos aliados maravillosos: La oración y la Palabra de Dios. <em>“Porque la palabra de Dios es viva y eficaz, y más cortante que toda espada de dos filos; y penetra hasta partir el alma y el espíritu, las coyunturas y los tuétanos, y discierne los pensamientos y las intenciones del corazón”</em> (Hebreos 4:12). <em>“… La oración eficaz del justo puede mucho”</em> (Santiago 5:16.) <br><br>Jocabed y Ana entre otras, son mujeres de la Biblia que tienen mucho para enseñarnos; ellas pueden contarnos sobre el valor de un hijo, y qué tanto puede trascender una enseñanza en la vida de ellos cuando ya no estamos. <br><br>La mayor satisfacción que puede tener una madre, no está en la herencia terrenal que pueda dejar, sino en la herencia celestial, ¡Hijos para el Reino de los cielos! No finjas tu fe, vívela y será el mejor legado para los tuyos.<br><br>Por Judith Ramírez Torres. Presidenta Nacional Damas Dorcas<br><br><br>       "
+            }
+        }]
+    },
+    {
+        "page": 15,
+        "pageContent": [{}]
+    },
+    {
+        "page": 16,
+        "pageContent": [{}]
+    },
+    {
+        "page": 17,
+        "pageContent": [{
+            "tittle": "<h1>VERDADES BÍBLICAS PARA INSTRUIRLOS EN LA FE</h1>",
+            "textResaltado": {
+                "class": "text7",
+                "p": "En Deuteronomio capítulo seis, el Señor a través de Moisés le enseña a su pueblo, a su hijo recién nacido llamado Israel, una serie de instrucciones, mandamientos y ordenanzas, cuya finalidad era, que a través de su obediencia y práctica, honraran a Dios, y fueran benditos en la tierra que iban a tomar en posesión."
+            },
+            "textBiblico": {
+                "class": "text7",
+                "p": "<em>“No las encubriremos a sus hijos, Contando a la generación venidera las alabanzas de Jehová, Y su potencia, y las maravillas que hizo…”</em> (Salmos 78:4-8)."
+            },
+            "modal": {
+                "id": "modalPage17",
+                "class": "btn-modal",
+                "tittle": "VERDADES BÍBLICAS PARA INSTRUIRLOS EN LA FE",
+                "textModal": "<em>“No las encubriremos a sus hijos, Contando a la generación venidera las alabanzas de Jehová, Y su potencia, y las maravillas que hizo…”</em> (Salmos 78:4-8).<br><br>En el capítulo trece del libro de los Jueces, encontramos una pareja de esposos a quienes les fue anunciado por un ángel del Señor, el nacimiento de un hijo, cuya vida estaba planeada y tejida por la mano de Dios; un hijo que desde antes de su nacimiento estaba consagrado y destinado a un servicio especial.<br><br>Trato de entender lo que los padres de Sansón, sintieron ante semejante noticia del ángel del Señor. Primero se le anunció a la madre, y se le dio instrucciones específicas acerca del niño y su cuidado en el embarazo. Luego Manoa estaba muy inquieto acerca de ello y oró al Señor que permitiera que el ángel volviera, y les enseñara lo que tenían que hacer con el niño. Así que el Señor se lo permitió y el ángel una vez más les recuerda las instrucciones.<br><br>Se hace necesario que, como padres le creamos al Señor, acerca del futuro y de los planes que Él tiene para con nuestros hijos.  Por eso, Él nos insta a que seamos partícipes y colaboradores, en la edificación y construcción de sus vidas. Ahora más que nunca necesitamos reforzar en nuestro corazón, esas verdades eternas que un día conocimos, esas verdades que han hecho de nuestra vida, una vida plena y segura.<br><br>¡Es hora de que nuestros hijos hagan de esas verdades un estilo de vida que agrade y honre al Señor!<br><br>En Deuteronomio capítulo seis, el Señor a través de Moisés le enseña a su pueblo, a su hijo recién nacido llamado Israel, una serie de instrucciones, mandamientos y ordenanzas, cuya finalidad era, que a través de su obediencia y práctica, honraran a Dios, y fueran benditos en la tierra que iban a tomar en posesión.<br><br>El interés del Señor a través de estas instrucciones, era que CONOCIERAN Y ENTENDIERAN QUIÉN ERA ÉL, que sintieran su amor tan puro y comprometido, como un padre con su hijo. Sus manos llenas de abundantes regalos, favores y promesas, pidiendo tan solo un corazón obediente y fiel. Deuteronomio 6:4-9 y 13.<br><br>Allí encontramos los fundamentos, principios y verdades bíblicas que todo padre y madre, debemos darnos a la tarea de conocer, aprender y practicar; para luego sembrar, con una esperanza viva en los corazones de nuestros hijos. Verdades que serán un derrotero de fe, que seguramente ellos continuarán transmitiendo.<br><br><span>• Primera Verdad</span>: “El Señor nuestro Dios es el único Señor” <span>(1 Juan 5:20).</span> <br><br><span>• Segunda Verdad</span>: “Ama al Señor tu Dios con todo tu corazón, con toda tu alma y con todas tus fuerzas” <span>(Lucas 10:27).</span><br><br> <span>• Tercera Verdad</span>: “El Temor al Señor”  <span>(Salmos 111:10).</span><br><br><span>• Cuarta Verdad</span>: “La fe” <span>(Hebreos 11:6).</span><br><br><span>• Quinta Verdad</span>: “La Santidad” <span>(Hebreos 12:14; 2 Corintios 7:1).</span><br><br><span>•  Sexta Verdad</span>: “El Servicio” <span>(Hebreos 12:28).</span><br><br><span>• Séptima Verdad</span>: “Anunciar el Evangelio a las almas” <span>(Marcos 16:15).</span><br><br><span>• Otras verdades</span>: La gracia, la verdad, la gratitud, la generosidad, la misericordia, la integridad, la justicia, el amor, entre otros.<br><br> La Biblia nos enseña, que el instruir a los hijos para conocer, amar, obedecer, seguir y servir a Dios, es la base fundamental para levantar hombres y mujeres de bien para la familia, iglesia y sociedad.  Siendo como luminares encendidos, en medio de las tinieblas de este mundo, preparados para anunciar las virtudes de Aquel que también los llamó, de las tinieblas a su luz admirable. Los padres que hemos conocido al Señor Jesucristo, y sabemos quién es Él, tenemos la honrosa labor, de continuar presentando a este Dios extraordinario, que no solamente salva, sino que es Amigo y Padre, que ama, corrige, perdona, restaura, suple, fortalece, entre otras. Que a través de su sacrificio en la cruz del Calvario, nos hizo miembros de un pueblo llamado Iglesia, que es su cuerpo. Y que somos los encargados de proclamar, anunciar y compartir, la más bella de las noticias,“el Evangelio”.<br><br>Ellos tienen que saber, que el Dios eterno ha puesto sus ojos sobre sus vidas, y que mientras nos dure la vida, como padres continuaremos con la más noble tarea, de instruirles en la fe de Jesucristo, ¡como la más grande y bendita verdad!<br><br>Por Nardy Jazmín Suárez de Giraldo. Vicepresidenta Nacional Damas Dorcas.<br><br>"
+            }
+        }]
+    },
+    {
+        "page": 18,
+        "pageContent": [{}]
+    },
+    {
+        "page": 19,
+        "pageContent": [{}]
+    },
+    {
+        "page": 20,
+        "pageContent": [{
+            "tittle": "<h1>ENFOQUE INFANTIL Y JUVENIL</h1>"
+        }]
+    },
+    {
+        "page": 21,
+        "pageContent": [{
+            "tittle": "<h1>ELIJO LA FE, COMO MI ESTILO DE VIDA</h1>",
+            "textResaltado": {
+                "class": "text7",
+                "p": "La vida es un regalo de Dios. La niñez y la juventud, aunque efímeras, son un tesoro de parte de Dios que debemos cuidar. Las niñas y jóvenes que gozan el privilegio de conocer a Dios en esta etapa tan hermosa de la vida, son bienaventuradas."
+            },
+            "textBiblico": {
+                "class": "text7",
+                "p": "<em>“…Toma temprano las buena decisiones…Acuérdate de tu creador en los días de tu juventud…”</em> (Eclesiastés 11:9,12:1 BLA1995)."
+            },
+            "modal": {
+                "id": "modalPage21",
+                "class": "btn-modal",
+                "tittle": "ELIJO LA FE, COMO MI ESTILO DE VIDA",
+                "textModal": "<em>“…Toma temprano las buena decisiones…Acuérdate de tu creador en los días de tu juventud…”</em> (Eclesiastés 11:9,12:1 BLA1995).<br><br>La vida es un regalo de Dios. La niñez y la juventud, aunque efímeras, son un tesoro de parte de Dios que debemos cuidar. Las niñas y jóvenes que gozan el privilegio de conocer a Dios en esta etapa tan hermosa de la vida, son bienaventuradas.<br><br>La juventud con el vigor y alegría que la caracteriza, es una etapa de decisiones trascendentales en la vida en todos los aspectos, espiritual, intelectual, laboral, familiar, afectivo, entre otros.<br><br>Decidir seguir a Dios, profesión, arte u oficio, forma de vida autónoma e independiente a los padres, vida laboral, matrimonio, tener hijos, construir una familia, entre otras; pero la principal de todas, decidir tu vida con Dios, es tan importante y determinante, que de esta decisión dependerán todas las demás.<br><br>Muchas mujeres en su niñez y juventud, aunque conocieron de Dios, se olvidaron de su Creador y no lo honraron, lo cual las condujo a cometer graves errores. La Palabra de Dios lo advierte:<br><br><em>“Jóvenes: disfruten de su juventud, sean felices, sigan los impulsos de su corazón y gocen de la vida. Pero siempre tengan presente que Dios los juzgará por todo lo que hagan. No se dejen dominar del mal genio ni permitan que los deseos de su cuerpo los hagan pecar. Los peores errores los comete uno cuando está joven. Acuérdate de tu Creador cuando todavía eres joven, antes que lleguen los malos tiempos y te aflija la vejez; así no tendrás que decir: «Ya no le encuentro gusto a la vida»”</em><br><br>(Eclesiastés 11:9-10, 12:1 PDT).<br><br>Niña, Jovencita; Dios te ha elegido con propósitos maravillosos, mira lo que dice la Palabra de Dios: <em>“No me elegisteis vosotros a mí; sino que yo os elegí a vosotros; y os he puesto para que vayáis y llevéis fruto, y vuestro fruto permanezca; para que todo lo que pidiereis al Padre en mi nombre; Él os lo dé”</em> (Juan 15:16 RVG).<br><br>Es importante que puedas valorar la bendición y la oportunidad de decidir, que Dios sea el primero en tu vida. <em>“Busquen el reino de Dios por encima de todo lo demás y lleven una vida justa, y él les dará todo lo que necesiten”</em> (Mateo 6:33 NTV).<br><br>Decidir vivir para Él y consagrar a Dios tu vida, honrándole y sirviéndole con todo tu corazón, es la mejor elección de tu vida. Tener a Dios en el corazón es la riqueza, el tesoro más grande que un ser humano pueda poseer, y no por su fuerza o capacidad, sino por la gracia y misericordia de Dios. La experiencia más especial y sublime que un ser humano pueda vivir, está en la presencia de Dios. <em>“Me darás a conocer la senda de la vida; En Tu presencia hay plenitud de gozo; En Tu diestra hay deleites para siempre”</em> (Salmos 16:11 NBLA).<br><br>Vive lo maravilloso que es tener a Dios como Señor y Rey de tu vida. Que Dios sea tu Señor, es elegir la fe como estilo de vida; es tener la certeza de que Él tiene cuidado de ti, y que sus propósitos para tu vida son superiores a los tuyos. <em>“Echando toda vuestra solicitud en él, porque él tiene cuidado de vosotros”</em> (1 Pedro 5:7 RVA).<br><br><em>“Cuanto se alza el cielo sobre la tierra, así se alzan mis proyectos sobre los de ustedes, así superan mis planes a sus planes”</em> (Isaías 55:9 BHTI).<br><br>Elegir la fe como estilo de vida, es garantía de vida eterna; lo que implica ver por la fe las promesas de Dios hechas realidad en tu vida, contar con la presencia de Dios que nunca te dejará, disfrutar la vida sin nada que lamentar, caminar con la seguridad de ser amada por Dios y amarlo con todo tu corazón.  <em>“Esto es lo que las Escrituras dicen: «Ningún mortal ha visto, ni oído, ni imaginado las maravillas que Dios tiene preparadas para los que aman al Señor»”</em> (1 Corintios 2:9 NBV).<br><br><em>“Pues vivimos por la fe y no por lo que vemos”</em> (2 Corintios 5:7 PDT).<br><br>Vivir por la fe es amar a Dios sin haberle visto, es sentir su presencia a cada instante de la vida, y ver sus maravillas y sus misericordias para con nosotras cada día.  Enamórate de Dios, solo así podrás vivir para Él.  Nunca olvides que, Amar a Dios es obedecerle, y obedecerle es el mayor placer.<em> “Ustedes demostrarán que me aman, si cumplen mis mandamientos”</em> (Juan 14:15 TLA). <em>“Me deleito en hacer tu voluntad, Dios mío, tu ley la llevo dentro de mí”</em> (Salmos 40:8 NBV).<br><br>Elige una vida por fe y no por lo que está delante de tus ojos, pues es efímero, se acaba; pero Dios es eterno y de esa manera nos ha amado.  <em>“El Señor se le apareció desde la distancia y le dijo: «Con amor eterno te he amado y por eso te sigo mostrando mi fiel amor”</em> (Jeremías 31:3 PDT). <em>“Y el mundo pasa, y sus deseos; pero el que hace la voluntad de Dios permanece para siempre”</em> (1 Juan 2:17).<br><br>Permanecer en la fe es de valientes. No te dejes mover de la fe en Cristo, por ninguna circunstancia, situación o problema, por difícil que sea. Ni por los deleites temporales del pecado o vanidades de este mundo. Quien está en Cristo, puede decir como dijo el apóstol Pablo:<em> “En medio de todos nuestros problemas, estamos seguros de que Jesucristo, quien nos amó, nos dará la victoria total. Yo estoy seguro de que nada podrá separarnos del amor de Dios…”</em> (Romanos 8:37-39 BLSNT).<br><br><em>“Más el justo vivirá por fe; Y si retrocediere, no agradará a mi alma”</em> (Hebreos 10:38).<br><br>Elije la fe como estilo de vida… y harás tuya la vida eterna.<br><br>Recuerda siempre…<br><br><em>“Mantener la fe es como una competencia. Haz todo lo posible por ganar la carrera y obtener la vida eterna. Dios te llamó para tener esa vida cuando declaraste la gran verdad de tu fe ante mucha gente”</em> (1 Timoteo 6:12 PDT).<br><br>Por Carolina Henao Díaz. Esposa de Pastor<br><br>            "
+            }
+        }]
+    },
+    {
+        "page": 22,
+        "pageContent": [{}]
+    },
+    {
+        "page": 23,
+        "pageContent": [{}]
+    },
+    {
+        "page": 24,
+        "pageContent": [{}]
+    },
+    {
+        "page": 25,
+        "pageContent": [{
+            "tittle": "<h1>CRUCIGRAMA</h1>",
+            "crossword": {}
+        }]
+    },
+    {
+        "page": 26,
+        "pageContent": [{
+            "tittle": "<h1>MIS AÑOS DORADOS</h1>"
+        }]
+    },
+    {
+        "page": 27,
+        "pageContent": [{}]
+    },
+    {
+        "page": 28,
+        "pageContent": [{}]
+    },
+    {
+        "page": 29,
+        "pageContent": [{}]
+    },
+    {
+        "page": 30,
+        "pageContent": [{}]
+    },
+    {
+        "page": 31,
+        "pageContent": [{}]
+    },
+    {
+        "page": 32,
+        "pageContent": [{
+            "tittle": "<h1>MI FE EN ACCIÓN</h1>"
+        }]
+    },
+    {
+        "page": 33,
+        "pageContent": [{}]
+    },
+    {
+        "page": 34,
+        "pageContent": [{}]
+    },
+    {
+        "page": 35,
+        "pageContent": [{}]
+    },
+    {
+        "page": 35,
+        "pageContent": [{}]
+    },
+    {
+        "page": 37,
+        "pageContent": [{}]
+    },
+    {
+        "page": 38,
+        "pageContent": [{
+            "tittle": "<h1>SALUD EMOCIONAL</h1>"
+        }]
+    },
+    {
+        "page": 39,
+        "pageContent": [{
+            "tittle": "<h1>LA FE COMO ANCLA EN MEDIO DE LA TEMPESTAD</h1>",
+            "textResaltado": {
+                "class": "text7",
+                "p": "<em>“Traigo a mi memoria un día cualquiera en el año 2020, a eso de las 2:00 de la tarde; cuando por la gracia de Dios trabajábamos en la congregación de la IPUC en Bazán Nariño; veníamos atravesando la Bocana de Limones (donde se une el río con el mar). Mi esposo venía manejando una canoa pequeña con motor fuera de borda, y me comentó que estábamos varados. Como él sabe arreglar motores le pregunté si era grave el daño y que si podía arreglarlo, para mi sorpresa me contestó que no podía.”</em>"
+            },
+            "textBiblico": {
+                "class": "text7",
+                "p": "<em>“Esta confianza nos da plena seguridad; es como el ancla de un barco, que lo mantiene firme y quieto en el mismo lugar. Y esta confianza nos la da Jesucristo, que traspasó la cortina del templo de Dios en el cielo, y entró al lugar más sagrado”</em> (Hebreos 6:19 TLA).            "
+            },
+            "modal": {
+                "id": "modalPage38",
+                "class": "btn-modal",
+                "tittle": "LA FE COMO ANCLA EN MEDIO DE LA TEMPESTAD",
+                "textModal": "<em>“Esta confianza nos da plena seguridad; es como el ancla de un barco, que lo mantiene firme y quieto en el mismo lugar. Y esta confianza nos la da Jesucristo, que traspasó la cortina del templo de Dios en el cielo, y entró al lugar más sagrado”</em> (Hebreos 6:19 TLA).<br><br>El ancla es considerada el último recurso del marinero en la tempestad, por lo cual, es asociada con la esperanza que queda como sostén ante las dificultades de la vida.<br><br>Traigo a mi memoria un día cualquiera en el año 2020, a eso de las 2:00 de la tarde; cuando por la gracia de Dios trabajábamos en la congregación de la IPUC en Bazán Nariño; veníamos atravesando la Bocana de Limones (donde se une el río con el mar). Mi esposo venía manejando una canoa pequeña con motor fuera de borda, y me comentó que estábamos varados. Como él sabe arreglar motores le pregunté si era grave el daño y que si podía arreglarlo, para mi sorpresa me contestó que no podía.<br><br>Estábamos en medio del mar, comenzó a llover y una gran tormenta se acercaba, venían vientos y olas grandes. Viajábamos con mi hija de cuatro años y una jovencita que nos acompañaba, todos nos mareamos por el movimiento de las olas. En ese momento pensé: “Jesús, eres mi única esperanza”. Venían a mi mente textos bíblicos en los que muchos personajes, en medio de la tempestad clamaron a Dios y Él les respondió. Entonces… Empecé a cantar:<br><br> <em>“¿Quién es Aquel que hasta el mar le obedece?<br>¿Quién es Aquel, quién es Aquel?<br>¿Quién es Aquel, que las olas y el viento,<br>Oyen su voz y obedecen también? ...”</em><br><br>Mi hija cayó en un sueño profundo gracias a Dios, mi esposo echó mano del canalete (remo de pala muy ancha con el cual se boga), para ayudar a la canoa a llegar a la orilla, pero no sirvió de nada, pues las olas eran muy grandes. A los pocos minutos mi esposo dijo: “Tomemos cada una de las puntas de la capa, porque esta va a ser la vela, para que el viento nos lleve al manglar”, y aunque se veía cerca, la verdad nos demoramos mucho, las olas y el viento nos arrastraban; estábamos a la deriva.<br><br>A eso de las 5:30 de la tarde por fin llegamos a la orilla, ahí, ya mi esposo pudo bogar un poco con el canalete y yo me agarraba fuerte del manglar para ayudar en algo, me preocupaba un poco ya que venía la noche y no me imaginaba pasar tantas horas en el mar, soportando el piquete de zancudos y mosquitos.<br><br>Fuimos sorprendidos gratamente cuando apareció una canoa, <span>contra viento y marea</span>; así se denomina este tipo de transporte, tienen un rústico techo de plástico que cubre el centro de la embarcación; con ellas salen a pescar para llevar el sostenimiento a sus hogares.  Saqué fuerzas de donde no tenía, eché mano de una capa blanca y empecé a moverla con todas mis fuerzas, pues la canoa se veía a lo lejos.<br><br>Dios demostró una vez más que estaba con nosotros; mi esposo dijo: ¡La canoa giró! ¡Y vienen a auxiliarnos! Se acercaron y nos preguntaron: “¿Qué les pasó?” Les contamos un poco la historia y ellos dijeron: “Nosotros no pensábamos salir a pescar, por la tormenta que se avecinaba y por el mal tiempo, sin embargo decidimos salir” Comprendí, que no fue porque ellos quisieran hacerlo, Dios en su infinita misericordia los envió para auxiliarnos; fue así como nos llevaron a un lugar cercano donde nos dieron hospedaje, techo y comida; se portaron como amigos sin conocernos, y al otro día muy amablemente nos llevaron hasta nuestro destino que era la Playa Bazán.<br><br>Dios sigue siendo bueno y es el ancla en medio de la tempestad, escucha nuestro clamor y sabe de qué tenemos necesidad, aunque vienen tormentas, vientos y olas, Dios siempre nos sostendrá. <span>“Y aquí está, una mujer que cree en Dios por encima de las circunstancias”</span>, he sido testigo muchas veces de cómo Dios nos sostiene, vemos su mano poderosa a cada instante, obrando como solo Él sabe hacerlo; por eso digo confiadamente que la fe es como un ancla en medio de la tempestad.<br><br>Todos tenemos conciencia que estamos expuestos a tormentas sin previo aviso, a lo largo de nuestra vida, aun cuando las dificultades nos hagan temblar, la Palabra de Dios nos asegura que podemos mantenernos firmes durante las situaciones más angustiosas. Esa ancla para la tormenta de la vida, ¡es el Señor Jesucristo! Aquel que nunca cambia.<br><br>Por Sonia Lucía Balcázar Velasco. Vocal Comité Damas Dorcas<br><br>    "
+            }
+        }]
+    }, {
+        "page": 40,
+        "pageContent": [{}]
+    }, {
+        "page": 41,
+        "pageContent": [{}]
+    }, {
+        "page": 42,
+        "pageContent": [{}]
+    }, {
+        "page": 43,
+        "pageContent": [{}]
+    }, {
+        "page": 44,
+        "pageContent": [{}]
+    }, {
+        "page": 45,
+        "pageContent": [{}]
+    }, {
+        "page": 46,
+        "pageContent": [{
+            "tittle": "<h1>EVANGELISMO Y MISIONES</h1>"
+        }]
+    }, {
+        "page": 47,
+        "pageContent": [{}]
+    }, {
+        "page": 48,
+        "pageContent": [{}]
+    }, {
+        "page": 49,
+        "pageContent": [{}]
+    }, {
+        "page": 50,
+        "pageContent": [{}]
+    }, {
+        "page": 51,
+        "pageContent": [{}]
+    }, {
+        "page": 52,
+        "pageContent": [{}]
+    }, {
+        "page": 53,
+        "pageContent": [{}]
+    }, {
+        "page": 54,
+        "pageContent": [{}]
+    }, {
+        "page": 55,
+        "pageContent": [{}]
+    }, {
+        "page": 56,
+        "pageContent": [{}]
+    }, {
+        "page": 57,
+        "pageContent": [{}]
+    }, {
+        "page": 58,
+        "pageContent": [{}]
+    }, {
+        "page": 59,
+        "pageContent": [{}]
+    }, {
+        "page": 60,
+        "pageContent": [{}]
+    }, {
         "page": 6,
         "pageContent": [{}]
     }

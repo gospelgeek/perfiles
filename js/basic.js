@@ -1,13 +1,13 @@
    /*jshint esversion: 6 */
-   //Function that detects mobile devices to adjust the magazine
-   function checkMobile() {
-       return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-   }
 
+   //Function that detects mobile devices to adjust the magazine
+   function checkMobile() { return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent); }
+
+   //addPage allows assigning the number, background image reads the json of the information that it will have on each of the pages
    function addPage(page, book) {
        var element = $('<div />', {});
-
        if (book.turn('addPage', element, page)) {
+           if (page != 1 && page != 62) { element.html('<div class="gradient"><div class="pagesMagazine">' + page + '<div></div>') }
            element.css({ 'background-image': 'url("pages/' + page + '.png")' });
            $.getJSON('json/pages.json').done(function(data) {
                $.each(data, function(key, region) {
@@ -26,60 +26,55 @@
        }
    }
 
+   //addContentPage from json begins to load the information in each certain page
    function addContentPage(page, region, element) {
-       switch (page) {
-           case 1:
-               break;
-           case 2:
-               element = createHtml(region.pageContent)
+       element = createHtml(region.pageContent)
+       if (page != 11) {
+           for (let i = 0; i < element.length; i++) {
+               $('.p' + page).append(element[i]);
+           }
+       } else {
+           if (page == 11) {
                for (let i = 0; i < element.length; i++) {
-                   $('.p2').append(element[i]);
+                   $('.p' + page).append(element[i]);
+                   var words = ['Magdalena', 'Gloria', 'Maria', 'Guadalupe', 'Carmen', 'Luz', 'Esperanza', 'Socorro', 'Estrella', 'Cielo', 'Eva', 'Marta', 'Loida', 'Sara', 'sonia']
+                   createWordsGame(words)
                }
-               showImg();
-               break;
-           case 3:
-               element = createHtml(region.pageContent)
-               for (let i = 0; i < element.length; i++) {
-                   $('.p3').append(element[i]);
-               }
-               var words = ['Magdalena', 'Maria', 'Guadalupe', 'Carme', 'Luz', 'Esperanza', 'Socorro', 'Estrella', 'Cielo', 'Eva', 'Marta', 'Loida', 'Sara', 'sonia']
-               createWordsGame(words)
 
-               break
-           case 4:
-               break;
-           case 5:
-               element = createHtml(region.pageContent)
-               for (let i = 0; i < element.length; i++) {
-                   $('.p5').append(element[i]);
-               }
-               break;
-           case 6:
-               break;
-
+           }
        }
    }
 
+   function pruebapage() {
+       var words = ['Magdalena', 'Gloria', 'Maria', 'Guadalupe', 'Carmen', 'Luz', 'Esperanza', 'Socorro', 'Estrella', 'Cielo', 'Eva', 'Marta', 'Loida', 'Sara', 'sonia']
+       if (($('#flipbook').turn("page") == 10 || $('#flipbook').turn("page") == 11) && checkMobile()) {
+           createWordsGame(words)
+           stylesMobile()
+       } else {
+           createWordsGame(words)
+       }
+
+   }
+
+   //createWordsGame allows create the alphabet soup
    function createWordsGame(words) {
        var gamePuzzle = wordfindgame.create(words, '#puzzle', '#words')
        var puzzle = wordfind.newPuzzle(words, { width: 18, height: 18, fillBlanks: false })
        wordfind.print(puzzle)
 
        $('#solve').click(function() { wordfindgame.solve(gamePuzzle, words) })
+       $('#clean').click(function() { wordfindgame.clean() })
    }
 
-   /*Imgs */
+   //showImg and showImgs allows creating the modal to display each image contained in the magazine
    var pictures, pictureSLight, containerLight;
 
-
    function showImg() {
-
        pictures = document.querySelectorAll('.img-gallery')
        pictureSLight = document.querySelector('.add-imgs')
        containerLight = document.querySelector('.img-light')
        pictures.forEach(imagen => {
            imagen.addEventListener('click', () => {
-               console.log(imagen.getAttribute('src'))
                showImgs(imagen.getAttribute('src'))
            })
        })
@@ -92,8 +87,6 @@
        })
    }
 
-
-
    const showImgs = (imagen) => {
        pictureSLight.src = imagen
        containerLight.classList.toggle('show')
@@ -105,7 +98,7 @@
        return navigator.userAgent.indexOf('Chrome') != -1;
    }
 
-   /*Events to book's pagination*/
+   //Events to book's pagination
    var prevBtn = document.querySelector("#previous-button");
    var nextBtn = document.querySelector("#next-button");
    var book = document.querySelector("#flipbook");
@@ -119,12 +112,15 @@
    function goNextPage() {
        $('#flipbook').turn("next");
        hiddenBtn();
+       pruebapage()
+
    }
 
    //Method to go to the previous page
    function goPrevPage() {
        $('#flipbook').turn("previous");
        hiddenBtn();
+       pruebapage()
    }
 
    //Method to hide the button at the beginning and end of the book
@@ -140,19 +136,19 @@
        } else {
            nextBtn.style.visibility = "visible";
        }
-
    }
+
 
    // Using arrow keys to turn the page
    $(document).keydown(function(e) {
        var previous = 37,
            next = 39;
-
        switch (e.keyCode) {
            case previous:
                // left arrow
                $('#flipbook').turn('previous');
                hiddenBtn();
+               pruebapage()
                e.preventDefault();
 
                break;
@@ -160,6 +156,7 @@
                //right arrow
                $('#flipbook').turn('next');
                hiddenBtn();
+               pruebapage()
                e.preventDefault();
                break;
        }
@@ -199,18 +196,15 @@
            $(this).attr('src', $(this).attr('src'));
            return false;
        });
-
-
    });
 
-   /*Navegation bar*/
+   /*Events that allow to hide the navegation bar */
    var btnNav = document.querySelector('.btn-nav');
    var menu = document.querySelector('.navigation');
 
    btnNav.addEventListener('click', () => {
        btnNav.classList.toggle('hidde-menu');
        menu.classList.toggle('hidde-menu');
-
        if (player) {
            player.destroy();
            $('#playermodal').hide();
@@ -220,12 +214,11 @@
        }
    });
 
-   /*Set width and height to PC */
+   //Set width and height to PC
    function resizeViewport() {
        var width = $(window).width(),
            height = $(window).height(),
-           options = $('.flipbook').turn('options'),
-           ancho = height * (8.5 / 11);
+           options = $('.flipbook').turn('options')
 
        $('.flipbook-viewport').css({
            width: width,
@@ -244,9 +237,7 @@
                bound.width -= 1;
 
            if (bound.width != $('.flipbook').width() || bound.height != $('.flipbook').height()) {
-
                $('.flipbook').turn('size', bound.width, height);
-
                if ($('.flipbook').turn('page') == 1)
                    $('.flipbook').turn('peel', 'br');
            }
@@ -261,7 +252,6 @@
        if (bound.width > d.boundWidth || bound.height > d.boundHeight) {
            var rel = bound.width / bound.height;
            if (d.boundWidth / rel > d.boundHeight && d.boundHeight * rel <= d.boundWidth) {
-
                bound.width = Math.round(d.boundHeight * rel);
                bound.height = d.boundHeight;
 
@@ -281,20 +271,18 @@
        resizeViewport();
    });
 
-   /*Redirect page of the flipbook*/
+   //Redirect page of the flipbook
    function goPage(page) {
        $("#hideThumb").modal('hide');
        $('#flipbook').turn('page', page);
    }
 
-
+   //readCookie allows save the status of the magazine where the user left it
    function readCookie(name) {
-
        var nameEQ = name + "=";
        var ca = document.cookie.split(';');
 
        for (var i = 0; i < ca.length; i++) {
-
            var c = ca[i];
            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
            if (c.indexOf(nameEQ) == 0) {
@@ -304,7 +292,7 @@
        return null;
    }
 
-   /*API to control videos*/
+   //API to control videos
    var player;
    $(document).on('click', '#openPlayer', function() {
        $('#playermodal').modal({
@@ -337,13 +325,11 @@
        player.destroy();
    });
 
-
-   /*Search*/
+   //Search
    var formulario = document.querySelector('#form-search');
    var btnSearch = document.querySelector('#btn-form');
    var resultado = document.querySelector('#resultado');
    var search = document.querySelector('#contentSearch');
-
 
    function funcRecursiva(data, texto, page, elem) {
        data.forEach(element => {
@@ -351,9 +337,8 @@
                if (element.page != null) {
                    page = element.page;
                }
-               elem = [element.tittle, element.textModal, element.textAudio]
+               elem = [element.tittle, element.textModal, element.textAudio, element.p]
                funcRecursiva(Object.values(element), texto, page, elem)
-
            } else {
                for (let i = 0; i < elem.length; i++) {
                    var textElement = JSON.stringify(elem[i])
@@ -361,23 +346,10 @@
                        textElement = textElement.normalize('NFD').replace(/[\u0300-\u036f]/g, "").toLowerCase()
                        if (textElement.indexOf(texto) !== -1) {
                            if (!checkMobile()) {
-                               resultado.innerHTML += `
-                             <tbody>
-                                <tr class='b-trSearch' onclick="goPage(${page})">
-                                    <td><p>Pág.${page}</p></td>
-                                        <td class='p-tdSearch'>${elem[i]}</td>
-                                </tr>
-                             </tbody>
-                             `
+                               resultado.innerHTML += `<tbody><tr class='b-trSearch' onclick="goPage(${page})"><td><p class="p-search">Pág.${page}</p></td><td class='p-tdSearch'>${elem[i]}</td></tr></tbody>`
                            } else {
                                resultado.innerHTML += `
-                             <tbody>
-                                <tr class='b-trSearch' onclick="goPage(${page})">
-                                    <td><p style='font-size:40px;'>Pág.${page}</p></td>
-                                    <td>${elem[i]}</td>
-                                </tr>
-                             </tbody>
-                             `
+                             <tbody><tr class='b-trSearch' onclick="goPage(${page})"><td><p style='font-size:40px;'>Pág.${page}</p></td><td>${elem[i]}</td></tr></tbody>`
                            }
                        }
                    }
@@ -389,7 +361,7 @@
 
    const filter = () => {
        resultado.innerHTML = '';
-       const texto = formulario.value.normalize('NFD').replace(/[\u0300-\u036f]/g, "").toLowerCase();
+       const texto = formulario.value.normalize('NFD').replace(/[\u0300-\u036f]/g, "").toLowerCase().trim();
 
        if (texto === '') {
            if (!checkMobile()) {

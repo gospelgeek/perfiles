@@ -88,7 +88,7 @@ body {
 }
 
 .flipbook-viewport .flipbook {
-    left: -565px;
+    left: -598px;
     top: 0!important;
 }
 
@@ -96,14 +96,6 @@ body {
     background-color: white;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-}
-
-.flipbook .page {
-    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    -ms-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    -o-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .flipbook-viewport .page img {
@@ -126,6 +118,52 @@ body {
     -o-box-shadow: 0 0 20px #ccc;
     -ms-box-shadow: 0 0 20px #ccc;
     box-shadow: 0 0 20px #ccc;
+}
+
+.flipbook-viewport .page-wrapper {
+    -webkit-perspective: 2000px;
+    -moz-perspective: 2000px;
+    -ms-perspective: 2000px;
+    perspective: 2000px;
+}
+
+.flipbook-viewport .own-size {
+    background-color: white;
+    overflow: hidden;
+}
+
+.flipbook-viewport .even .gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0.95, rgba(0, 0, 0, 0)), color-stop(1, rgba(0, 0, 0, 0.2)));
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0.2) 100%);
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0.2) 100%);
+    background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0.2) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0.2) 100%);
+    background-image: linear-gradient(left, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0.2) 100%);
+}
+
+.flipbook-viewport .odd .gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, right top, left top, color-stop(0.95, rgba(0, 0, 0, 0)), color-stop(1, rgba(0, 0, 0, 0.15)));
+    background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0.15) 100%);
+    background-image: -moz-linear-gradient(right, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0.15) 100%);
+    background-image: -ms-linear-gradient(right, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0.15) 100%);
+    background-image: -o-linear-gradient(right, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0.15) 100%);
+    background-image: linear-gradient(right, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0.15) 100%);
+}
+
+.divMagazine {
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -251,7 +289,6 @@ body {
 .btn-modal img {
     width: 70%;
     height: auto;
-    margin-top: 120% !important;
 }
 
 .blocker {
@@ -266,12 +303,15 @@ body {
     overflow-y: auto;
     height: 450px;
     padding: 0 20px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 22px;
 }
 
 
 /*thumbnails*/
 
-.thumbnails-head {
+.head-modal {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -280,7 +320,7 @@ body {
     margin-bottom: 10px;
 }
 
-.thumbnails-head .tittle {
+.head-modal .tittle {
     font-size: 20px;
     font-weight: bold;
     margin-left: 12px;
@@ -291,7 +331,7 @@ body {
     color: #000;
 }
 
-.thumbnails-head .close-modal {
+.head-modal .close-modal {
     display: flex;
     justify-content: center;
     width: 20%;
@@ -451,6 +491,10 @@ body {
     cursor: pointer;
 }
 
+.p-search {
+    font-size: 17px;
+}
+
 .b-trSearch:hover {
     background-color: #f3f3f3;
 }
@@ -568,4 +612,66 @@ body {
     right: 20px;
     font-size: 40px;
     cursor: pointer;
+}
+
+
+/*tittles*/
+
+h1 {
+    font-size: 1.5vw;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5vw;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+.text7 {
+    font-size: 15px;
+    padding: 15px 24px;
+    text-align: justify;
+}
+
+span {
+    font-weight: bold;
+}
+
+.bxs-quote-alt-left {
+    font-size: 25px;
+}
+
+#gameModal {
+    display: flex;
+}
+
+.message {
+    margin: 47px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.message span {
+    font-size: 37px;
+    background: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.pagesMagazine {
+    position: fixed;
+    bottom: 0;
+    font-size: 20px;
+    padding: 20px 30px;
+    font-weight: bold;
+}
+
+.even .pagesMagazine {
+    left: 0;
+}
+
+.odd .pagesMagazine {
+    right: 0;
 }
