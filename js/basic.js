@@ -7,7 +7,7 @@
    function addPage(page, book) {
        var element = $('<div />', {});
        if (book.turn('addPage', element, page)) {
-           if (page != 1 && page != 62) { element.html('<div class="gradient"><div class="pagesMagazine">' + page + '<div></div>') }
+           if (page != 1 && page != 63) { element.html('<div class="gradient"><div class="pagesMagazine">' + (page - 1) + '<div></div>') }
            element.css({ 'background-image': 'url("pages/' + page + '.png")' });
            $.getJSON('json/pages.json').done(function(data) {
                $.each(data, function(key, region) {
@@ -29,12 +29,12 @@
    //addContentPage from json begins to load the information in each certain page
    function addContentPage(page, region, element) {
        element = createHtml(region.pageContent)
-       if (page != 11) {
+       if (page != 12) {
            for (let i = 0; i < element.length; i++) {
                $('.p' + page).append(element[i]);
            }
        } else {
-           if (page == 11) {
+           if (page == 12) {
                for (let i = 0; i < element.length; i++) {
                    $('.p' + page).append(element[i]);
                    var words = ['Magdalena', 'Gloria', 'Maria', 'Guadalupe', 'Carmen', 'Luz', 'Esperanza', 'Socorro', 'Estrella', 'Cielo', 'Eva', 'Marta', 'Loida', 'Sara', 'sonia']
@@ -47,7 +47,7 @@
 
    function pruebapage() {
        var words = ['Magdalena', 'Gloria', 'Maria', 'Guadalupe', 'Carmen', 'Luz', 'Esperanza', 'Socorro', 'Estrella', 'Cielo', 'Eva', 'Marta', 'Loida', 'Sara', 'sonia']
-       if (($('#flipbook').turn("page") == 10 || $('#flipbook').turn("page") == 11) && checkMobile()) {
+       if (($('#flipbook').turn("page") == 12 || $('#flipbook').turn("page") == 13) && checkMobile()) {
            createWordsGame(words)
            stylesMobile()
        } else {
@@ -346,10 +346,10 @@
                        textElement = textElement.normalize('NFD').replace(/[\u0300-\u036f]/g, "").toLowerCase()
                        if (textElement.indexOf(texto) !== -1) {
                            if (!checkMobile()) {
-                               resultado.innerHTML += `<tbody><tr class='b-trSearch' onclick="goPage(${page})"><td><p class="p-search">Pág.${page}</p></td><td class='p-tdSearch'>${elem[i]}</td></tr></tbody>`
+                               resultado.innerHTML += `<tbody><tr class='b-trSearch' onclick="goPage(${page})"><td><p class="p-search">Pág.${(page-1)}</p></td><td class='p-tdSearch'>${elem[i]}</td></tr></tbody>`
                            } else {
                                resultado.innerHTML += `
-                             <tbody><tr class='b-trSearch' onclick="goPage(${page})"><td><p style='font-size:40px;'>Pág.${page}</p></td><td>${elem[i]}</td></tr></tbody>`
+                             <tbody><tr class='b-trSearch' onclick="goPage(${page})"><td><p style='font-size:40px;'>Pág.${(page-1)}</p></td><td>${elem[i]}</td></tr></tbody>`
                            }
                        }
                    }

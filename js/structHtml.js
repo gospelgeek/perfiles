@@ -8,6 +8,7 @@ function createHtml(pageContent) {
     pos = 0;
     $.each(pageContent, function(key, region) {
         for (var tag in region) {
+            console.log(region)
             switch (tag) {
                 case 'tittle':
                     struct[pos] = element.append(region.tittle)

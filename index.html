@@ -165,13 +165,13 @@
                 duration: 1000,
                 acceleration: !isChrome(),
                 acceleration: true,
-                pages: 62,
+                pages: 63,
                 when: {
                     turning: function(event, page, view) {
                         if (navigator.cookieEnabled == true) {
                             document.cookie = "pagina =" + encodeURIComponent(page);
                         }
-                        Hash.go('page/' + page).update();
+                        Hash.go('page/' + (page - 1)).update();
                         // Page turning sounds
                         var audio = new Audio('audio/changepage.mp3');
                         audio.volume = 0.5;
