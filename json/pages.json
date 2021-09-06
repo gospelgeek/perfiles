@@ -19,12 +19,14 @@
     {
         "page": 5,
         "pageContent": [{
-            "tittle": "<h1>PARA TI MUJER</h1>"
+
         }]
     },
     {
         "page": 6,
-        "pageContent": [{}]
+        "pageContent": [{
+            "tittle": "<h1>PARA TI MUJER</h1>"
+        }]
     },
     {
         "page": 7,
@@ -122,7 +124,9 @@
     },
     {
         "page": 16,
-        "pageContent": [{}]
+        "pageContent": [{
+            "tittle": "<h1>MI MANUAL PERFECTO DE INSTRUCCIÓN</h1>"
+        }]
     },
     {
         "page": 17,
@@ -197,11 +201,17 @@
     {
         "page": 25,
         "pageContent": [{
-
+            "tittle": "<h1>MI SER GUARDADO IRREPRENSIBLE  PARA DIOS</h1>"
         }]
     },
     {
         "page": 26,
+        "pageContent": [{
+
+        }]
+    },
+    {
+        "page": 27,
         "pageContent": [{
             "tittle": "<h1>CRUCIGRAMA</h1>",
 
@@ -209,14 +219,10 @@
         }]
     },
     {
-        "page": 27,
+        "page": 28,
         "pageContent": [{
             "tittle": "<h1>MIS AÑOS DORADOS</h1>"
         }]
-    },
-    {
-        "page": 28,
-        "pageContent": [{}]
     },
     {
         "page": 29,
