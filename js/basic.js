@@ -7,7 +7,7 @@
    function addPage(page, book) {
        var element = $('<div />', {});
        if (book.turn('addPage', element, page)) {
-           if (page != 1 && page != 63) { element.html('<div class="gradient"><div class="pagesMagazine">' + (page - 1) + '<div></div>') }
+           if (page != 1 && page != 62) { element.html('<div class="gradient"><div class="pagesMagazine">' + (page - 1) + '<div></div>') }
            element.css({ 'background-image': 'url("pages/' + page + '.png")' });
            $.getJSON('json/pages.json').done(function(data) {
                $.each(data, function(key, region) {

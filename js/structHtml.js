@@ -44,7 +44,7 @@ function createHtml(pageContent) {
                             'href': '#' + jsonData.id,
                             'rel': 'modal:open'
                         }).append(
-                            $('<img/>', { 'src': '/pics/leermas.png' }))))
+                            $('<img/>', { 'src': './pics/leermas.png' }))))
                     break;
 
                 case 'audio':
@@ -80,7 +80,7 @@ function createHtml(pageContent) {
                         }).append(
                             $('<img/>', {
                                 'class': 'imgVideo',
-                                'src': '/pics/Group 4.png'
+                                'src': './pics/Group 4.png'
                             }))))
                     break;
 
