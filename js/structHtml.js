@@ -2,17 +2,22 @@ var jsonData;
 var struct;
 var pos;
 
+
 function createHtml(pageContent) {
     struct = [];
     element = $('<div/>', { 'class': 'divMagazine' })
     pos = 0;
     $.each(pageContent, function(key, region) {
         for (var tag in region) {
-            console.log(region)
             switch (tag) {
                 case 'tittle':
                     struct[pos] = element.append(region.tittle)
                     break;
+
+                case 'tableContent':
+
+                    struct[pos] = element.append(tableContent(region.idPage))
+                    break
 
                 case 'textResaltado':
                     jsonData = region.textResaltado

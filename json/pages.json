@@ -4,11 +4,18 @@
     },
     {
         "page": 2,
-        "pageContent": [{ "tittle": "<h1>CONTENIDO</h1>" }]
+        "pageContent": [{
+            "idPage": 2,
+            "tittle": "<h1>CONTENIDO</h1>",
+            "tableContent": {}
+        }]
     },
     {
         "page": 3,
-        "pageContent": [{}]
+        "pageContent": [{
+            "idPage": 3,
+            "tableContent": {}
+        }]
     },
     {
         "page": 4,

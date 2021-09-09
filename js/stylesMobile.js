@@ -8,7 +8,8 @@ function stylesMobile() {
         width: '123px',
         height: '211px',
         'z-index': 5,
-        top: '50%'
+        top: '50%',
+        'background-color': 'rgba(0, 0, 0, 0.1)'
     });
     $('.bxs-chevron-right').css({
         'font-size': '70px'
@@ -17,7 +18,8 @@ function stylesMobile() {
         width: '123px',
         height: '211px',
         'z-index': 5,
-        top: '50%'
+        top: '50%',
+        'background-color': 'rgba(0, 0, 0, 0.2)'
     });
     $('.bxs-chevron-left').css({
         'font-size': '70px'
@@ -108,4 +110,8 @@ function stylesMobile() {
     $('.pagesMagazine').css({ 'font-size': '48px', 'padding': '30px 50px', 'right': 0 })
     $('.even .pagesMagazine').css({ 'left': 'unset' })
     $('.buttonsGame').css({ width: '34vw' })
+    $('.li-tablecontent').css({ 'line-height': '5.3vw' })
+    $('.containerTable h1').css({ 'font-size': '3vw' })
+    $('.containerPage').css({ 'font-size': '3vw' })
+    $('.ul-containerTable').css({ 'padding': '70px 80px' })
 }

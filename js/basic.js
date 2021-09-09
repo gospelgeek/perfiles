@@ -11,6 +11,7 @@
            element.css({ 'background-image': 'url("pages/' + page + '.png")' });
            $.getJSON('json/pages.json').done(function(data) {
                $.each(data, function(key, region) {
+
                    if (page == region.page) {
                        addContentPage(region.page, region, element);
                        if (!checkMobile()) {
@@ -45,12 +46,48 @@
        }
    }
 
-   function pruebapage() {
+   function tableContent(id) {
+       var ul = $('<ul/>', { 'class': 'ul-containerTable' });
+       var tittles = [];
+       var pages = [];
+       var pos = 0;
+       $.getJSON('json/pages.json').done(function(data) {
+           $.each(data, function(key, region) {
+               pages[pos] = region.page
+               $.each(region.pageContent, function(key, region) {
+                   tittles[pos] = region.tittle
+                   pos++
+               })
+           })
+           if (id == 2) {
+               for (let i = 2; i < 30; i++) {
+                   if (typeof tittles[i] != 'undefined' && !checkMobile()) {
+                       ul.append('<li class="li-tablecontent" onclick="goPage(' + pages[i] + ')"><div class="containerTable">' + tittles[i] + '</div>' + '<div class="containerPage">' + (pages[i] - 1) + '</div></li>')
+                   } else if (typeof tittles[i] != 'undefined') {
+                       ul.append('<li class="li-tablecontent" onclick="goPage(' + pages[i] + ')"><div class="containerTable">' + tittles[i] + '</div>' + '<div class="containerPage">' + (pages[i] - 1) + '</div></li>')
+                       stylesMobile()
+                   }
+               }
+           } else if (id == 3) {
+               for (let i = 30; i < 62; i++) {
+                   if (typeof tittles[i] != 'undefined' && !checkMobile()) {
+                       ul.append('<li class="li-tablecontent" onclick="goPage(' + pages[i] + ')"><div class="containerTable">' + tittles[i] + '</div>' + '<div  class="containerPage">' + (pages[i] - 1) + '</div></li>')
+                   } else if (typeof tittles[i] != 'undefined') {
+                       ul.append('<li class="li-tablecontent" onclick="goPage(' + pages[i] + ')"><div class="containerTable">' + tittles[i] + '</div>' + '<div class="containerPage">' + (pages[i] - 1) + '</div></li>')
+                       stylesMobile()
+                   }
+               }
+           }
+       })
+       return ul
+   }
+
+   function reloadGame() {
        var words = ['Magdalena', 'Gloria', 'Maria', 'Guadalupe', 'Carmen', 'Luz', 'Esperanza', 'Socorro', 'Estrella', 'Cielo', 'Eva', 'Marta', 'Loida', 'Sara', 'sonia']
        if (($('#flipbook').turn("page") == 12 || $('#flipbook').turn("page") == 13) && checkMobile()) {
            createWordsGame(words)
            stylesMobile()
-       } else {
+       } else if ($('#flipbook').turn("page") == 12 || $('#flipbook').turn("page") == 13) {
            createWordsGame(words)
        }
 
@@ -112,7 +149,7 @@
    function goNextPage() {
        $('#flipbook').turn("next");
        hiddenBtn();
-       pruebapage()
+       reloadGame()
 
    }
 
@@ -120,7 +157,7 @@
    function goPrevPage() {
        $('#flipbook').turn("previous");
        hiddenBtn();
-       pruebapage()
+       reloadGame()
    }
 
    //Method to hide the button at the beginning and end of the book
@@ -148,7 +185,7 @@
                // left arrow
                $('#flipbook').turn('previous');
                hiddenBtn();
-               pruebapage()
+               reloadGame()
                e.preventDefault();
 
                break;
@@ -156,7 +193,7 @@
                //right arrow
                $('#flipbook').turn('next');
                hiddenBtn();
-               pruebapage()
+               reloadGame()
                e.preventDefault();
                break;
        }

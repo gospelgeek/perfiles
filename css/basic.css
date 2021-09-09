@@ -675,3 +675,39 @@ span {
 .odd .pagesMagazine {
     right: 0;
 }
+
+
+/*Tabla de contenido*/
+
+.ul-containerTable {
+    padding: 20px 60px;
+}
+
+.li-tablecontent {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    cursor: pointer;
+    line-height: 4vh;
+}
+
+.li-tablecontent:hover {
+    background-color: #f3f3f3;
+}
+
+.containerTable {
+    vertical-align: middle;
+}
+
+.containerTable h1 {
+    margin: 0;
+    font-weight: 300;
+    font-size: .8vw;
+    font-family: sans-serif;
+    text-align: left;
+}
+
+.containerPage {
+    font-size: .8vw;
+    font-family: sans-serif;
+}
