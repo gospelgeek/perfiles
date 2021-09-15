@@ -96,6 +96,8 @@ function createHtml(pageContent) {
                     break;
 
                 case 'crossword':
+                    struct[pos] = element.append('<div id="puzzle-wrapper"></div>')
+                    console.log('primero se ejecuto el structHtml');
                     break
 
                 case 'imgs':

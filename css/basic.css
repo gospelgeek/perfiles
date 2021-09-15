@@ -160,6 +160,11 @@ body {
     background-image: linear-gradient(right, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0.15) 100%);
 }
 
+.pagesMagazine {
+    position: fixed;
+    z-index: 1000;
+}
+
 .divMagazine {
     position: absolute;
     width: 100%;
@@ -660,12 +665,22 @@ span {
     color: transparent;
 }
 
+
+/*Numbers of the pages*/
+
 .pagesMagazine {
-    position: fixed;
+    display: flex;
+    position: absolute;
     bottom: 0;
-    font-size: 20px;
-    padding: 20px 30px;
+    font-size: .9vw;
+    margin: 20px 50px;
     font-weight: bold;
+    cursor: pointer;
+}
+
+.pagesMagazine:hover {
+    background-color: #afafafb6;
+    color: #ffffff;
 }
 
 .even .pagesMagazine {
@@ -674,6 +689,32 @@ span {
 
 .odd .pagesMagazine {
     right: 0;
+}
+
+.even .numberPage {
+    position: absolute;
+    left: 0;
+}
+
+.even .datePage {
+    margin-left: 28px;
+}
+
+.odd .datePage {
+    margin-right: 5px;
+}
+
+.datePage {
+    font-weight: 300;
+}
+
+.even .spaceDate {
+    position: absolute;
+    left: 16px;
+}
+
+.odd .spaceDate {
+    margin-right: 5px;
 }
 
 

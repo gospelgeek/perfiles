@@ -139,6 +139,8 @@
     <script type="text/javascript" src="lib/hash.js"></script>
     <script type="text/javascript" src="js/wordfind.js"></script>
     <script type="text/javascript" src="js/wordfindgame.js"></script>
+    <script type="text/javascript" src="js/jquery.crossword.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
     <script>
         $(window).load(function() {
@@ -160,7 +162,6 @@
                 gradients: true,
                 autoCenter: true,
                 duration: 1000,
-                acceleration: !isChrome(),
                 acceleration: true,
                 pages: 62,
                 when: {
@@ -195,7 +196,7 @@
             test: Modernizr.csstransforms,
             yep: ['lib/turn.js'],
             nope: ['lib/turn.html4.min.js'],
-            both: ['js/basic.js', 'css/basic.css', 'css/styleWordFind.css', 'js/stylesMobile.js', 'js/structHtml.js', 'json/pages.json'],
+            both: ['js/basic.js', 'css/basic.css', 'css/styleWordFind.css', 'css/styleCrossword.css', 'js/stylesMobile.js', 'js/structHtml.js', 'json/pages.json'],
             complete: loadApp
         });
     </script>

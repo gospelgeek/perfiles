@@ -114,4 +114,10 @@ function stylesMobile() {
     $('.containerTable h1').css({ 'font-size': '3vw' })
     $('.containerPage').css({ 'font-size': '3vw' })
     $('.ul-containerTable').css({ 'padding': '70px 80px' })
+    $('.even .numberPage').css({ 'position': 'unset' })
+    $('.even .spaceDate').css({ 'position': 'unset', 'margin': '0 20px' })
+    $('#puzzle-clues li').css({ 'font-size': '3.9vw' })
+    $('table td').css({ width: '9vw', height: '4vh' })
+    $('.textClaves').css({ height: '300px', padding: '0 20px' })
+    $('.claves h2').css({ 'font-size': '50px' })
 }

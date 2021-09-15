@@ -6,8 +6,9 @@
    //addPage allows assigning the number, background image reads the json of the information that it will have on each of the pages
    function addPage(page, book) {
        var element = $('<div />', {});
+       var date = 'Noviembre 2021'
        if (book.turn('addPage', element, page)) {
-           if (page != 1 && page != 62) { element.html('<div class="gradient"><div class="pagesMagazine">' + (page - 1) + '<div></div>') }
+           if (page != 1 && page != 62) { element.append('<div class="gradient"><div class="pagesMagazine" id="pagesMagazine" onclick="goPage(' + 2 + ')"> <div class="datePage">' + date + '</div> <div class="spaceDate">|</div> <div class="numberPage">' + (page - 1) + '</div></div></div>') }
            element.css({ 'background-image': 'url("pages/' + page + '.png")' });
            $.getJSON('json/pages.json').done(function(data) {
                $.each(data, function(key, region) {
@@ -27,10 +28,12 @@
        }
    }
 
+
+
    //addContentPage from json begins to load the information in each certain page
    function addContentPage(page, region, element) {
        element = createHtml(region.pageContent)
-       if (page != 12) {
+       if (page != 12 && page != 26) {
            for (let i = 0; i < element.length; i++) {
                $('.p' + page).append(element[i]);
            }
@@ -42,6 +45,12 @@
                    createWordsGame(words)
                }
 
+           } else if (page == 26) {
+               for (let i = 0; i < element.length; i++) {
+                   $('.p' + page).append(element[i]);
+
+               }
+               crosswordGame();
            }
        }
    }
@@ -441,3 +450,12 @@
        search.classList.remove('contentSearch');
        search.classList.remove('contentSearchMovile');
    });
+
+   function isChrome() {
+
+       // Chrome's unsolved bug
+       // http://code.google.com/p/chromium/issues/detail?id=128488
+
+       return navigator.userAgent.indexOf('Chrome') != -1;
+
+   }
