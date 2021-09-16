@@ -15,7 +15,6 @@ function createHtml(pageContent) {
                     break;
 
                 case 'tableContent':
-
                     struct[pos] = element.append(tableContent(region.idPage))
                     break
 
@@ -102,15 +101,28 @@ function createHtml(pageContent) {
 
                 case 'imgs':
                     jsonData = region.imgs;
-                    for (var i = 0; i < jsonData.length; i++) {
-                        struct[pos] = element.append($('<div/>', { 'class': 'div-img' }).append(
-                            $('<img/>', {
-                                'id': jsonData[i].id,
-                                'src': jsonData[i].url,
-                                'class': jsonData[i].class
-                            })))
+                    $.each(jsonData, function(key, region) {
+                        struct[pos] = element.append($('<div/>', {
+                                'id': region.id,
+                                'class': 'modal imgShow'
+                            }).append(
+                                $('<div/>', { 'class': ' closeImgs' }).append(
+                                    $('<a/>', {
+                                        'id': 'closePlayer',
+                                        'href': '#',
+                                        'rel': 'modal:close'
+                                    }).append(
+                                        $('<i/>', { 'class': 'bx bx-x closeIcon' }))),
+                                $('<img/>', { 'class': region.class, 'src': region.url }),
+                                $('<p/>', { 'class': 'piedePagina' }).html(region.piedeImagen)
+                            ),
+                            $('<a/>', {
+                                'href': '#' + region.id,
+                                'rel': 'modal:open'
+                            }).append(
+                                $('<img/>', { 'class': region.class, 'src': region.url })))
                         pos++;
-                    }
+                    })
                     break;
             }
             pos++;

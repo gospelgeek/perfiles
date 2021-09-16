@@ -112,32 +112,7 @@
        $('#clean').click(function() { wordfindgame.clean() })
    }
 
-   //showImg and showImgs allows creating the modal to display each image contained in the magazine
-   var pictures, pictureSLight, containerLight;
 
-   function showImg() {
-       pictures = document.querySelectorAll('.img-gallery')
-       pictureSLight = document.querySelector('.add-imgs')
-       containerLight = document.querySelector('.img-light')
-       pictures.forEach(imagen => {
-           imagen.addEventListener('click', () => {
-               showImgs(imagen.getAttribute('src'))
-           })
-       })
-
-       containerLight.addEventListener('click', (e) => {
-           if (e.target !== pictureSLight) {
-               containerLight.classList.toggle('show')
-               pictureSLight.classList.toggle('showImage')
-           }
-       })
-   }
-
-   const showImgs = (imagen) => {
-       pictureSLight.src = imagen
-       containerLight.classList.toggle('show')
-       pictureSLight.classList.toggle('showImage')
-   }
 
    // http://code.google.com/p/chromium/issues/detail?id=128488
    function isChrome() {
@@ -367,9 +342,9 @@
        });
    });
 
-   $(document).on('click', '#closePlayer', function() {
-       player.destroy();
-   });
+   //    $(document).on('click', '#closePlayer', function() {
+   //        player.destroy();
+   //    });
 
    //Search
    var formulario = document.querySelector('#form-search');

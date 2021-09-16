@@ -23,7 +23,15 @@
     },
     {
         "page": 5,
-        "pageContent": [{ "tittle": "<h1>PARA TI MUJER</h1>" }]
+        "pageContent": [{
+            "tittle": "<h1>PARA TI MUJER</h1>",
+            "imgs": [{
+                "id": "imgPrueba1",
+                "class": "img-gallery",
+                "url": "./pics/paisaje.jpg",
+                "piedeImagen": "Imagen de prueba"
+            }]
+        }]
     },
     {
         "page": 6,

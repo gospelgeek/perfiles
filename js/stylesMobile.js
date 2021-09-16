@@ -27,7 +27,11 @@ function stylesMobile() {
     $('h1').css({ 'font-size': '50px' })
     $('.modal h2').css({ 'padding-top': '30px' })
     $('.text7').css({ 'font-size': '35px', 'padding': '16px 90px' })
-    $('.modal').css({ 'max-width': '100%' });
+    $('.modal').css({ 'max-width': 'unset' });
+    $('.imgShow').css({ 'max-width': '100%' });
+    $('.piedePagina').css({ 'font-size': '40px' });
+    $('.closeImgs').css({ 'width': '100%', 'height': '100px' })
+    $('.closeIcon').css({ 'font-size': '80px', 'color': '#fff' });
     $('.btn-nav').css({ display: 'none' });
     $('.navigation').css({
         width: '70%',
@@ -106,8 +110,7 @@ function stylesMobile() {
         'top': '108px',
         'right': '50px'
     })
-    $('.closeImg').css({ 'font-size': '100px' })
-    $('.pagesMagazine').css({ 'font-size': '48px', 'padding': '30px 50px', 'right': 0 })
+    $('.pagesMagazine').css({ 'font-size': '35px', 'padding': '30px 50px', 'right': 0 })
     $('.even .pagesMagazine').css({ 'left': 'unset' })
     $('.buttonsGame').css({ width: '34vw' })
     $('.li-tablecontent').css({ 'line-height': '5.3vw' })
@@ -116,6 +119,7 @@ function stylesMobile() {
     $('.ul-containerTable').css({ 'padding': '70px 80px' })
     $('.even .numberPage').css({ 'position': 'unset' })
     $('.even .spaceDate').css({ 'position': 'unset', 'margin': '0 20px' })
+    $('.odd .spaceDate').css({ 'margin': '0 20px' })
     $('#puzzle-clues li').css({ 'font-size': '3.9vw' })
     $('table td').css({ width: '9vw', height: '4vh' })
     $('.textClaves').css({ height: '300px', padding: '0 20px' })
