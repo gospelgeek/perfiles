@@ -734,3 +734,96 @@ span {
     font-size: .8vw;
     font-family: sans-serif;
 }
+
+.photo {
+    width: 30px;
+    height: 30px;
+}
+
+.tooltip {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-decoration: none;
+    color: #000;
+}
+
+.tooltip div {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.tooltip div p {
+    margin: 0;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 100%;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -305%;
+    left: 50%;
+    margin-left: -151px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip div .tooltiptext::after {
+    content: "";
+    position: absolute;
+    transform: rotate(179deg);
+    top: -25%;
+    left: 49%;
+    margin-left: -5px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltiptextMobile {
+    visibility: hidden;
+    width: 100%;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -350%;
+    left: 23%;
+    margin-left: -151px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltiptextMobile::after {
+    content: "";
+    position: absolute;
+    transform: rotate(179deg);
+    top: -50%;
+    left: 45%;
+    margin-left: -5px;
+    border-width: 38px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip div:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip div:hover .tooltiptextMobile {
+    visibility: visible;
+    opacity: 1;
+}

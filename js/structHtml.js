@@ -28,6 +28,19 @@ function createHtml(pageContent) {
                     struct[pos] = element.append($('<p/>', { 'class': jsonData.class }).html(jsonData.p))
                     break;
 
+                case 'author':
+                    jsonData = region.author;
+
+                    struct[pos] = element.append(
+                        $('<a/>', { 'href': '#', 'class': 'tooltip' }).append(
+                            $('<div/>', { 'class': 'containerTooltip' }).append(
+                                $('<p/>', {}).html('<span>Escrito por: </span>' + jsonData.name),
+                                $('<img/>', { 'src': jsonData.photo, 'class': 'photo' }),
+                                $('<span/>', { 'class': 'tool tooltiptext' }).append(
+                                    $('<img/>', { 'src': jsonData.photo, 'class': 'photo' }),
+                                    $('<p/>', {}).html(jsonData.name + '<br>' + jsonData.charge)))))
+                    break;
+
                 case 'modal':
                     jsonData = region.modal;
                     struct[pos] = element.append($('<div/>', {

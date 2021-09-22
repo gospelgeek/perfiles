@@ -124,4 +124,10 @@ function stylesMobile() {
     $('table td').css({ width: '9vw', height: '4vh' })
     $('.textClaves').css({ height: '300px', padding: '0 20px' })
     $('.claves h2').css({ 'font-size': '50px' })
+    $('.tooltip div p').css({ 'font-size': '35px' })
+    $('.photo').css({ 'width': '54px', 'height': '54px' })
+    $('.tooltiptext').removeClass('tooltiptext')
+    $('.containerTooltip .tool').addClass('tooltiptextMobile')
+    $('.tooltiptext').css({ 'bottom': '-352%', 'left': '24%', 'margin-left': '-149px' })
+
 }

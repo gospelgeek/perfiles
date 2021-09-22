@@ -45,6 +45,11 @@
         "page": 8,
         "pageContent": [{
             "tittle": "<h1>MUJER VIVE TU FE EN CRISTO</h1>",
+            "author": {
+                "name": "Jacibe de Campuzano",
+                "charge": "Esposa de Pastor",
+                "photo": "./pics/profile.png"
+            },
             "textResaltado": {
                 "class": "text7",
                 "p": "Cuando la escritura dice que el justo por la fe vivirá, me hace comprender que la verdadera fe, trasciende a todas las esferas de la vida, vivimos una vida de fe, por fe y en fe, pero ¿Cómo trasciende esa fe a todas las áreas de nuestra vida?"
