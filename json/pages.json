@@ -70,6 +70,11 @@
         "page": 10,
         "pageContent": [{
             "tittle": "<h1>FE PARA LA PRESERVACIÓN DEL ALMA</h1>",
+            "author": {
+                "name": "Edilberto Ortíz Sanmartín",
+                "charge": "Primer Vicepresidente IPUC",
+                "photo": "./pics/profile.png"
+            },
             "textResaltado": {
                 "class": "text7",
                 "p": "La fe en Cristo fortalece nuestra alma en momentos difíciles. Al enfrentarnos a diferentes situaciones actuando con fe, seremos capaces de tomar decisiones dirigidas por Dios, siendo instrumentos de Él, lo que se verá reflejado en la victoria que Dios nos concederá, y no miraremos atrás"
@@ -105,6 +110,11 @@
         "page": 14,
         "pageContent": [{
             "tittle": "<h1>EL LEGADO DE UNA FE NO FINGIDA</h1>",
+            "author": {
+                "name": "Judith Ramírez Torres",
+                "charge": "Presidenta Nacional Damas Dorcas",
+                "photo": "./pics/profile.png"
+            },
             "textResaltado": {
                 "class": "text7",
                 "p": "Los padres de familia con su forma de vivir trascienden para bien o para mal, quieran o no, en la vida de sus hijos. Tienen en sus manos una tremenda oportunidad de sembrar con sus enseñanzas y ejemplo, en la vida de cada pequeño que llega al hogar."
@@ -138,6 +148,11 @@
         "page": 18,
         "pageContent": [{
             "tittle": "<h1>VERDADES BÍBLICAS PARA INSTRUIRLOS EN LA FE</h1>",
+            "author": {
+                "name": "Nardy Jazmín Suárez de Giraldo",
+                "charge": "Vicepresidenta Nacional Damas Dorcas",
+                "photo": "./pics/profile.png"
+            },
             "textResaltado": {
                 "class": "text7",
                 "p": "En Deuteronomio capítulo seis, el Señor a través de Moisés le enseña a su pueblo, a su hijo recién nacido llamado Israel, una serie de instrucciones, mandamientos y ordenanzas, cuya finalidad era, que a través de su obediencia y práctica, honraran a Dios, y fueran benditos en la tierra que iban a tomar en posesión."
@@ -170,6 +185,11 @@
         "page": 22,
         "pageContent": [{
             "tittle": "<h1>ELIJO LA FE, COMO MI ESTILO DE VIDA</h1>",
+            "author": {
+                "name": "Carolina Henao Díaz",
+                "charge": "Esposa de Pastor",
+                "photo": "./pics/profile.png"
+            },
             "textResaltado": {
                 "class": "text7",
                 "p": "La vida es un regalo de Dios. La niñez y la juventud, aunque efímeras, son un tesoro de parte de Dios que debemos cuidar. Las niñas y jóvenes que gozan el privilegio de conocer a Dios en esta etapa tan hermosa de la vida, son bienaventuradas."
@@ -260,6 +280,11 @@
         "page": 40,
         "pageContent": [{
             "tittle": "<h1>LA FE COMO ANCLA EN MEDIO DE LA TEMPESTAD</h1>",
+            "author": {
+                "name": "Sonia Lucía Balcázar Velasco",
+                "charge": "Vocal Comité Damas Dorcas",
+                "photo": "./pics/profile.png"
+            },
             "textResaltado": {
                 "class": "text7",
                 "p": "<em>“Traigo a mi memoria un día cualquiera en el año 2020, a eso de las 2:00 de la tarde; cuando por la gracia de Dios trabajábamos en la congregación de la IPUC en Bazán Nariño; veníamos atravesando la Bocana de Limones (donde se une el río con el mar). Mi esposo venía manejando una canoa pequeña con motor fuera de borda, y me comentó que estábamos varados. Como él sabe arreglar motores le pregunté si era grave el daño y que si podía arreglarlo, para mi sorpresa me contestó que no podía.”</em>"

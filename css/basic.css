@@ -770,9 +770,9 @@ span {
     padding: 5px 0;
     position: absolute;
     z-index: 1;
-    bottom: -305%;
+    bottom: -440%;
     left: 50%;
-    margin-left: -151px;
+    transform: translate(-50%, -50%);
     opacity: 0;
     transition: opacity 0.3s;
 }
@@ -781,7 +781,7 @@ span {
     content: "";
     position: absolute;
     transform: rotate(179deg);
-    top: -25%;
+    top: -22%;
     left: 49%;
     margin-left: -5px;
     border-width: 10px;
@@ -799,9 +799,9 @@ span {
     padding: 5px 0;
     position: absolute;
     z-index: 1;
-    bottom: -350%;
-    left: 23%;
-    margin-left: -151px;
+    bottom: -474%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     opacity: 0;
     transition: opacity 0.3s;
 }
