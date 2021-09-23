@@ -24,7 +24,7 @@
     {
         "page": 5,
         "pageContent": [{
-            "tittle": "<h1>PARA TI MUJER</h1>",
+            "section": "PARA TI MUJER",
             "imgs": [{
                 "id": "imgPrueba1",
                 "class": "img-gallery",
@@ -44,7 +44,7 @@
     {
         "page": 8,
         "pageContent": [{
-            "tittle": "<h1>MUJER VIVE TU FE EN CRISTO</h1>",
+            "section": "MUJER VIVE TU FE EN CRISTO",
             "author": {
                 "name": "Jacibe de Campuzano",
                 "charge": "Esposa de Pastor",

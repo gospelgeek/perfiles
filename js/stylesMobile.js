@@ -129,5 +129,6 @@ function stylesMobile() {
     $('.tooltiptext').removeClass('tooltiptext')
     $('.containerTooltip .tool').addClass('tooltiptextMobile')
     $('.tooltiptext').css({ 'bottom': '-352%', 'left': '24%', 'margin-left': '-149px' })
-
+    $('.name-section h3').css({ 'font-size': '30px' })
+    $('.bx-book-reader ').css({ 'font-size': '60px' })
 }

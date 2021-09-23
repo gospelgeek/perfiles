@@ -30,7 +30,6 @@ function createHtml(pageContent) {
 
                 case 'author':
                     jsonData = region.author;
-
                     struct[pos] = element.append(
                         $('<a/>', { 'href': '#', 'class': 'tooltip' }).append(
                             $('<div/>', { 'class': 'containerTooltip' }).append(
@@ -39,6 +38,12 @@ function createHtml(pageContent) {
                                 $('<span/>', { 'class': 'tool tooltiptext' }).append(
                                     $('<img/>', { 'src': jsonData.photo, 'class': 'photo' }),
                                     $('<p/>', {}).html(jsonData.name + '<br>' + jsonData.charge)))))
+                    break;
+
+                case 'section':
+                    struct[pos] = element.append($('<div/>', { 'class': 'div-section' }).append(
+                        $('<i/>', { 'class': 'bx bx-book-reader' }),
+                        $('<div/>', { 'class': 'name-section' }).html('<h3>' + region.section + '</h3>')))
                     break;
 
                 case 'modal':
