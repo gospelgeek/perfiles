@@ -12,7 +12,6 @@
            element.css({ 'background-image': 'url("pages/' + page + '.png")' });
            $.getJSON('json/pages.json').done(function(data) {
                $.each(data, function(key, region) {
-
                    if (page == region.page) {
                        addContentPage(region.page, region, element);
                        if (!checkMobile()) {
@@ -29,6 +28,70 @@
    }
 
 
+   function structThumbnail(pages, i, clase, backgrounds, j) {
+       $('#tbody-thum').append(
+           $('<tr/>', { 'class': 'fila-thum' }).append(
+               $('<td/>', { 'class': 'doublePageIzq' }).append(
+                   $('<div/>', { 'class': 'pag' }).append(
+                       $('<div/>', { 'class': 'ain', 'id': clase[i], 'onclick': 'goPage(' + pages[i - 1] + ')' }).append(
+                           $('<img/>', { 'class': 'imgThumb', 'src': backgrounds[j - 1] }),
+                           $('<div/>', { 'class': 'pag-number number-left' }).html(j - 1)
+                       ),
+                       $('<div/>', { 'class': 'afd', 'onclick': 'goPage(' + pages[i] + ')' }).append(
+                           $('<img/>', { 'class': 'imgThumb', 'src': backgrounds[j] }),
+                           $('<div/>', { 'class': 'pag-number number-right' }).html(j)
+                       )
+                   )
+               ),
+               $('<td/>', { 'class': 'spacePages' }),
+               $('<td/>', { 'class': 'doublePageDer' }).append(
+                   $('<div/>', { 'class': 'pag' }).append(
+                       $('<div/>', { 'class': 'ain', 'onclick': 'goPage(' + pages[i + 1] + ')' }).append(
+                           $('<img/>', { 'class': 'imgThumb', 'src': backgrounds[j + 1] }),
+                           $('<div/>', { 'class': 'pag-number number-left' }).html(j + 1)
+                       ),
+                       $('<div/>', { 'class': 'afd', 'id': clase[j + 2], 'onclick': 'goPage(' + pages[i + 2] + ')' }).append(
+                           $('<img/>', { 'class': 'imgThumb', 'src': backgrounds[j + 2] }),
+                           $('<div/>', { 'class': 'pag-number number-right' }).html(j + 2)
+                       )
+                   )
+               )
+           )
+       )
+   }
+
+   function thumbnail() {
+       console.log('metodo thumbnails')
+       var backgrounds = [];
+       var pages = [];
+       var clase = []
+       var pos = 0;
+       $.getJSON('json/pages.json').done(function(data) {
+           $.each(data, function(key, region) {
+               pages[pos] = region.page
+               backgrounds[pos] = region.background
+               clase[pos] = region.id
+               pos++
+           })
+
+           console.log(clase);
+           var j = 0
+           for (let i = 0; i < pages.length; i = i + 4) {
+               if (!checkMobile()) {
+                   structThumbnail(pages, i, clase, backgrounds, j)
+                   j = j + 4
+               } else {
+                   structThumbnail(pages, i, clase, backgrounds, j)
+                   j = j + 4
+                   stylesMobile()
+               }
+
+           }
+
+       })
+
+
+   }
 
    //addContentPage from json begins to load the information in each certain page
    function addContentPage(page, region, element) {
@@ -55,6 +118,7 @@
        }
    }
 
+   /*Content Table */
    function tableContent(id) {
        var ul = $('<ul/>', { 'class': 'ul-containerTable' });
        var tittles = [];
@@ -91,6 +155,7 @@
        return ul
    }
 
+   /*Reload alphabet soup */
    function reloadGame() {
        var words = ['Magdalena', 'Gloria', 'Maria', 'Guadalupe', 'Carmen', 'Luz', 'Esperanza', 'Socorro', 'Estrella', 'Cielo', 'Eva', 'Marta', 'Loida', 'Sara', 'sonia']
        if (($('#flipbook').turn("page") == 12 || $('#flipbook').turn("page") == 13) && checkMobile()) {
@@ -110,13 +175,6 @@
 
        $('#solve').click(function() { wordfindgame.solve(gamePuzzle, words) })
        $('#clean').click(function() { wordfindgame.clean() })
-   }
-
-
-
-   // http://code.google.com/p/chromium/issues/detail?id=128488
-   function isChrome() {
-       return navigator.userAgent.indexOf('Chrome') != -1;
    }
 
    //Events to book's pagination
@@ -294,8 +352,14 @@
 
    //Redirect page of the flipbook
    function goPage(page) {
-       $("#hideThumb").modal('hide');
-       $('#flipbook').turn('page', page);
+       if (page == 12) {
+           $("#hideThumb").modal('hide');
+           $('#flipbook').turn('page', page);
+           reloadGame()
+       } else {
+           $("#hideThumb").modal('hide');
+           $('#flipbook').turn('page', page);
+       }
    }
 
    //readCookie allows save the status of the magazine where the user left it

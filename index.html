@@ -43,47 +43,15 @@
         </div>
 
         <!-- Thumbnails -->
-        <div id="thumbnails" class="modal">
+        <div id="thumbnails" class="modal" style="max-width:600px">
             <div class="head-modal">
                 <div class="tittle">Páginas</div>
                 <div class="close-modal"> <a id="hideThumb" href="#" rel="modal:close"><i class='bx bx-x closeT'></i></a></div>
             </div>
             <div class="gallery">
                 <table class="table-thum">
-                    <tbody>
-                        <tr class="fila-thum">
-                            <td class="page-1">
-                                <div class="pag">
-                                    <div class="afd leftThumb" onclick="goPage(1)">
-                                        <img src="pages/1.png" class="imgThumb">
-                                        <div class="pag-number number-right">1</div>
-                                    </div>
-                                </div>
-                            </td>
-                            <td style="width: 10px;"></td>
-                            <td class="page-2-3">
-                                <div class="pag">
-                                    <div class="ain" onclick="goPage(2)">
-                                        <img src="pages/2.png" class="imgThumb ">
-                                        <div class="pag-number number-left ">2</div>
-                                    </div>
-                                    <div class="afd" onclick="goPage(3)">
-                                        <img src="pages/3.png " class="imgThumb ">
-                                        <div class="pag-number number-right ">3</div>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="fila-thum">
-                            <td class="page-1">
-                                <div class="pag">
-                                    <div class="ain rightThumb " onclick="goPage(4)">
-                                        <img src="pages/4.png " class="imgThumb ">
-                                        <div class="pag-number number-right ">4</div>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
+                    <tbody id="tbody-thum">
+
                     </tbody>
                 </table>
             </div>
@@ -146,7 +114,8 @@
     <script type="text/javascript ">
         function loadApp() {
             var book = $(this),
-                currentPage = book.turn('page');
+                currentPage = book.turn('page'),
+                book = book.turn('pages');
             var height = $(window).height(),
                 width = $(window).width();
             // Create the flipbook
@@ -180,6 +149,8 @@
                     }
                 }
             });
+
+            thumbnail()
 
             var cookie = readCookie("pagina");
             if (cookie != null) {

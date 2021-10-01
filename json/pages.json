@@ -1,5 +1,7 @@
 [{
         "page": 1,
+        "background": "./pages/1.png",
+        "id": "hiddenPag",
         "pageContent": [{}]
     },
     {
@@ -25,6 +27,7 @@
         "page": 5,
         "pageContent": [{
             "section": "PARA TI MUJER",
+            "tittle": "<h1>PARA TI MUJER</h1>",
             "imgs": [{
                 "id": "imgPrueba1",
                 "class": "img-gallery",
@@ -45,6 +48,7 @@
         "page": 8,
         "pageContent": [{
             "section": "MUJER VIVE TU FE EN CRISTO",
+            "tittle": "<h1>MUJER VIVE TU FE EN CRISTO</h1>",
             "author": {
                 "name": "Jacibe de Campuzano",
                 "charge": "Esposa de Pastor",
@@ -386,7 +390,7 @@
     },
     {
         "page": 62,
+        "background": "./pages/62.png",
         "pageContent": [{}]
     }
-
 ]

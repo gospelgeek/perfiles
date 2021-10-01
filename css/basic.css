@@ -353,14 +353,24 @@ body {
     overflow-y: auto;
 }
 
+.gallery td {
+    background-color: #fff;
+    width: unset;
+    height: unset;
+    padding: unset;
+    border: unset;
+    position: unset;
+}
+
 .table-thum {
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
     margin-right: 10px;
+    border-collapse: unset;
 }
 
-.fila-thum td {
+tr .fila-thum td {
     padding-bottom: 10px;
 }
 
@@ -404,8 +414,13 @@ body {
     left: 0;
 }
 
-.fila-thum .page-2-3 {
+.fila-thum .doublePageDer {
     float: left;
+}
+
+.fila-thum .doublePageIzq {
+    float: right;
+    margin-right: 5px;
 }
 
 .ain {
@@ -432,6 +447,18 @@ body {
 
 .modal {
     padding: 10px 10px !important;
+}
+
+#hiddenPag {
+    display: none;
+}
+
+.spacePages {
+    padding: 5px !important;
+}
+
+.fila-thum:last-child .doublePageDer .afd {
+    display: none;
 }
 
 
@@ -509,6 +536,20 @@ body {
     position: absolute !important;
     left: 50%;
     margin-left: -250px;
+}
+
+#resultado td {
+    width: unset;
+    background-color: unset;
+}
+
+#resultado span {
+    position: unset;
+}
+
+#resultado h1 {
+    text-align: start;
+    font-weight: 300;
 }
 
 

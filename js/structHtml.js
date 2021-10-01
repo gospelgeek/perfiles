@@ -2,7 +2,6 @@ var jsonData;
 var struct;
 var pos;
 
-
 function createHtml(pageContent) {
     struct = [];
     element = $('<div/>', { 'class': 'divMagazine' })

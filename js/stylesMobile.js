@@ -27,7 +27,7 @@ function stylesMobile() {
     $('h1').css({ 'font-size': '50px' })
     $('.modal h2').css({ 'padding-top': '30px' })
     $('.text7').css({ 'font-size': '35px', 'padding': '16px 90px' })
-    $('.modal').css({ 'max-width': 'unset' });
+    $('.modal').css({ 'max-width': 'unset', height: '62vh' });
     $('.imgShow').css({ 'max-width': '100%' });
     $('.piedePagina').css({ 'font-size': '40px' });
     $('.closeImgs').css({ 'width': '100%', 'height': '100px' })
@@ -51,24 +51,28 @@ function stylesMobile() {
         width: '200px',
         height: '250px',
     });
-    $('.gallery').css({ 'max-height': '700px' });
+    $('.gallery').css({ 'max-height': '960px' });
     $('.thumbnails-head').css({ height: '100px' });
+    $('fila-thumb td').css({ height: '100px' })
     $('.tittle').css({ 'font-size': '50px', });
     $('.closeT').css({ 'font-size': '70px' });
     $('.imgVideo').css({
         width: '360px',
         height: '140px',
     });
+    $('.instructions li').css({ 'font-size': '44px', 'padding': '17px' })
+    $('.head-modal').css({ height: '127px' })
+    $('.search-head').css({ 'margin': '25px' })
+    $('.search-head .tittle').css({ 'margin-right': '24px' })
+    $('#contentSearch').css({ 'font-size': '33px' })
+    $('.pag-number').css({ 'font-size': '33px' })
     $('.modalSearch').css({ left: '29%' });
     $('.input-search input').css({
         width: '416px',
-        height: '81px',
-        'font-size': '30px'
+        height: '108px',
+        'font-size': '44px'
     });
-    $('.search-head').css({
-        'margin-top': '28px',
-        'margin-bottom': '31px'
-    });
+
     $('.input a .lupa').css({ 'font-size': '70px' });
     $('.input-search .input').css({ 'margin-right': '27px' });
     $('.audioContent em').css({
@@ -121,7 +125,7 @@ function stylesMobile() {
     $('.even .spaceDate').css({ 'position': 'unset', 'margin': '0 20px' })
     $('.odd .spaceDate').css({ 'margin': '0 20px' })
     $('#puzzle-clues li').css({ 'font-size': '3.9vw' })
-    $('table td').css({ width: '9vw', height: '4vh' })
+
     $('.textClaves').css({ height: '300px', padding: '0 20px' })
     $('.claves h2').css({ 'font-size': '50px' })
     $('.tooltip div p').css({ 'font-size': '35px' })
