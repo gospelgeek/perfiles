@@ -27,7 +27,6 @@
        }
    }
 
-
    function structThumbnail(pages, i, clase, backgrounds, j) {
        $('#tbody-thum').append(
            $('<tr/>', { 'class': 'fila-thum' }).append(
@@ -61,7 +60,6 @@
    }
 
    function thumbnail() {
-       console.log('metodo thumbnails')
        var backgrounds = [];
        var pages = [];
        var clase = []
@@ -74,7 +72,6 @@
                pos++
            })
 
-           console.log(clase);
            var j = 0
            for (let i = 0; i < pages.length; i = i + 4) {
                if (!checkMobile()) {
@@ -116,7 +113,22 @@
                crosswordGame();
            }
        }
+       //Reset variables of audio
+       if ($('.audioBtnLink').is(':hidden'))
+           $('.audioBtnLink').css({ 'display': 'block' })
+
+       if ($('.audioBtnLink').is(':visible'))
+           $('.audioPage').css({ 'display': 'none' })
    }
+
+   function mostrarAudio(audio, btnAudio) {
+       $('#' + audio.id).css({ 'display': 'block' })
+       $('#' + btnAudio.id).css({ 'display': 'none' })
+       $('#' + audio.id)[0].play();
+
+   }
+
+
 
    /*Content Table */
    function tableContent(id) {
@@ -192,7 +204,6 @@
        $('#flipbook').turn("next");
        hiddenBtn();
        reloadGame()
-
    }
 
    //Method to go to the previous page
@@ -216,7 +227,6 @@
            nextBtn.style.visibility = "visible";
        }
    }
-
 
    // Using arrow keys to turn the page
    $(document).keydown(function(e) {
@@ -242,8 +252,9 @@
    });
 
    //Stop media
+
    function pausedMultimedia() {
-       $('audio').on('play', function() {
+       $('audio').on('play', '.audioContent', function() {
            // var current = this;
            // $('audio').each(function() {
            //     if (this !== current) {
@@ -253,6 +264,7 @@
            //     }
            // });
 
+           console.log('hola');
            jQuery('iframe[src*="https://www.youtube.com/embed/"]').addClass("youtube-iframe");
            $('.youtube-iframe').each(function(index) {
                $(this).attr('src', $(this).attr('src'));
@@ -263,6 +275,14 @@
 
    /*Functions to stop the audios and page turning sounds */
    $(".flipbook").bind("turning", function(event, page, view) {
+
+       //Reset variables of audio
+       if ($('.audioBtnLink').is(':hidden'))
+           $('.audioBtnLink').css({ 'display': 'block' })
+
+       if ($('.audioBtnLink').is(':visible'))
+           $('.audioPage').css({ 'display': 'none' })
+
        // stop audios
        $('audio').each(function() {
            this.pause(); // Stop playing
@@ -325,7 +345,6 @@
    }
 
    function calculateBound(d) {
-
        var bound = { width: d.width, height: d.height };
 
        if (bound.width > d.boundWidth || bound.height > d.boundHeight) {
@@ -343,8 +362,10 @@
    }
 
    $(window).resize(function() {
+       console.log('resize');
        if (!checkMobile()) {
            resizeViewport();
+
        }
    }).bind('orientationchange', function() {
        resizeViewport();

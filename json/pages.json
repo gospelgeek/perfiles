@@ -27,32 +27,50 @@
         "page": 5,
         "pageContent": [{
             "section": "PARA TI MUJER",
-            "tittle": "<h1>PARA TI MUJER</h1>",
-            "imgs": [{
-                "id": "imgPrueba1",
-                "class": "img-gallery",
-                "url": "./pics/paisaje.jpg",
-                "piedeImagen": "Imagen de prueba"
-            }]
+            "tittle": "<h1>PARA TI MUJER</h1>"
         }]
     },
     {
         "page": 6,
-        "pageContent": [{ "tittle": "<h1>UNA FE CIMENTADA EN TU PALABRA</h1>" }]
+        "pageContent": [{
+            "section": "PARA TI MUJER",
+            "tittle": "<h1>UNA FE CIMENTADA EN TU PALABRA</h1>",
+            "author": {
+                "name": "Álvaro Jesús Torres Forero",
+                "charge": "Presidente IPUC",
+                "photo": "./photos/ÁlvaroTorres.jpg",
+                "profilePhoto": "./photos/ÁlvaroTorres.jpg"
+            },
+            "modal": {
+                "id": "modalPage5",
+                "class": "btn-modal",
+                "tittle": "UNA FE CIMENTADA EN TU PALABRA",
+                "textModal": "<span>Porque ¿qué dice la Escritura? Creyó Abraham a Dios, y le fue contado por justicia” (Romanos 4:3)</span><br><br><em>“El cielo y la tierra pasarán, pero mis palabras no pasarán” (Mateo 24:35).</em><br><br>Todo el mundo habla de la fe de Abraham y, por cierto, la tuvo. Pero la grandeza de esa fe descansa en el hecho de que estaba <em> “plenamente convencido de que era (Dios) también poderoso para hacer todo lo que había prometido”</em> (Romanos 4:21).<br><br>La fe de Abraham era oro puro porque estaba puesta la palabra del Eterno, quien nunca falta a sus promesas porque tiene la capacidad de Hacer. Igual sucede en el caso de Sara, como dice en (Hebreos 11:11). “Por la fe también la misma Sara, siendo estéril, recibió fuerza para concebir; y dio a luz aun fuera del tiempo de la edad, porque creyó que era fiel quien lo había prometido”.<br><br>Mi fe no es poderosa porque yo me convenza de cosas hermosas, como si se tratara de una autosugestión, no creemos en el poder del pensamiento positivo como los orientales. Ni tenemos fe en nosotros mismos, como si creyéramos en el súper hombre. Nuestra fe es preciosa porque está anclada firmemente en Aquel que no mengua y que no tiene que calcular lo que dice, porque nunca se equivoca.<br><br>La gran lección que aprendemos del ministerio de Moisés es que repetidamente encontramos a lo largo de su vida la expresión: “Como Jehová le dijo a Moisés”. Si queremos pisar tierra firme es necesario actuar basados en lo que Dios ha dicho, todo lo demás es tierra movediza.<br><br>Con Samuel pasó algo similar. Los hombres tenemos la tendencia a atribuir a los protagonistas de las historias una gloria que no les pertenece. Si lo que Samuel dijo se cumplió no fue por él sino, por el respaldo de Dios:<br><em>“Y Samuel creció, y Jehová estaba con él, y no dejó caer a tierra ninguna de sus palabras”</em> (1 Samuel 3:19).  El protagonista es Dios, ¡siempre Dios!<br><br>En su gran sermón, Jesús nos reta sin rodeos:<em> “Cualquiera, pues, que me oye estas palabras, y las hace, le compararé a un hombre prudente, que edificó su casa sobre la roca”</em> (Mateo 7:24). <br>En esta escritura la “Roca” es la palabra expuesta. Nosotros no podemos, ni debemos, construir expectativas basadas en nuestras ilusiones o sueños, sino que necesitamos  construir nuestras expectativas en la Palabra de Dios, porque Él no falta a sus Palabras, y su Palabra está establecida eternamente en los cielos. Muchos de nuestros desaciertos y frustraciones nacen de la equivocación de pensar que la fe, de por sí es suficiente, pero no olvidemos que quien hace todas las cosas es El Señor.<br><br>Él dijo: <em>“Otra vez os digo, que si dos de vosotros se pusieren de acuerdo en la tierra acerca de cualquiera cosa que pidieren, <span>les será hecho por mi Padre que está en los cielos”</em> (Mateo 18:19).</span><br><em>“Y todo lo que pidiereis al Padre en mi nombre, lo haré, para que el Padre sea glorificado en el Hijo”</em> (Juan 14:13-14).<br><br>La promesa es que, si sus Palabras estuvieren nosotros y permaneciéremos en ellas, Él hará, Él usará su poder a nuestro favor.<br><br><em>“Si algo pidieréis en mi nombre, yo lo haré”</em> (Juan 14:14).<br>Creo que haríamos bien  en emular a Pedro: <span>En tu Palabra echaré la red.</span><br>  Nuestra fe debe; tiene que estar cimentada en la Palabra de Dios.<br><br>Por Álvaro Jesús Torres Forero. Presidente IPUC<br><br>"
+            },
+            "audio": {
+                "idBtn": "btnAudio5",
+                "id": "audio5",
+                "textAudio": "Escuche este audio",
+                "url": "audio/UnaFeCimentadaEnTuPalabra.mp3"
+            }
+        }]
     },
     {
         "page": 7,
-        "pageContent": [{}]
+        "pageContent": [{
+            "section": "PARA TI MUJER"
+        }]
     },
     {
         "page": 8,
         "pageContent": [{
-            "section": "MUJER VIVE TU FE EN CRISTO",
+            "section": "PARA TI MUJER",
             "tittle": "<h1>MUJER VIVE TU FE EN CRISTO</h1>",
             "author": {
                 "name": "Jacibe de Campuzano",
                 "charge": "Esposa de Pastor",
-                "photo": "./pics/profile.png"
+                "photo": "./photos/LuzJacibe.jpg",
+                "profilePhoto": "./photos/LuzJacibe.jpg"
             },
             "textResaltado": {
                 "class": "text7",
@@ -63,21 +81,32 @@
                 "class": "btn-modal",
                 "tittle": "MUJER VIVE TU FE EN CRISTO",
                 "textModal": "Cuando la escritura dice que el justo por la fe vivirá, me hace comprender que la verdadera fe, trasciende a todas las esferas de la vida, vivimos una vida de fe, por fe y en fe, pero ¿Cómo trasciende esa fe a todas las áreas de nuestra vida?<br><br> La fe produce muchos frutos en el hijo de Dios, una justificación que es por fe y genera paz para con Dios, mujer, vive en paz. Por la fe en Él, nos es abierta la puerta de la gracia, mujer, disfruta el gran regalo de la gracia de Dios. Además, la fe también opera en la salvación del creyente, pues por gracia somos salvos por medio de la fe; mujer, la fe nos da certeza de nuestra salvación, y esa misma fe nos permite agradar a Dios, pues sin ella es imposible hacerlo. Mujer, Dios es galardonador de los que le buscan, búscale ahora. <br><br> La fe es el instrumento por excelencia con el que Dios ha dotado a su pueblo, hace parte de la armadura de Dios como escudo y nos permite apagar todos los dardos de fuego del maligno, úsala, ningún dardo jamás atravesará el escudo de la fe. Es don del Espíritu Santo y también fruto del Él, por la misma fe heredamos las promesas. Es la fe la que en medio de cualquier situación nos permite ver futuros de victoria. <br><br> Cómo no hablar de los milagros, la fe es la llave que abre los cielos, cuando alguien clama con fe todo es posible, en la iglesia, en la casa, en la vida, en medio de cualquier circunstancia he aprendido que la fe y las oraciones cambian las cosas, que el dolor no te mate la fe, la angustia no te impida creer ni la prueba te obligue a callar; mujer, clama, clama, Él dijo: “YO TE RESPONDERÉ”. <br><br> Hoy alimentamos nuestra fe con las historias de mujeres que decidieron creer: <br><br> <span>La fe de Sara</span>: <em>“Por la fe también la misma Sara siendo estéril, recibió fuerza para concebir...”</em> (Hebreos 11: 11). Mujer, Dios no solo gestará el milagro, te dará fuerzas para concebirlo. <br><br> <span>La fe de Rahab</span>: <em>“Por la fe Rahab la ramera no pereció…”</em> (Hebreos 11:31). No era la mejor mujer, pero decidió creer y no perdió su recompensa, atrévete a creer. <br><br> <span>La fe de Ana</span>: Mujer estéril y afligida, pero pidió a Dios un hijo y lo pidió varón. Dios se lo otorgó. Yo le llamaría milagro a la carta, ser mamá ya era milagroso, pero concederle un hijo varón es extraordinario. Tenemos un Dios con la capacidad de hacer el milagro a tu medida, según tu deseo. PÍDELE AHORA. <br><br> <span>La fe de la mujer cananea</span>: Ante la negativa de Jesús, ella se humilló y pidió migajas, su actitud llevó al Maestro a exclamar: “OH MUJER GRANDE ES TU FE, hágase contigo como quieres”. Dos grandes enseñanzas quedan de este milagro, persistencia y humillación, dos aliados de la fe. Mujer, no desmayes.<br><br> La mujer del flujo de sangre: Lo que no pudo hacer en doce años pasó en un instante, se acercó a Jesús, le tocó, la fuente de su sangre se secó. Hay quienes se acercan a Dios, pero no le tocan, a Dios hay que acercarse y tocarle por la fe, te aseguro que no regresarás con las manos vacías. <br><br> Hoy nos enseñan, ver para creer, el principio bíblico es totalmente opuesto, si crees, verás la gloria de Dios; no podemos basar nuestra fe en lo que vemos, recuerda siempre que la fe no niega la realidad, pero está por encima de ella. En mi vida con Cristo, Él me llevó a un escenario donde todo lo que se veía era desalentador, una leucemia, dos años de quimioterapia, un trasplante de médula ósea y cero garantías de que el tratamiento funcionase. Pero decidí creer y Dios me mostró su gloria, aquí estoy completamente sana cinco años después, <span>bienaventurados los que no vieron y creyeron.</span> <br><br> Por último, quiero recordarte mujer que la fe debe ser probada, muchas de las cosas que vivimos, Dios las permite para ver que tenemos en el corazón, es fácil confesar una fe con la boca, pero en el sequedal de la prueba, brota la fe o la incredulidad, la confianza o la duda, que hermoso sería que nuestra fe no se marchite, sino que en medio de la sequía siga dando fruto. No importa cuántos desiertos tengas que cruzar, pasarás al otro lado en fe, Abraham se fortaleció en fe dando gloria a Dios, haz tú lo mismo, no estamos llamadas a tirar la toalla, abandonar el hogar, permitir que los hijos tomen el rumbo incorrecto, vamos a dar la guerra, recuerda: No me rendiré sin dar una pelea. Eres de las que pelea sus batallas de rodillas, edifica su casa en sabiduría, cree a las promesas de Dios y pelea la buena batalla de la fe.<br><br> El testimonio es el legado que trasciende a la vida y a la muerte ¿Cómo nos recordarán? ¿Qué será lo primero que vendrá a la mente de aquellos que nos conocieron cuando alguien mencione nuestro nombre? ¿Qué quieres que sea? Yo quiero que los que siguen mis pasos tengan que decir: Le creyó a Dios y me enseñó a creerle a Dios. Así que MUJER, VIVE TU FE EN CRISTO y deja un legado imborrable para las futuras generaciones. <br><br> Por Jacibe de Campuzano. Esposa de Pastor <br><br><br>"
+            },
+            "audio": {
+                "idBtn": "btnAudio7",
+                "id": "audio7",
+                "textAudio": "Escuche este audio",
+                "url": "audio/MujerViveTuFeEnCristo.mp3"
             }
         }]
     },
     {
         "page": 9,
-        "pageContent": [{}]
+        "pageContent": [{
+            "section": "PARA TI MUJER"
+        }]
     },
     {
         "page": 10,
         "pageContent": [{
+            "section": "PARA TI MUJER",
             "tittle": "<h1>FE PARA LA PRESERVACIÓN DEL ALMA</h1>",
             "author": {
                 "name": "Edilberto Ortíz Sanmartín",
                 "charge": "Primer Vicepresidente IPUC",
-                "photo": "./pics/profile.png"
+                "photo": "./photos/EdilbertoO.jpg",
+                "profilePhoto": "./photos/EdilbertoO.jpg"
+
             },
             "textResaltado": {
                 "class": "text7",
@@ -97,7 +126,9 @@
     },
     {
         "page": 11,
-        "pageContent": [{}]
+        "pageContent": [{
+            "section": "PARA TI MUJER"
+        }]
     },
     {
         "page": 12,
@@ -108,16 +139,21 @@
     },
     {
         "page": 13,
-        "pageContent": [{ "tittle": "<h1>FÉ PARA MIS GENERACIONES</h1>" }]
+        "pageContent": [{
+            "section": "<h3>FÉ PARA MIS GENERACIONES</h3>",
+            "tittle": "<h1>FÉ PARA MIS GENERACIONES</h1>"
+        }]
     },
     {
         "page": 14,
         "pageContent": [{
+            "section": "<h3>FÉ PARA MIS GENERACIONES</h3>",
             "tittle": "<h1>EL LEGADO DE UNA FE NO FINGIDA</h1>",
             "author": {
                 "name": "Judith Ramírez Torres",
                 "charge": "Presidenta Nacional Damas Dorcas",
-                "photo": "./pics/profile.png"
+                "photo": "./photos/JudithRamírez.jpg",
+                "profilePhoto": "./photos/JudithRamírez.jpg"
             },
             "textResaltado": {
                 "class": "text7",
@@ -138,24 +174,45 @@
 
     {
         "page": 15,
-        "pageContent": [{}]
+        "pageContent": [{
+            "section": "<h3>FÉ PARA MIS GENERACIONES</h3>"
+        }]
     },
     {
         "page": 16,
-        "pageContent": [{ "tittle": "<h1>MI MANUAL PERFECTO DE INSTRUCCIÓN</h1>" }]
+        "pageContent": [{
+            "section": "<h3>FÉ PARA MIS GENERACIONES</h3>",
+            "tittle": "<h1>MI MANUAL PERFECTO DE INSTRUCCIÓN</h1>",
+            "author": {
+                "name": "Fernando Sierra",
+                "charge": "Director FECP",
+                "photo": "./photos/FernandoSierra.jpg",
+                "profilePhoto": "./photos/FernandoSierra.jpg"
+            },
+            "modal": {
+                "id": "modalPage15",
+                "class": "btn-modal",
+                "tittle": "MI MANUAL PERFECTO DE INSTRUCCIÓN",
+                "textModal": "<em>“Pero persiste tú en lo que has aprendido y te persuadiste, sabiendo de quién has aprendido; y que desde la niñez has sabido las Sagradas Escrituras, las cuales te pueden hacer sabio para la salvación por la fe que es en Cristo Jesús. Toda la Escritura es inspirada por Dios, y útil para enseñar, para redargüir, para corregir, para instruir en justicia, a fin de que el hombre de Dios sea perfecto, enteramente preparado para toda buena obra”</em> (2 Timoteo 3:14-17).<br><br>El libro de los principios nos narra una charla en su capítulo tres entre una serpiente y una mujer; el primer error que cometió esta mujer fue haber tenido esa charla, pues el apóstol nos dice: <em>“No erréis; las malas conversaciones corrompen las buenas costumbres” </em>(1 Corintios 15:33). El segundo error que cometió, fue añadirle palabras a lo que Dios dijo <em>“…no comeréis de él, ni le tocareis… ”</em> (Génesis 3:3). El tercer error en que cayó esta mujer fue creerle a la serpiente <em>“Entonces la serpiente dijo a la mujer: No moriréis; sino que sabe Dios que el día que comáis de él, serán abiertos vuestros ojos, y seréis como Dios, sabiendo el bien y el mal”</em> (Génesis 3:4-5).<br><br>¿Por qué digo que cometió tres errores? Por lo siguiente: El libro de Apocalipsis, escrito por el apóstol Juan, nos dice: <em>“Y prendió al dragón, la serpiente antigua, que es el diablo y Satanás, y lo ató por mil años”</em> (Apocalipsis 20:2).<br>Ahora miremos la segunda parte del versículo: <em>“…Él ha sido homicida desde el principio, y no ha permanecido en la verdad, por que no hay verdad en él…”</em> (Juan 8: 44). Cuando habla, mentira de suyo habla; por que es mentiroso y padre de mentira, y el apóstol Pablo escribiendo en su segunda carta a los Corintios nos dice <em>“…os he desposado con un solo esposo, para presentaros como una virgen pura a Cristo”</em>(2 Corintios 11:2).<br>Pero me temo que, como la serpiente con astucia engañó a Eva, vuestros sentidos sean de alguna manera extraviados de la sincera fidelidad a Cristo. Así comienza la caída del ser humano del lugar de privilegio que Dios le había dado, pues el diablo le hizo creer que Dios no decía verdad y que además era egoísta, pues no quería que fuera como Él.<br><br>Pero miremos lo que dice el manual de Dios acerca de este asunto: <em>“Pablo, siervo de Dios y apóstol de Jesucristo, conforme a la fe de los escogidos de Dios y el conocimiento de la verdad que es según la piedad, en la esperanza de la vida eterna, la cual Dios, que no miente, prometió desde antes del principio de los siglos, y a su debido tiempo manifestó su palabra por medio de la predicación que me fue encomendada por mandato de Dios nuestro Salvador, a Tito, verdadero hijo en la común fe: Gracia, misericordia y paz, de Dios Padre y del Señor Jesucristo nuestro Salvador”</em> (Tito 1:1-4).<br><br>La versión TLA de la Biblia dice: <em>“¡Dios no es como nosotros! No dice mentira alguna ni cambia de parecer. Dios cumple lo que promete”</em> (Números 23: 19).<br> Partiendo entonces de: <span>Dios no miente,</span> queremos mostrar otra herramienta que está en el manual, El Evangelio, que es la buena noticia dada por El ángel del Señor a aquellos pastores que velaban en la vigilia de la madrugada cuidando las ovejas. Lucas dice en el capítulo dos de su evangelio, el versículo ocho al once:<br>Había pastores en la misma región, que velaban y guardaban las vigilias de la noche sobre su rebaño. Y he aquí, se les presentó un ángel del Señor, y la gloria del Señor los rodeó de resplandor; y tuvieron gran temor. <em>“Pero el ángel les dijo: No temáis; porque he aquí os doy nuevas de gran gozo, que será para todo el pueblo: que os ha nacido hoy, en la ciudad de David, un Salvador, que es CRISTO el Señor”</em> (Lucas 2: 10-11). Mateo en su Evangelio nos dice de la siguiente manera <em>“…un ángel del Señor le apareció en sueños y le dijo: José, hijo de David, no temas recibir a María tu mujer, porque lo que en ella es engendrado, del Espíritu Santo es”</em> (Mateo 1:20).<br> Y el versículo 21: “y dará a luz un hijo, y llamará su nombre JESÚS, por que <em><span>él salvará a su pueblo de sus pecados</span></em>”, y Pablo escribiendo a los Corintios, en su primera carta, les dice así: <em>“Además os declaro, hermanos, el evangelio que os he predicado, el cual también recibisteis, en el cual también perseveráis; por el cual asimismo, si retenéis la palabra que os he predicado, sois salvos, sino creísteis en vano. Porque primeramente os he enseñado lo que asimismo recibí: Que Cristo murió por nuestros pecados, conforme a las Escrituras; y que fue sepultado, y que resucitó al tercer día, conforme a las Escrituras; y que apareció a Cefas, y después a los doce…y al último de todos como a un abortivo, me apareció a mí”</em> (1 Corintios 15: 1-5 y 8).<br>El apóstol Pablo nos dice: <em>“Pues os digo, que Cristo Jesús vino a ser siervo de la circuncisión para mostrar <span>la verdad de Dios</span>, para confirmar las promesas hechas a los padres y para que los gentiles glorifiquen a Dios…”</em> (Romanos 15:8-9). Ahora ¿cuál verdad? Juan en su Evangelio nos la dice: <em>“Y como Moisés levantó la serpiente en el desierto, así es necesario que el Hijo del Hombre sea levantado, para que todo aquel que en él cree, no se pierda más tenga vida eterna”</em> (Juan 3:14-15).<br><em>“Por que de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna”</em> (Juan 3:16).<br>Entonces, la VERDAD DE DIOS es que Él nos AMA, pero al no creerlo el ser humano se envanece en sus propios razonamientos, al no glorificar a Dios ni darle gracias se le llena el corazón de tinieblas y profesa ser sabio, pero al hacer esto se vuelve más necio cada día, inventando sus propios paradigmas, filosofías, argumentos entre otros. De ahí que su sistema educativo tenga como base la filosofía contemporánea:<br><br> <img src='./pics/DiagramaManualPerfectoDeInstruccion.PNG' alt='' style=' width:100%'><br><br><span class='centerSpan'>El resultado: vivir el momento (vitalismo)</span><br><div style=' width:100%; text-align:right''><img src='./pics/DiagramaManualPerfectoDeInstruccion2.PNG' alt=''></div><br><div style=' width:100%; float:left'><img src='./pics/DiagramaManualPerfectoDeInstruccion3.PNG' alt=''></div><br><br><span>El resultado de esto es aumento en el índice de suicidios de niños, jóvenes y ancianos </span><br><br><img src='./pics/DiagramaManualPerfectoDeInstruccion4.PNG' alt='' style=' width:100%'><br><br> Comamos y bebamos por que mañana moriremos (así dicen algunos hombres) La versión Lenguaje actual nos dice: <em>“Es verdad que vivimos en este mundo, pero no actuamos como todo el mundo, ni luchamos con las armas de este mundo. Al contrario, usamos el poder de Dios para destruir las fuerzas del mal, (fortalezas, argumentos, filosofías) las acusaciones y el orgullo de quienes quieren impedir que todos conozcan a Dios. Con ese poder hacemos que los pecadores cambien su manera de pensar y obedezcan a Cristo” </em> (2 Corintios 10:3-5).<br><br>Aquí surge nuestro siguiente instrumento o arma (lo decimos con toda reverencia) que encontramos en el manual: “EL ESPÍRITU SANTO” usando la palabra da:<br><br>•Da nueva vida: Santiago 1:17-18; 1 Pedro 1:23-25; Salmos 19:7<br> • Da crecimiento a la nueva criatura: 1 Pedro 1:1-3; Hebreos 5:11-14 <br>• Ubica la fe de la persona: Romanos 10:16-17 <br>• Guía al incrédulo a reconocer a Dios: 1 Corintios 14:22-26<br>• Nos da la capacidad de cambiar nuestro entorno: Salmos 84:5-7<br>• Mantiene la vida espiritual lozana: Salmos 1:2-3; Jeremías  17:8 <br> • Da permanencia: Mateo 7: 21, 24-27; Lucas 6:46<br>• Prosperidad: Josué 1:7-9<br>• Da sabiduría: Salmos 19:7-8<br>• Emociona, enternece, da paz:2 Reyes 22:18-20 <br><br><em>“Gracias a Cristo, también ustedes que oyeron el mensaje de la verdad, la buena noticia de su salvación, y abrazaron la fe, fueron sellados como propiedad de Dios con el Espíritu Santo que él había prometido. Este Espíritu es el anticipo que nos garantiza la herencia que Dios nos ha de dar, cuando haya completado nuestra liberación…”</em> (Efesios 1:13-14 DHH).<br><br>Imagínense ustedes, queridos hermanos, si el Espíritu Santo es apenas el anticipo de lo que Dios tiene preparado para los que le creen y le aman, ¡cómo será lo que nos falta por recibir! Nuestra oración en el Espíritu Santo es que nos llene del conocimiento de su voluntad, y la inteligencia espiritual necesaria para persuadir a nuestros hijos y a los hijos de nuestros hijos, a que le crean a Dios y lo amen. La ORACIÓN entonces es el complemento para que nuestra fe sea fuerte, y podamos alcanzar el propósito de Dios para nuestras vidas.<br><br>La ORACIÓN es una herramienta del manual, tan eficaz que por medio de ella un hombre puede lograr que Dios lo oiga y cierre el cielo por tres años y medio, para que no llueva; ¿vuelva a orar y Dios envíe la lluvia <em>“Y acaso Dios no hará justicia a sus escogidos que claman a Él día y noche? ¿Se tardará en responderles? Os digo que pronto les hará justicia, pero ¿cuándo venga el hijo del hombre hallará fe en la tierra?”</em> (Lucas 18: 7-8). Nos corresponde contestar a nosotros que no dejaremos de orar en ningún momento, le predicaremos el Evangelio a los nuestros sin desmayar; procuraremos vivir llenos del Espíritu Santo para discernir lo que Él nos ha concedido; nuestra exhortación es adelante, hacia la meta, <em>“No nos cansemos, pues, de hacer bien; porque a su tiempo segaremos, si no desmayamos”</em> (Gálatas 6:9).<br><br>Por Fernando Sierra Santiago. Director FECP<br><br>"
+            }
+        }]
     },
     {
         "page": 17,
-        "pageContent": [{}]
+        "pageContent": [{
+            "section": "<h3>FÉ PARA MIS GENERACIONES</h3>"
+        }]
     },
     {
         "page": 18,
         "pageContent": [{
+            "section": "<h3>FÉ PARA MIS GENERACIONES</h3>",
             "tittle": "<h1>VERDADES BÍBLICAS PARA INSTRUIRLOS EN LA FE</h1>",
             "author": {
                 "name": "Nardy Jazmín Suárez de Giraldo",
                 "charge": "Vicepresidenta Nacional Damas Dorcas",
-                "photo": "./pics/profile.png"
+                "photo": "./photos/NardyJazmín.jpg",
+                "profilePhoto": "./photos/NardyJazmín.jpg"
             },
             "textResaltado": {
                 "class": "text7",
@@ -175,7 +232,9 @@
     },
     {
         "page": 19,
-        "pageContent": [{}]
+        "pageContent": [{
+            "section": "<h3>FÉ PARA MIS GENERACIONES</h3>"
+        }]
     },
     {
         "page": 20,
@@ -183,16 +242,21 @@
     },
     {
         "page": 21,
-        "pageContent": [{ "tittle": "<h1>ENFOQUE INFANTIL Y JUVENIL</h1>" }]
+        "pageContent": [{
+            "section": "<h3>ENFOQUE INFANTIL Y JUVENIL</h3>",
+            "tittle": "<h1>ENFOQUE INFANTIL Y JUVENIL</h1>"
+        }]
     },
     {
         "page": 22,
         "pageContent": [{
+            "section": "<h3>ENFOQUE INFANTIL Y JUVENIL</h3>",
             "tittle": "<h1>ELIJO LA FE, COMO MI ESTILO DE VIDA</h1>",
             "author": {
                 "name": "Carolina Henao Díaz",
                 "charge": "Esposa de Pastor",
-                "photo": "./pics/profile.png"
+                "photo": "./photos/CarolinaHenao.jpg",
+                "profilePhoto": "./photos/CarolinaHenao.jpg"
             },
             "textResaltado": {
                 "class": "text7",
@@ -212,15 +276,34 @@
     },
     {
         "page": 23,
-        "pageContent": [{}]
+        "pageContent": [{
+            "section": "<h3>ENFOQUE INFANTIL Y JUVENIL</h3>"
+        }]
     },
     {
         "page": 24,
-        "pageContent": [{ "tittle": "<h1>MI SER GUARDADO IRREPRENSIBLE  PARA DIOS</h1>" }]
+        "pageContent": [{
+            "section": "<h3>ENFOQUE INFANTIL Y JUVENIL</h3>",
+            "tittle": "<h1>MI SER GUARDADO IRREPRENSIBLE  PARA DIOS</h1>",
+            "author": {
+                "name": "Ingrid Flórez de Quintero",
+                "charge": "Esposa de Pastor",
+                "photo": "./photos/IngridFlórez.jpg",
+                "profilePhoto": "./photos/IngridFlórez.jpg"
+            },
+            "modal": {
+                "id": "modalPage23",
+                "class": "btn-modal",
+                "tittle": "MI SER GUARDADO IRREPRENSIBLE  PARA DIOS",
+                "textModal": "María, la atractiva joven de Nazaret, fue atraída por un ángel para que escuchara el interesante proyecto de Dios para ella. Un plan donde no imaginaba lo que esto involucraba; no era su documento de identidad o su currículo académico, era todo un paquete que llevaba incluido hasta su propio vientre.  Era una especie de entrega, es por esto que se sorprende y se extraña preguntando al ángel, qué significaba eso, a lo que este le contesta: <em> “…No tengas miedo, María, porque Dios te ha dado un gran privilegio...”</em> (Lucas 1:30 TLA).<br><br>El ser llamado por Dios a la salvación y a todo lo que Él ofrece, implica un compromiso, y quienes no lo ven como tal, les es difícil entender y acceder.  María sabía que era un privilegio que se le apareciera un ángel con un mensaje de parte de Dios; lo que ella no entendía, era lo que esto implicaba. Sin embargo, lo sobresaliente de este suceso, es la disposición de entregar y decir: <em>“Aquí estoy”</em>; lo cual, traía consigo el estar dispuesta a vivir de una manera diferente, a las demás chicas de su aldea; era dedicarse y conservarse al proyecto que Dios tenía para ella.  Como en todo proyecto, se necesita de tiempo, dedicación, disponibilidad y hasta sacrificios.  Quienes quieren lograr la realización de sus proyectos, deben consagrarse a ellos.<br><br>El mundo moderno, ofrece a la mujer de hoy, una gama de estilos de vida; desde alquilar sus vientres, ofrecer su juventud, figura y belleza con fines publicitarios, ofertas laborales a cambio de sus servicios profesionales, hasta la fama y popularidad, que son ofrecimientos de este siglo, que se vuelven atractivos para vivir en este tiempo. Todo esto conlleva a esfuerzos, sacrificios y entrega, mientras la juventud efímera permanece en nosotros.<br><br> <span>•  Todo proyecto implica consagración.</span><br><br>La joven que ama a Dios, que ha escogido la salvación y todo lo que esta incluye, sabe que hay una manera de vivir, agradable a los ojos de Dios y aprobada por Él.  Precisamente esa entrega de todo nuestro ser, alma y cuerpo, es lo ideal para que el Dios de paz la perfeccione.<br><br>Ser guardado, reservado y consagrado a Dios, es ser un vaso diferente a todos los que están guardados en la vitrina. Las vitrinas están llenas de vasos, unos para usos honrosos y dedicados.  María fue un vaso exclusivo de Dios, lo que la llevó a consagrar su vientre, su juventud, su buen nombre y todo lo que implicaba la misión que Dios le había encargado.<br><br><em> “Y el mismo Dios de paz os santifique por completo; y todo vuestro ser, espíritu, alma y cuerpo, sea guardado irreprensible para la venida de nuestro Señor Jesucristo”</em> (1 Tesalonicenses 5:23). <br><br>Nuestro espíritu, debe vivir en conectividad con el Espíritu de Dios, que es un Espíritu de poder, y es quien regula nuestros pensamientos y acciones, por eso es importante saber qué elegimos a través de nuestros sentidos para alimentar el cuerpo y el alma.<br><br>La joven vive en un entorno contaminado, por tal razón, hay que ser cuidadoso de lo que vamos a proveer para el espíritu, alma y cuerpo.  Siempre habrá cosas ilícitas, pero recuerda: Si quieres vivir en santidad tendrás que rechazarlas porque, aunque no sean pecado, ni sean malas, no convienen; sobre todo cuando se sigue cumpliendo lo que dijo Isaías: <em> “¡¡ Ay de los que a lo malo dicen bueno, y a lo bueno malo; que hacen de la luz tinieblas, y de las tinieblas luz; que ponen lo amargo por dulce, y lo dulce por amargo!” </em>(Isaías 5:20).<br><br>María se guardó, siguió todos los pasos del proyecto, en toda la ejecución del mismo, así como el ángel se lo pidió.<br><br>Llegar a la santidad es caminar por la línea de la obediencia; es dejar que el Espíritu Santo sea el freno de aquellos impulsos que nos pueden hacer deslizar.<br><br>Seguimos siendo humanos, pero guardemos la conectividad continua con el Altísimo, esforzándonos cada día en guardarnos sin reprensión para la venida cercana de Cristo.<br><br>Por Ingrid Flórez de Quintero. Esposa de Pastor<br><br>"
+            }
+        }]
     },
     {
         "page": 25,
-        "pageContent": [{}]
+        "pageContent": [{
+            "section": "<h3>ENFOQUE INFANTIL Y JUVENIL</h3>"
+        }]
     },
     {
         "page": 26,
@@ -231,63 +314,159 @@
     },
     {
         "page": 27,
-        "pageContent": [{ "tittle": "<h1>MIS AÑOS DORADOS</h1>" }]
+        "pageContent": [{
+            "section": "<h3>MIS AÑOS DORADOS</h3>",
+            "tittle": "<h1>MIS AÑOS DORADOS</h1>"
+        }]
     },
     {
         "page": 28,
-        "pageContent": [{ "tittle": "<h1>UNA FE QUE TRASCIENDE EN EL TIEMPO</h1>" }]
+        "pageContent": [{
+            "section": "<h3>MIS AÑOS DORADOS</h3>",
+            "tittle": "<h1>UNA FE QUE TRASCIENDE EN EL TIEMPO</h1>",
+            "author": {
+                "name": "Nubia de Hermida",
+                "charge": "Esposa de Pastor",
+                "photo": "./photos/NubiaAriza.jpg",
+                "profilePhoto": "./photos/NubiaAriza.jpg"
+            },
+            "modal": {
+                "id": "modalPage27",
+                "class": "btn-modal",
+                "tittle": "UNA FE QUE TRASCIENDE EN EL TIEMPO",
+                "textModal": "<em>“Porque yo sé que mandará a sus hijos y a su casa después de sí, que guarden el camino de Jehová, haciendo justicia y juicio, para que haga venir Jehová sobre Abraham lo que ha hablado acerca de él”</em> (Génesis 18: 19).<br><br>Sin duda muchas cosas han cambiado en nuestro mundo; el mundo que conocí era mucho más simple, y en el que viví sin sospechar que llegaría tan rápido a esta etapa de mi vida. Si miro hacia atrás, entre la colección de mis recuerdos, entiendo que cada experiencia y cada decisión, me trajeron al lugar donde estoy, y aunque todo ha cambiado, dijo el sabio Salomón <em>“…No hay nada nuevo bajo el sol”</em> (Eclesiastés 1:9 NBLA).<br><br>Todo se repite cíclicamente, así como la primavera, el verano, el otoño y el invierno, se repiten vez tras vez; sin importar cuánto avancemos. Lo cierto es que ninguna estación puede venir sin que otra la anteceda.  No llegamos hasta aquí como resultado del azar, ni hemos perdido fuerza por peinar algunas canas.<br><br>En la primavera nacen las flores, retoñan los capullos y toda la naturaleza se pinta de colores, pero su belleza es temporal. Pronto el verano cubre de verde las praderas y la tierra sigue su preparación hacia el otoño, donde el sol transforma el verde del verano en hojas secas que, lloviendo de los árboles, los preparan para el invierno.<br><br>Nada se muere, todo se transforma y regresa a su ciclo. Ninguna estación es más importante que otra; todas, cual regalo de Dios, ofrecen al mundo balance, alegría y vida.<br><br>Podría decirse que, en este <span>otoño de la edad dorada</span>, nuestros árboles siguen firmes. Sin importar la inclemencia del sol, se levantan como prueba de la fidelidad de Dios y la madurez que traen los años, que nos han enseñado a confiar en el amor de Dios y en su continua provisión.<br><br>No somos viejos, estamos llenos de vida; no estamos enfermos, hemos usado nuestra salud; no somos lentos, cada estación nos enseñó la sabiduría de la paciencia; no estamos atrasados, qué sería de la primavera sin el trabajo del otoño y el invierno.  Somos un legado de fe y esperanza, una prueba viva de la fidelidad de Dios, un regalo a la generación del presente, un estandarte firme que reposa en las promesas de un Dios vivo que no nos defraudó, sino que cumplió cada una de sus promesas.<br><br>El mundo de hoy puede verse moderno, desafiante, y caprichoso; pero las promesas del Señor siguen siendo inamovibles y poderosas. Hemos abierto un camino de obediencia, que urgimos tomar a esta nueva generación, un camino que nos recompensó, como dice la Escritura, y que deseamos seguir perpetuando hasta la venida del Señor Jesucristo.<br><br>No hay duda que el mismo Dios de Abraham estuvo con nosotros, hemos seguido la justicia y el juicio, y deseamos entregar a esta generación ese mismo legado. Quiera el Dios de Abraham seguir allanando el camino, para que de generación en generación sin importar que ocurra, todos recuerden que todo es temporal, pero <em>“…el que hace la voluntad de Dios permanece para siempre”</em> (1 Juan 2:17).<br><br>Seguiremos firmes hasta el día de Cristo, erguidos, no doblegados por los vientos y resistentes al ardiente sol del otoño. No estamos improvisando la vida, nuestro caminar firme en Dios nos permitió llegar hasta aquí.<br><br>Un sabio dijo: “Viví hasta tener la inmensa felicidad de pensar que he contribuido de algún modo al progreso y bienestar de la humanidad”<br><br>Nuestra sociedad ha producido dos tipos de hombres: <span>Los benefactores y los detractores.</span><br><br><span>El detractor:</span> El que empobrece la vida, y el que, con su egoísmo e insana ambición, detrae de la humanidad empobreciéndola.<br><br>En otras palabras, existen personas que sirven a la humanidad y los que se sirven de ella.  Uno era Jacob, nieto de Abraham; el otro era Absalón, hijo de David rey de Israel.<br><br><span>El primero</span> cavó un pozo. En esa época en aquellos lugares, cavar un pozo era una obra de un gran sentido social. Si tenemos en cuenta que este pozo estaba situado junto al camino real, que corría de norte a sur en Palestina; por ese camino transitaban las caravanas desde Egipto a Siria y viceversa.<br><br><span>El Segundo</span> hizo levantar un monumento recordatorio, que traería gran satisfacción a su interés personal para perpetuar su nombre.<br><br><span>¿Cuál es la diferencia entre los dos?</span><br><br>Estos dos hombres representaban dos tipos de vida humana; como ellos, de igual manera muchos dejan solamente pilares en el camino de sus vidas, puede ser una fortuna material o una posición encumbrada, cosas que solo tienen un valor relativo por su temporalidad. En cambio, otros dejan un pozo, es decir, una obra de humanidad que será de utilidad para varias generaciones.<br><br><span>¡¡¡Estos son los que hacen más hermosa la vida!!!</span> Más suave el camino para nuestros pies. Gracias a sus vidas fecundas, nosotros somos más sanos, más fuertes, más buenos y más sabios.<br><br>Dios los bendiga<br><br>Por Nubia de Hermida. Esposa de Pastor<br><br>"
+            }
+        }]
     },
     {
         "page": 29,
-        "pageContent": [{}]
+        "pageContent": [{
+            "section": "<h3>MIS AÑOS DORADOS</h3>"
+        }]
     },
     {
         "page": 30,
-        "pageContent": [{ "tittle": "<h1>MI GOZO Y FORTALEZA ES EL SEÑOR</h1>" }]
+        "pageContent": [{
+            "section": "<h3>MIS AÑOS DORADOS</h3>",
+            "tittle": "<h1>MI GOZO Y FORTALEZA ES EL SEÑOR</h1>",
+            "author": {
+                "name": "Arnolia Rentería",
+                "charge": "Sierva del señor Jesucristo",
+                "photo": "./photos/ArnoliaRenteríaPerfil.png",
+                "profilePhoto": "./photos/ArnoliaRentería.jpg"
+            },
+            "modal": {
+                "id": "modalPage29",
+                "class": "btn-modal",
+                "tittle": "ENTREVISTA REALIZADA A LA HERMANA ARNOLIA RENTERÍA",
+                "textModal": "Entrevista realizada a la <span>hermana Arnolia Rentería</span>, el día 22 de junio de 2021, Rozo, Valle del Cauca. Sierva del Señor Jesucristo, de gran trayectoria en la iglesia.<br><br>-<span> Revista Perfiles</span>: Dios le bendiga hermana Arnolia Rentería, gracias por contestar las siguientes preguntas. ¿Cuál es su fecha de nacimiento?<br>- <span>Hermana Arnolia Rentería</span>: Nací el 21 de mayo de 1935.<br>- <span>Revista Perfiles</span>: ¿Cuál es su fecha y lugar de bautismo en el Nombre del Señor Jesús?<br><span>- Hna. A. R</span>: Fui bautizada en 1957, en Puerto Tejada (Cauca).<br><span>- Revista Perfiles</span>: ¿Quién fue el Pastor que la bautizó?<br>-<span> Hna. A. R</span>: El pastor Eduardo García, y en mi bautismo estuvo la hermana Rut de Drost, tocando el acordeón.<br>-<span> Revista Perfiles</span>: Comparta dos experiencias  que haya vivido y que marcaron su vida en el camino del Señor Jesús.<br>-<span> Hna. A. R</span>: Me fui con mi esposo a vivir a Buenaventura, él era no convertido; allí inició la obra del Señor, yo oré al Señor por la conversión de mi esposo por aproximadamente veintidós años y Dios obró de manera poderosa en su vida.<br>En un determinado momento mi esposo enfermó gravemente, yo hice una oración por él y Dios lo sanó; luego de esto él llevaba sus amigos enfermos a mi casa para que yo orara por ellos y mi Señor que es tan bueno los sanaba.<br>-<span> Revista Perfiles</span>: ¿Algún día pensó ver la Iglesia tan grande como la ve ahora?<br>-<span> Hna. A. R</span>: Sí, sí pensé ver la Iglesia así de grande, ya que había mucho derramamiento del Espíritu Santo.<br>-<span> Revista Perfiles</span>: ¿Qué fue lo que más le impactó de esos primeros hombres que le predicaron la Palabra de Dios?<br>-<span> Hna. A. R</span>: De los primeros hombres lo que me impactó fue su fe, su potencia para evangelizar, la forma como predicaban la Palabra de Dios, muchos no eran hombres letrados, pero sí ungidos por el Espíritu Santo.<br>-<span> Revista Perfiles</span>: ¿Recibió algún tipo de amenazas cuando decidió entregar su vida a Cristo?<br>-<span> Hna. A. R</span>: No fui directamente amenazada, pero sufrí la incredulidad de muchas personas en mi persistencia en el camino del Señor.<br>-<span> Revista Perfiles</span>: ¿Siente que su vida realmente cambió luego de conocer al Señor Jesús?<br>-<span> Hna. A. R</span>: Indudablemente sí, el cambio fue potencial, cuando el Señor me rescató me llenó del Espíritu Santo, me llenó de unción para no volver atrás.<br>-<span> Revista Perfiles</span>: ¿Qué es lo que más recuerda de los primeros cultos o eventos de evangelismo?<br>-<span> Hna. A. R</span>: Recuerdo mucho el derramamiento del Espíritu Santo y milagros por doquier.<br>-<span> Revista Perfiles</span>: ¿Cómo llegó el mensaje de salvación a su vida, y a través de quién?<br>-<span> Hna. A. R</span>: El mensaje de salvación llegó a mi vida a través de la hermana Enelia Vásquez.<br>-<span> Revista Perfiles</span>: ¿Enfrentó dificultades en el momento que tomó la decisión de seguir al Señor Jesús?<br>Hna. A. R: Enfrenté la incredulidad de la gente.<br>-<span>Revista Perfiles</span>: ¿Cómo y a quién recuerda de esos primeros tiempos de la Iglesia?<br>-<span> Hna. A. R</span>: Recuerdo al pastor Saúl Ramírez, hermano muy humilde; a las hermanas Eucaris Agudelo y Argemira Parra, hermanas de mucha oración; Judith de Rivera, excelente compañera de evangelismo; en los lugares donde el Señor Jesucristo nos permitió evangelizar, hay una congregación hoy en día. Recuerdo a las hermanas Rut de Drost, Falleta del Larsen y Sally Lemons.<br>-<span> Revista Perfiles</span>: ¿Cómo era la forma de ser del hermano Drost y su esposa? ¿Qué recuerda de ellos o de otros misioneros?<br>-<span> Hna. A. R</span>: Era una persona a quien le gustaba mucho el evangelismo. El hermano Larsen una vez vino a Cali a visitar al hermano Saúl, yo vivía en la iglesia y estaba enferma, impuso las manos sobre mí, oró y el Señor me sanó. Eran personas muy sencillas y amigables.<br>-<span> Revista Perfiles</span>: ¿Qué consejo daría a las nuevas generaciones?<br>-<span> Hna. A. R</span>: Deben preocuparse por buscar más a Dios, porque Él se deja encontrar. Si lo dejamos entrar a nuestra vida, Él a través de nosotros hace maravillas, y todo con mucha sinceridad.<br><br>"
+            }
+        }]
     },
     {
         "page": 31,
-        "pageContent": [{}]
+        "pageContent": [{
+            "section": "<h3>MIS AÑOS DORADOS</h3>"
+        }]
     },
     {
         "page": 32,
-        "pageContent": [{ "tittle": "<h1>LECCIÓN MUJER BUENA</h1>" }]
+        "pageContent": [{
+            "section": "<h3>MIS AÑOS DORADOS</h3>",
+            "tittle": "<h1>LECCIÓN MUJER BUENA</h1>"
+        }]
     },
     {
         "page": 33,
-        "pageContent": [{ "tittle": "<h1>MI FE EN ACCIÓN</h1>" }]
+        "pageContent": [{
+            "section": "<h3>MI FE EN ACCIÓN</h3>",
+            "tittle": "<h1>MI FE EN ACCIÓN</h1>"
+        }]
     },
     {
         "page": 34,
-        "pageContent": [{ "tittle": "<h1>VIVIENDO MI PROCESO EN MEDIO DE LA FE</h1>" }]
+        "pageContent": [{
+            "section": "<h3>MI FE EN ACCIÓN</h3>",
+            "tittle": "<h1>VIVIENDO MI PROCESO EN MEDIO DE LA FE</h1>",
+            "author": {
+                "name": "Beatriz Elena Villa",
+                "charge": " Secretaria Nacional Damas Dorcas",
+                "photo": "./photos/BeatrizVilla.jpg",
+                "profilePhoto": "./photos/BeatrizVilla.jpg"
+            },
+            "modal": {
+                "id": "modalPage33",
+                "class": "btn-modal",
+                "tittle": "VIVIENDO MI PROCESO EN MEDIO DE LA FE",
+                "textModal": "<em>“Porque has sido mi socorro, y así en la sombra de tus alas me regocijaré. Está mi alma apegada a ti; tu diestra me ha sostenido”</em> (Salmo 63:7-8).<br><br>Doy gloria a Dios por permitirme compartir con ustedes mi testimonio, un proceso donde Dios ha prolongado mi vida en su infinita misericordia.<br><br><em>“… Con amor eterno te he amado; por tanto, te prolongué mi misericordia”</em> (Jeremías 31:3).<br><br>Soy la hermana Beatriz Elena Villa, entregué mi vida a Cristo hace veintiocho años, los que han sido de gran bendición, porque he experimentado cómo Dios ha tenido cuidado de mi vida. Mi familia está conformada por mi esposo, el Pastor Elkin Betancur, nuestros hijos: Andrés Esteban e Izhar David. He tenido el privilegio de servir al Señor Jesús en su amada Iglesia. A los cuatro años de bautizados, fuimos llamados al santo Ministerio; desde entonces, he venido sirviéndole en su obra con mucho amor y pasión. <em>“Y yo con el mayor placer gastaré lo mío...”</em> (2 Corintios 12:15).<br><br>A los trece años de estar sirviendo al Señor en el santo ministerio, empecé a notar algo extraño en mi cuerpo, y como es natural, como humana sentí temor; pero tomé la decisión de seguir adelante, y cada día que pasaba declaraba sanidad, aferrada a las promesas de Dios. <em>“Es, pues, la FE la certeza de lo que se espera, la convicción de lo que no se ve”</em> (Hebreos 11: 1).<br><br>Fue más fuerte mi confianza en el Señor, que ponerme frente a un espejo y mirar cómo una parte de mi cuerpo se deformaba, pero seguía declarando sanidad Divina en el Nombre del Señor Jesús. Esto sucedió por un año, pero cuando Dios nos permite atravesar procesos con propósitos, no hay nada que lo detenga. Vemos que Lucas 7:11, nos muestra cómo la viuda de Naín pasa por un proceso doloroso; su esposo había muerto y luego su hijo, pero finalmente, ¡vió la gloria de Dios! ¡Una experiencia maravillosa!<br><br>Transcurrido este tiempo Dios me habla a través de su sierva la hermana Faride de Herrera, esposa de pastor. Después que ella ha estado orando cuatro meses por mí, aun sin saber lo que me pasaba, (pero ya Dios lo sabía todo y lo tenía bajo control), Él nos dio la oportunidad de encontrarnos en un evento de esposas de pastores, donde compartimos acerca de este clamor a mi favor. Entendí que debía contarle lo que estaba sucediendo, de inmediato me aconsejó que consultara al médico, a lo que respondí, <em>“siento que estaría dudando del Señor al hacerlo”</em> ; su respuesta fue: <em>“Aunque tengas fe, si Dios lo permite es necesario pasar por un proceso”</em>.<br><br>Fue allí cuando decidí acudir al oncólogo, quien me diagnosticó cáncer. Aunque mi cuerpo tembló de miedo, mi espíritu se regocijó en el Señor y exclamé: “¡doctor, Jesucristo tiene el control!” . El doctor me dice: “ora a tu Dios que el cáncer no haya hecho metástasis, ya que la enfermedad ha tomado su curso y está muy avanzada”.<br><br>Me realizaron biopsia, con resultado positivo de tumor cancerígeno en grado cinco, según la ciencia, muy avanzado, con gran posibilidad de metástasis. Pero el médico se quedó sorprendido, y me expresó que había sucedido algo maravilloso, dado que el tumor estaba “encapsulado” y no había hecho metástasis, algo poco probable en estos casos. Pude ver cómo un milagro había sucedido en mí, y aunque tuve que pasar por tratamientos para eliminar el tumor, el gran amor y misericordia del Señor Jesús, se evidenciaba en mi ser.<br><br>¡Gloria a Dios! quien permitió que este tumor se encapsulara, reiterando que el DIOS ALTÍSIMO a quien sirvo, tiene todo el control, <em> “porque Dios no es injusto para olvidar vuestra obra y el trabajo de amor que habéis mostrado hacia su nombre...” </em>(Hebreos 6:10).<br><br>Viví mi proceso de la mano del Señor Jesucristo, fueron momentos dolorosos en medio de quimioterapias, radioterapias, pero fue una experiencia que enriqueció mi vida. Él estuvo a mi lado siempre, y esta vasija de barro era moldeada por el Alfarero. Tuve momentos de llanto, de dolor, pero también momentos de gozo, al ver su amor y cómo Él me sostenía, y me llevaba en sus brazos, aumentándome las fuerzas como las del búfalo, recordaba su Palabra: <em>“Esta enfermedad no es para muerte, sino para la Gloria de Dios…”</em>  (Juan 11: 4).<br><br>Hermana, si estás pasando por un  proceso en tu vida, vívelo sin renegar, por el contrario, agradece a Dios por lo que estás viviendo y sírvele con todo tu corazón, <em>“…sabiendo que vuestro trabajo en el Señor no es en vano”</em> (1 Corintios 15: 58).  Hoy puedo decir que la victoria obtenida en este maravilloso proceso, ha sido la respuesta de la fe que mi alma depositó en Jesucristo, <em>“Pero sin fe es imposible agradar a Dios; porque es necesario que el que se acerca a Dios crea que le hay…”</em>(Hebreos 11:6).<br><br>Mi gratitud a Dios, a mi esposo e hijos, a la amada Iglesia, por su apoyo incondicional, por su oración a mi favor. <em>“…Al que cree todo le es posible”</em>(Marcos 9:23).<br><br>Por Beatriz Elena Villa. Secretaria Nacional Damas Dorcas<br><br>"
+            }
+        }]
     },
     {
         "page": 35,
-        "pageContent": [{}]
+        "pageContent": [{
+            "section": "<h3>MI FE EN ACCIÓN</h3>"
+        }]
     },
     {
         "page": 36,
-        "pageContent": [{ "tittle": "<h1>BENDECIDAS PARA BENDECIR</h1>" }]
+        "pageContent": [{
+            "section": "<h3>MI FE EN ACCIÓN</h3>",
+            "tittle": "<h1>BENDECIDAS PARA BENDECIR</h1>",
+            "author": {
+                "name": " Julieth Hormiga de Sierra",
+                "charge": "Directora de Finanzas Nacional Damas Dorcas",
+                "photo": "./photos/JuliethHormiga.jpg",
+                "profilePhoto": "./photos/JuliethHormiga.jpg",
+                "id": "tooltipBig"
+            },
+            "textResaltado": {
+                "class": "text7",
+                "p": "¡Cuán grandes promesas y bendiciones hemos recibido de Dios! Por esto es sumamente importante entender, que fuimos bendecidas para bendecir, Dios nos ha llenado, y nos da mandamiento de dar de gracia, lo que hemos recibido de gracia. Mateo 10:8."
+            },
+            "modal": {
+                "id": "modalPage35",
+                "class": "btn-modal",
+                "tittle": "BENDECIDAS PARA BENDECIR",
+                "textModal": "<em>“Y poderoso es Dios para hacer que abunde en vosotros toda gracia, a fin de que, teniendo siempre en todas las cosas todo lo suficiente, abundéis para toda buena obra; como está escrito: “Repartió, dio a los pobres; Su justicia permanece para siempre”</em>(2 Corintios 9:8-9).<br><br>Es hermoso contemplar la misericordia de Dios en la vida nuestra, acordarnos que por su gracia fuimos escogidas para alcanzar la salvación de nuestras almas,<em>“…Hermoseará a los humildes con la salvación”</em> (Salmos 149:4). Pero también, gozar de todas esas bendiciones, que Él por su Espíritu Santo ha derramado en nosotras para este tiempo presente, (su gracia, amor, gozo, paz, seguridad, confianza y libertad) es maravilloso, además de saber que somos hijas suyas.<br><br>Y ¿qué decir de las cosas que nos proporciona a diario para nuestro sustento? Porque Él dijo: <em>“No andéis, pues, preocupados diciendo: ¿Qué vamos a comer?, ¿qué vamos a beber?, ¿con qué vamos a vestirnos?  Que por todas esas cosas se afanan los gentiles; pues ya sabe vuestro Padre celestial que tenéis necesidad de todo eso.”</em> (Mateo 6:31-32 B. de Jerusalén 1975).<br><br>¡Cuán grandes promesas y bendiciones hemos recibido de Dios! Por esto es sumamente importante entender, que fuimos <span>bendecidas para bendecir</span>, Dios nos ha llenado, y nos da mandamiento de dar de gracia, lo que hemos recibido de gracia. Mateo 10:8.<br><br>Es posible que nosotras mismas, no dimensionemos todo lo que Dios ha puesto en nosotras; solo cuando miramos y conocemos, la necesidad y el dolor en que viven aquellas mujeres que sufren sin tener esperanza, y cuando nos identificamos con la necesidad de nuestro prójimo, nos damos cuenta que tenemos mucho para dar.<br><br>En 1 Reyes 17: 8-16, encontramos a una mujer viuda de Sarepta, quien carecía de recursos aun para su propio sustento y el de su hijo, pero ella fue sensible a la necesidad del profeta, y no dudó en compartir con él lo que le quedaba, un puñado de harina y un poco de aceite; y dice la Palabra de Dios, que a esta mujer no le faltó harina ni aceite, hasta que Jehová hizo llover sobre la tierra. Ella abrió su corazón para dar, y el Señor multiplicó lo poco que tenía en sus manos.<br><br>Amada hermana, estamos viviendo tiempos de mucha necesidad espiritual y material, déjate usar por Dios, Él quiere verte actuar movida por su Espíritu, para que entregues palabras de consuelo y esperanza al afligido, para que lleves este mensaje de Salvación a los perdidos y compartas también de las bendiciones materiales recibidas del Señor. ¡Qué bueno es ser sensibles a la necesidad!, Recordando sus hermosas promesas:<br><br><em>«Entonces dirá el Rey a los de su derecha: “Venid, benditos de mi Padre, recibid la herencia del Reino preparado para vosotros desde la creación del mundo. Porque tuve hambre, y me disteis de comer; tuve sed, y me disteis de beber; era forastero, y me acogisteis; estaba desnudo, y me vestisteis; enfermo, y me visitasteis; en la cárcel, y vinisteis a verme.”</em> Entonces los justos le responderán: <em>“Señor, ¿cuándo te vimos hambriento, y te dimos de comer; o sediento, y te dimos de beber? ¿Cuándo te vimos forastero, y te acogimos; o desnudo, y te vestimos?  ¿Cuándo te vimos enfermo o en la cárcel, y fuimos a verte?”</em> Y el Rey les dirá: <em>“En verdad os digo que cuanto hicisteis a unos de estos hermanos míos más pequeños, a mí me lo hicisteis” »</em><br>(Mateo 25:34-40. B. de Jerusalén 1975).<br><br>Por Julieth Hormiga L. Directora de Finanzas Nacional Damas Dorcas<br><br>"
+            },
+            "audio": {
+                "idBtn": "btnAudio35",
+                "id": "audio35",
+                "textAudio": "Escuche este audio",
+                "url": "audio/BendecidasParaBendecir.mp3"
+            }
+        }]
     },
     {
         "page": 37,
-        "pageContent": [{}]
+        "pageContent": [{
+            "section": "<h3>MI FE EN ACCIÓN</h3>"
+        }]
     },
     {
         "page": 38,
-        "pageContent": [{ "tittle": "<h1>LECCIÓN MUJER MALA</h1>" }]
+        "pageContent": [{
+            "section": "<h3>MI FE EN ACCIÓN</h3>",
+            "tittle": "<h1>LECCIÓN MUJER MALA</h1>"
+        }]
     },
     {
         "page": 39,
-        "pageContent": [{ "tittle": "<h1>SALUD EMOCIONAL</h1>" }]
+        "pageContent": [{
+            "section": "<h3>SALUD EMOCIONAL</h3>",
+            "tittle": "<h1>SALUD EMOCIONAL</h1>"
+        }]
     }, {
         "page": 40,
         "pageContent": [{
+            "section": "<h3>SALUD EMOCIONAL</h3>",
             "tittle": "<h1>LA FE COMO ANCLA EN MEDIO DE LA TEMPESTAD</h1>",
             "author": {
                 "name": "Sonia Lucía Balcázar Velasco",
                 "charge": "Vocal Comité Damas Dorcas",
-                "photo": "./pics/profile.png"
+                "photo": "./photos/SoniaBalcázar.jpg",
+                "profilePhoto": "./photos/SoniaBalcázar.jpg"
             },
             "textResaltado": {
                 "class": "text7",
@@ -306,63 +485,197 @@
         }]
     }, {
         "page": 41,
-        "pageContent": [{}]
+        "pageContent": [{
+            "section": "<h3>SALUD EMOCIONAL</h3>"
+        }]
     },
     {
         "page": 42,
-        "pageContent": [{ "tittle": "<h1>ADIÓS A LA ANSIEDAD</h1>" }]
+        "pageContent": [{
+            "section": "<h3>SALUD EMOCIONAL</h3>",
+            "tittle": "<h1>ADIÓS A LA ANSIEDAD</h1>",
+            "author": {
+                "name": "Fernando López Pimiento",
+                "charge": "Segundo Vicepresidente IPUC",
+                "photo": "./photos/FernandoLopez.jpg",
+                "profilePhoto": "./photos/FernandoLopez.jpg"
+            },
+            "modal": {
+                "id": "modalPage41",
+                "class": "btn-modal",
+                "tittle": "ADIÓS A LA ANSIEDAD",
+                "textModal": "Detrás de una espesa barba se escondía el rostro de un médico neurólogo austríaco de origen judío, a quien apodaron <span>padre del psicoanálisis</span>. Se trataba de Sigmund Freud, quien fue el que describió la <span>ansiedad</span> como un estado afectivo desagradable, del que surge la aprehensión, los pensamientos molestos y hasta cambios fisiológicos.<br><br>Sin embargo, fue el Señor Jesús quien muchos siglos antes había abordado el tema, y aún más, la manera de superarla. El planteó la ansiedad como fruto de la falta de confianza en Él y sus promesas, algo que crece, y hace sentir soledad y falta de protección.<br><br>Fue en un sermón que desnudó la ansiedad y la relacionó con el afán ante cosas materiales, como la comida o el vestido, afirmando que la vida es más que el alimento, y el cuerpo más que el vestido.<br><br>Puso como ejemplo las aves del cielo, que no siembran, ni siegan, ni recogen en graneros; y el Señor las alimenta, cuánto más a nosotros que valemos mucho más que ellas.<br><br>Preguntó: -¿Creen ustedes que por preocuparse vivirán un día más?<br><br>Afirmó: -Aprendan de las flores que están en el campo, ellas no trabajan para hacerse sus vestidos.<br><br>Aseveró: -Sin embargo, les aseguro que ni el rey Salomón se vistió tan bien como ellas, aunque tuvo muchas riquezas.<br><br>Comparó: -Si Dios hace tan hermosas a las flores, que viven tan poco tiempo, ¿acaso no hará más por ustedes? <br><br>Exclamó: -¡Veo que todavía <span>no han aprendido a confiar en Dios!</span><br><br>Exhortó: -Ya no se preocupen por lo que van a comer, o lo que van a beber, o por la ropa que se van a poner.<br><br>Diferenció: -Sólo los que no conocen a Dios se preocupan por eso, ustedes tienen como padre a Dios que está en el cielo, y Él sabe lo que ustedes necesitan.<br><br>Determinó que el rasgo característico de un hombre, de una mujer de Dios, es la confianza en Él. La invitación es a correr con paciencia la carrera que tenemos por delante, puestos los ojos en Jesús, el autor y perfeccionador de la fe.<br><br>La única manera de superar el estado de ansiedad es confiando en Dios, como el apóstol Pablo le escribió a nuestros hermanos en Filipo: <em>“Por nada estéis afanosos, sino sean conocidas vuestras peticiones delante de Dios en toda oración y ruego, con acción de gracias” </em> (Filipenses 4:6).<br><br>Los discípulos en la tempestad se atemorizaron y despertaron al Señor, y Él les dijo: <span>“¿Dónde está vuestra fe?”</span><br><br>Ante esa emoción que nos surge  en situaciones de amenaza o peligro, podemos declarar:<br><br><span>La fe en Dios es la única vacuna contra la ansiedad.</span><br><br>Por Fernando López Pimiento. Segundo Vicepresidente IPUC<br><br>"
+            },
+            "audio": {
+                "idBtn": "btnAudio41",
+                "id": "audio41",
+                "textAudio": "Escuche este audio",
+                "url": "audio/AdiósALaAnsiedad.mp3"
+            }
+        }]
     },
     {
         "page": 43,
-        "pageContent": [{}]
+        "pageContent": [{
+            "section": "<h3>SALUD EMOCIONAL</h3>"
+        }]
     },
     {
         "page": 44,
-        "pageContent": [{ "tittle": "<h1>JESUCRISTO BASTA</h1>" }]
+        "pageContent": [{
+            "section": "<h3>SALUD EMOCIONAL</h3>",
+            "tittle": "<h1>JESUCRISTO BASTA</h1>",
+            "author": {
+                "name": "Vivian Flórez Sierra",
+                "charge": "Sin cargo especificado",
+                "photo": "./photos/VivíanFlórez.jpg",
+                "profilePhoto": "./photos/VivíanFlórez.jpg"
+            },
+            "modal": {
+                "id": "modalPage43",
+                "class": "btn-modal",
+                "tittle": "JESUCRISTO BASTA",
+                "textModal": "<em>“y vosotros estáis completos en él, que es la cabeza de todo principado y potestad” </em>(Colosenses 2:10).<br><br>Un día, hace un año y medio, mi mundo cambió de repente. Mi esposo falleció repentinamente y mi vida se tornó muy diferente. El choque inicial fue bastante fuerte, y por unos meses, probablemente tres, no estoy segura, estuve bastante afligida, y dependiendo de la oración y compañía de mis hijos, familia, hermanos de la iglesia y amigos.<br><br>En el transcurso de los meses siguientes, la situación se volvió más clara y tuve que lidiar con muchas nuevas realidades, incluyendo aprender a estar sola, aun cuando mi hijo vivía conmigo. Me di cuenta, por primera vez en veintinueve años, que ya no era parte de una pareja, ahora no había ningún compañero conmigo en la casa, nadie con quien hablar, con quién compartir, con quien discutir, con quien reír, con quien planificar el futuro: El próximo viaje juntos. Me sentí ¡sola!<br><br>También, tuve que adaptarme a la nueva casa, ya que me tuve que mudar y vender algunas cosas, porque ya no cabían en el nuevo lugar. Los sentimientos de soledad empezaron a llegar más cerca, como olas de pánico. Esta sensación era terrible para mí, la detestaba y deseaba que acabara lo más pronto posible. Tenía que enfrentarlos, pero, ¿Cómo?<br><br>Me di cuenta que la autocompasión y el dolor, me invadían al pensar: ¿Por qué esto me pasó a mí? ¿Por qué los demás se ven tan ocupados, como para estar conmigo en estos momentos? Entonces, analicé que la soledad, ese estado de la mente, me estaba haciendo apartar del deseo de salir adelante.   Pero, como es precisamente un estado mental, pensé: <em>“puedo resistirme a tales pensamientos y negarles el acceso a mi corazón”</em> , entonces hice lo que está escrito en 2 Corintios 10:5, la segunda parte del versículo: <em>“…y llevando cautivo todo pensamiento a la obediencia a Cristo”.</em><br><br>Me acogí a la Palabra de Dios, especialmente a sus promesas, con versículos como:<em>“Padre de huérfanos y defensor de viudas Es Dios en su santa morada”</em>(Salmos 68:5), <em> “Por nada estéis afanosos…”</em> (Filipenses 4:6), y otros como: <em>“Dad gracias en todo, porque esta es la voluntad de Dios para con vosotros en Cristo Jesús”</em> (1 Tesalonicenses 5:18).<br><br>Entonces, empecé a agradecerle a Dios por toda mi preciosa familia, hijos, nueras, mi nieta, amigos, hermanos en Cristo, mi trabajo. Agradeciéndole al Señor, pido por todos ellos, que los bendiga, los ayude y los guarde. He experimentado que cuando empiezo a agradecer, retomo mi lucha, alejo los pensamientos negativos, me vuelvo más fuerte, más valiente para enfrentar el día a día y entonces, la soledad al final tiene que huir y me quedo con la gratitud de que el Señor está conmigo.<br><br>También me refugié en la oración, porque sentía que necesitaba estar en la presencia del Señor más que nunca, y en un momento de oración en la madrugada, escuché una canción que llenó mi corazón: Jesucristo basta.  Esta frase se volvió un ícono en mi vida, yo no necesito otra cosa que mi gran Dios y Salvador Jesucristo, porque con Él lo tengo todo. Él sació mi corazón, y tal como soy, Él me ama, fui alcanzada por su amor; con brazos abiertos me recibe y puedo acercarme a Él sin temor. Por esto puedo decir sin lugar a dudas, <em>“Él es el agua que, al beber, nunca más tendré sed: ¡Jesucristo basta!”. </em> Ahora puedo confiar y descansar en Él, tengo un futuro, una esperanza fiel, porque a mí no me falta nada, estoy unida a Dios quien reina sobre toda autoridad.  Mi fe ha crecido, sujeta a lo que me ofrece el Señor, comprendiendo y abrazando la colosal magnitud de Jesucristo, lo cual me ha hecho ver la vida con nuevos ojos.<br><br>Ya no procuro buscar respuestas fuera de Jesucristo, su Palabra las tiene todas; en ella, hallo la sabiduría necesaria para vivir esta vida con firmeza. Las cosas de Dios son perfectas. Jesucristo lo es todo.<br><br>Todo lo demás, es insuficiente… ¡JESUCRISTO BASTA!<br><br>Por Vivian Flórez Sierra.<br><br>"
+            }
+        }]
     },
     {
         "page": 45,
-        "pageContent": [{}]
+        "pageContent": [{
+            "section": "<h3>SALUD EMOCIONAL</h3>"
+        }]
     },
     {
         "page": 46,
-        "pageContent": [{ "tittle": "<h1>SECCIÓN VIUDAS</h1>" }]
+        "pageContent": [{
+            "section": "<h3>SALUD EMOCIONAL</h3>",
+            "tittle": "<h1>SECCIÓN VIUDAS</h1>"
+        }]
     },
     {
         "page": 47,
-        "pageContent": [{ "tittle": "<h1>EVANGELISMO Y MISIONES</h1>" }]
+        "pageContent": [{
+            "section": "<h3>EVANGELISMO Y MISIONES</h3>",
+            "tittle": "<h1>EVANGELISMO Y MISIONES</h1>"
+        }]
     },
     {
         "page": 48,
-        "pageContent": [{ "tittle": "<h1>REFUGIO SEGURO EN MEDIO DE LA CRISIS</h1>" }]
+        "pageContent": [{
+            "section": "<h3>EVANGELISMO Y MISIONES</h3>",
+            "tittle": "<h1>REFUGIO SEGURO EN MEDIO DE LA CRISIS</h1>",
+            "author": {
+                "name": "Ivette Torres",
+                "charge": "Esposa de Misionero",
+                "photo": "./photos/IvetteTorres.jpg",
+                "profilePhoto": "./photos/IvetteTorres.jpg"
+            },
+            "modal": {
+                "id": "modalPage47",
+                "class": "btn-modal",
+                "tittle": "REFUGIO SEGURO EN MEDIO DE LA CRISIS",
+                "textModal": "La palabra <span>refugio</span> evoca imágenes de cuevas, montañas, lugares encerrados y aislados; lejos del alcance de vientos, relámpagos, de condiciones adversas del clima. También nos hace pensar, en las fortalezas militares construidas por sociedades a través de la historia, para proteger a sus ciudadanos y bienes de bombas u otros ataques del enemigo.<br><br>Por otra parte, en la Biblia hay una escena que me impacta particularmente: El Señor Jesús caminando sobre las aguas, en medio de vientos adversos y olas violentas. Siendo el Creador con autoridad para detener la borrasca, decide caminar sobre el agua tempestuosa, expuesto a las inclemencias del tiempo. Pienso a menudo que estaba disfrutando de su creación; como muchos de nosotros, siendo niños salíamos a jugar bajo la lluvia.  La figura del Señor Jesús, se impone caminando sobre las circunstancias adversas con paso seguro, confiado, en paz y enfocado en el objetivo.<br><br>En esta escena no hay un lugar de refugio sino una persona: El Señor Jesús, a este Refugio quiero referirme. Estar escondidos en Cristo nos proporciona la misma seguridad y paz. Él es capaz de caminar sobre cualquier circunstancia y nos invita, como lo hizo con Pedro, que con fe decidamos caminar sobre ellas.<em></em>“Estas cosas les he hablado para que en mí tengan paz.  En el mundo tendrán aflicción; pero confíen, <span>yo he vencido al mundo</span>” (Juan 16:33 RVC). De ahí que, estar escondido en Él, el Refugio seguro, representa creer y confiar en su Palabra, estar abandonados a su voluntad, juicio, sabiduría, bondad y gracia.<br><br>Hay ventanas en la vida de hombres y mujeres, en la Biblia, que nos proporcionan perspectivas sobre este tema. Los evangelios relatan el encuentro de una mujer que fue sorprendida en el acto de adulterio; repentinamente ella se ve envuelta por la violencia de una multitud, la condenación de la ley, la vergüenza de su pecado, en esa circunstancia de crisis la conducen a Jesús. En el contexto teológico de su experiencia, ella merecía condenación y castigo. Hasta entonces su fe había sido construida sobre la ley. Ahora, su vida cambia cuando escucha el mensaje de Cristo: <em>“… Tampoco yo te condeno. Vete, y no peques más”</em>(Juan 8:11 RVC). Su crisis se acabó cuando el Maestro declara: <em>“… Aquel de ustedes que esté sin pecado, que le arroje la primera piedra”</em> (Juan 8:7 RVC). <span>La fe fundada en el mensaje de la gracia, disipa la crisis</span>.<br><br>Por otra parte, el profeta Elías del Antiguo Testamento, también atraviesa una crisis cuando la reina lo busca para acabar con su vida; sin embargo, su problema no era Jezabel sino el estado de su fe. Cuando Dios le habla, no le promete defenderlo del ataque de la reina, ni tampoco de enviar ángeles que pelearan a su favor. El apóstol Pablo explica la respuesta de Dios diciendo: <em> “¿Y cuál fue la respuesta divina? «Me he reservado siete mil hombres, que no han doblado la rodilla delante de Baal»”</em>  (Romanos 11:4. RVC). La crisis de Elías es que había perdido de vista la visión Divina.  Qué fácil es pensar que nuestra experiencia con Dios nos aporta una visión clara de los eventos, sin embargo, aun la fe madura es desafiada y sufre crisis. El Señor Jesús sigue siendo el Refugio seguro. <span>La fe fundada en la visión Divina, disipa la crisis</span>.<br><br>En contraste a ellos, vemos a María la madre de Jesús, quien en respuesta al anuncio del nacimiento milagroso del bebé, responde:<em> “…Yo soy la sierva del Señor. ¡Cúmplase en mí lo que has dicho!...”</em> (Lucas 1:38 RVC.) Ella se enfrenta al peligro de perder su prometido José, a sufrir el castigo que la ley imponía a madres solteras, a las murmuraciones sobre su reputación a lo largo de su vida, al exilio para proteger su vida y la de su familia siendo una madre joven, a la crianza de un niño que ella no comprendería ni conocería completamente en toda su vida, al dolor de verle en un madero, como se lo había anunciado el profeta Simón al conocerla: <em>“… a ti te traspasará el alma como una espada”</em>(Lucas 2:35 RVC) ¡Una vida llena de circunstancias, pero libre de crisis! ¿Por qué? La decisión estaba tomada: <em>“Hágase tu voluntad”.</em><span> La fe fundada en la voluntad de Dios, evita la crisis.</span><br><br><span>“Yo he vencido al mundo”:</span>¡Esta es una declaración poderosa! ¿Habrá algún otro refugio que proporcione mayor seguridad que este? Pablo expresa la seguridad e invencibilidad que aporta el Señor Jesús, como Refugio en nuestra vida, cuando exclama: <em>“nada podrá separarnos del amor de Cristo”</em>. Y es que, ese amor, como lo dice el apóstol:<em>“Todo lo sufre, todo lo cree, todo lo espera, todo lo soporta”</em> (1 Corintios 13:7 RVC). Este nos llevará a superar cualquier crisis. Jesucristo es nuestro Refugio seguro.<br><br>Por Ivette Torres. Esposa de Misionero <br><br>"
+            },
+            "audio": {
+                "idBtn": "btnAudio47",
+                "id": "audio47",
+                "textAudio": "Escuche este audio",
+                "url": "audio/RefugioSeguroenMediodelaCrisis.mp3"
+            }
+        }]
     },
     {
         "page": 49,
-        "pageContent": [{}]
+        "pageContent": [{
+            "section": "<h3>EVANGELISMO Y MISIONES</h3>"
+        }]
     },
     {
         "page": 50,
-        "pageContent": [{ "tittle": "<h1>JESÚS FUENTE DE AGUA VIVA</h1>" }]
+        "pageContent": [{
+            "section": "<h3>EVANGELISMO Y MISIONES</h3>",
+            "tittle": "<h1>JESÚS FUENTE DE AGUA VIVA</h1>",
+            "author": {
+                "name": "Vicente Arango Varela",
+                "charge": "Director Misiones Nacionales IPUC",
+                "photo": "./photos/VicenteArango.jpg",
+                "profilePhoto": "./photos/VicenteArango.jpg"
+            },
+            "modal": {
+                "id": "modalPage41",
+                "class": "btn-modal",
+                "tittle": "JESÚS FUENTE DE AGUA VIVA",
+                "textModal": "<em>“En el último y gran día de la fiesta, Jesús se puso en pie y alzó la voz, diciendo: Si alguno tiene sed, venga a mí y beba”</em>(Juan 7:37).<br><br>El agua es el líquido vital, ya que de él depende la vida y es primordial para mantener en equilibrio el organismo humano. Este representa el 75% del peso corporal de un adulto, y el organismo elimina aproximadamente de 2.5 a 3 litros de agua al día. Todos los seres, incluyendo los vegetales, dependen del agua para sobrevivir. La Biblia dice: <em>“… la tierra, que proviene del agua y por el agua subsiste”</em> (2 Pedro 3:5).<br><br>Todos sabemos que Israel fue un pueblo nómada y que gran parte de su peregrinar transcurrió en desiertos donde la escasez de este líquido lo llevó a vivir episodios cruciales. Dios, sin embargo, lo sustentó realizando grandes proezas como el milagro sucedido con la peña en Horeb, donde Dios hizo brotar abundante agua fresca, calmando la sed de un pueblo de más de seiscientas mil personas y sus ganados, Éxodo 17:1-7.   Agar, errante por el desierto experimentó la ansiedad; pues el odre se secó mientras su hijo era presa de los estertores de la muerte, ella aterrorizada ve como su hijo va entrando en una agonía lenta y desesperante. Considerando que el final era inminente, se alejó para no ver el dramático final de Ismael y totalmente vencida se aleja para no mirar, según pensó ella, cuando el muchacho muriera; pero Dios muestra su fidelidad interviniendo en medio del caos y abre los ojos de la mujer, oscurecidos por la desesperación, para que vea la fuente que Él ha dispuesto para salvación en ese instante.<br><br>En las Sagradas Escrituras muchas verdades son representadas tomando como ejemplo el agua; David exclamó: <em>“Como el ciervo brama por las corrientes de las aguas, Así clama por ti, oh Dios, el alma mía. Mi alma tiene sed de Dios, del Dios vivo…”</em> (Salmos 42:1-2). Note usted cómo el salmista representa la sed de Dios, de su presencia, haciendo referencia a un ciervo que brama con angustia en medio del calor abrasador del desierto, a punto de perecer, buscando con desesperación calmar su intensa sed.  En (Salmos 63:1) leemos: <em>“…Mi alma tiene sed de ti, mi carne te anhela, en tierra seca y árida donde no hay aguas”.</em><br>También el agua es tipo de la limpieza que Dios hace en el creyente a través de la enseñanza y exhortación por medio de la Palabra. <em> “Maridos, amad a vuestras mujeres, así como Cristo amo a la iglesia, y se entregó así mismo por ella, para santificarla, habiéndola purificado en el lavamiento del agua por la palabra”</em> (Efesios 5:25-26).<br><br>De quienes han dejado el camino recto y se han extraviado en pos de las riquezas indebidas, el Señor compara sus vidas estériles como <em>“…fuentes sin agua, y nubes empujadas por la tormenta; para los cuales la más densa oscuridad está reservada para siempre”</em> (2 Pedro 2:17). <em>“Estos ignoran voluntariamente, que en el tiempo antiguo fueron hechos por la palabra de Dios los cielos, y también la tierra, que proviene del agua y por el agua subsiste”</em> (2 Pedro 3:5). Es bien importante notar que Dios ha dado el agua como principal recurso; todo lo que tiene vida en la tierra subsiste gracias al agua, sin ella sería imposible vivir. Las misiones científicas a marte tienen como objetivo principal hallar agua, pues este sería el indicio inequívoco de la existencia de vida en ese planeta.<br><br>Pero vayamos un poco más al fondo del significado del agua en cuanto a la relación preciosa con Dios. La Biblia nos habla en Juan 4, de una de las escenas más vívidas del evangelismo desarrollado por Jesús.  Una mujer va, como seguro lo hacía de costumbre, a sacar agua; pero al llegar al pozo, allí le estaba esperando quien para ella de entrada era un extraño, un judío más. <em>“Mujer, dame de beber”</em> en tono amable el Señor le pide, pero ella lo increpa: <em> “… ¿Cómo tú, siendo judío, me pides a mí de beber, que soy mujer Samaritana? Porque judíos y Samaritanos no se tratan entre sí”.</em>Jesús no se trenza en discusiones xenófobas, pues su interés de amor es salvar un alma. <em>“…Si conocieras el don de Dios, y quién es el que te dice: Dame de beber; tú le pedirías, y él te daría agua viva”;</em> y prosigue… <em>“Cualquiera que bebiere de esta agua, volverá a tener sed; mas el que bebiere del agua que yo le daré, no tendrá sed jamás; sino que el agua que yo le daré será en él una fuente que salte para vida eterna”.</em> Todos sabemos cómo aquella mujer fue impactada de manera tal por nuestro buen Dios, al punto que una vez descubre quién es Jesús y el don de su Espíritu, inquiere con ansiedad queriendo poseer aquella fuente inagotable: <em>“Señor, dame esa agua, para que no tenga yo sed, ni venga aquí a sacarla”.</em><br><br>El desenlace de este suceso ya lo conocemos: La mujer dejando el cántaro fue y presentó a Cristo ante los hombres de la ciudad. Son muchos los casos en que el agua es representada analógicamente; por ejemplo, cuando <em>“En el último y gran día de la fiesta, Jesús se puso en pie y alzó la voz, diciendo: Si alguno tiene sed, venga a mí y beba”</em> (Juan 7:37). El escritor sagrado afirmó que Jesús dijo esto refiriéndose al Espíritu Santo que recibirían los que creyesen en Él. Indudablemente tener a Cristo en nuestra vida, es tener la fuente de vida.<br><br>Por Vicente Arango Varela. Director Misiones Nacionales IPUC<br><br>"
+            }
+        }]
     },
     {
         "page": 51,
-        "pageContent": [{}]
+        "pageContent": [{
+            "section": "<h3>EVANGELISMO Y MISIONES</h3>"
+        }]
     },
     {
         "page": 52,
-        "pageContent": [{ "tittle": "<h1>VIVENCIAS DE LA OBRA MISIONERA</h1>" }]
+        "pageContent": [{
+            "section": "<h3>EVANGELISMO Y MISIONES</h3>",
+            "tittle": "<h1>VIVENCIAS DE LA OBRA MISIONERA</h1>",
+            "author": {
+                "name": "Zoraida Osorio",
+                "charge": "Esposa de Misionero en Bélgica",
+                "photo": "./photos/ZoraidaOsorio.jpg",
+                "profilePhoto": "./photos/ZoraidaOsorio.jpg"
+            },
+            "modal": {
+                "id": "modalPage51",
+                "class": "btn-modal",
+                "tittle": "VIVENCIAS EN LA OBRA MISIONERA",
+                "textModal": "<em>“Doy gracias al que me fortaleció, a Cristo Jesús nuestro Señor, porque me tuvo por fiel, poniéndome en el ministerio” (1 Timoteo 1:12).</em><br><br>Es por su misericordia y amor, que Él nos ha tenido en sus propósitos. Son ya veinticuatro años, que por su inefable bondad nos ha llamado a su ministerio; aunque sirviéndolo, hace cuarenta y tres años, desde que le entregué mi vida a Cristo.<br><br>Por la gracia de Dios, hace ocho años Él inició con nosotros un propósito mayor. Y digo mayor, por los retos a los cuales nos enfrentábamos; era el llamado al campo misionero, el cuál no habíamos contemplado, o más bien lo veíamos demasiado grande para nosotros. Pero fue algo directamente de parte de Él hacia nosotros, haciéndolo con mi esposo y al mismo tiempo conmigo, luego con mis hijos que eran muy jóvenes (veintiún y diecisiete años). Fue una decisión muy dura, pero seguros de que obedecer a Dios es lo que nos trae grandes bendiciones.<br><br>Entramos en oración y ayuno durante un año, por confirmación del plan de Dios para con nosotros. Fueron muchas las situaciones vividas durante ese año, mientras nos entrevistaban y se desarrollaba el proceso de documentación: <br><br> - El hijo mayor no podía irse, porque el país (Bélgica) no recibía hijos mayores de dieciocho años. ¡Oh Dios! Él deseaba irse con nosotros al campo misionero.<br>- El segundo hijo estaba a punto de cumplir los dieciocho años, y todavía no nos respondían o confirmaban de la embajada, el permiso para entrar.<br>- Dejar a mis padres y abuela de quienes estaba siempre pendiente.<br><br>Cosas fuertes pasaron durante ese año de proceso, antes de salir al campo misionero.<br><br>Otra situación que viví, es que, en Bélgica ¡se hablan tres idiomas! Yo había tenido años atrás un derrame cerebral y había muerto; solo por gracia y misericordia de Dios, Él me devolvió la vida, en consecuencia, se me dificulta aprender temas nuevos que involucren mucha información.<br><br>Solo y por la fe le dije: “Señor, te entrego mi hijo mayor como lo hizo Abraham con Isaac, sé que me lo guardarás y también bendecirás su vida” , y hasta aquí, así Dios lo ha hecho. A mis padres y abuela, Él siempre ha cuidado y ha provisto las personas para que estén atentos a ellos. Mi hijo menor cumplió los dieciocho años estando todavía en Colombia, y Dios nos permitió salir con él y llegar aquí con nosotros. En todo y por todo, he visto la mano de Dios obrando a nuestro favor.<br><br>Con el otro reto al cual me enfrentaba, los idiomas, lloré y clamé a mi Señor Jesús; pero desde Colombia, Dios me hizo ver a Moisés una vez más, él dijo: “No se hablar” Y El Señor puso las personas adecuadas para hablar por él. A Josué, el Señor le dijo: <em>“Mira que te mando que te esfuerces y seas valiente; no temas ni desmayes, porque Jehová tu Dios estará contigo en donde quiera que vayas”</em> (Josué 1:9).<br><br>En el tiempo que nos quedamos mi hijo menor y yo en Colombia, mientras mi esposo en Bélgica esperaba para la reagrupación familiar, en la congregación donde asistí, encontré una cartelera que decía: ¡Dios no busca personas capacitadas, Él capacita a los que elige!<br><br>Fue el momento donde más me derretí en su presencia, lo que era la duda para mí, también lo dejé en sus manos y le dije: <em>“Señor, si así lo deseas, tú iras delante y no me dejarás avergonzada”</em>  Así lo ha hecho, he podido ir aprendiendo dos de los idiomas (francés y neerlandés). Cuando llegamos a Bélgica intenté aprenderlos yendo a la escuela, pero enfermé demasiado y me tocó retirarme (no podía dormir, todo el tiempo mi mente se llenaba y me confundía con lo que nos enseñaban, mi cabeza era como una bomba de agua y no podía hacer nada). Le dije: “Señor, no me has enviado a esto, por favor solo haz un milagro”.<br><br>Hoy por la gracia de Dios estudio en casa y lo maravilloso es que puedo comprender lo que las personas me dicen en otro idioma, y aunque no hable a la perfección, ellos me comprenden lo que les quiero decir. <br><br>Hubo un momento (entre otros), cuando mi esposo estaba dirigiendo y predicando en francés y no había quien le tradujera al español; llegó un impulso sobre mí y empecé a traducir al español de una manera fluida. ¡Gloria a Dios! <br><br>A través de WhatsApp puedo también compartir y aconsejar, a las hermanas y amigas que no hablan español, Dios también está obrando en ellas y están aprendiendo el español.<br><br>Sólo puedo decir: ¡Gracias Señor Jesucristo! Me sigues mostrando que siempre estás delante y detrás de nosotros. ¡Gloria a Dios!<br><br>Por Zoraida Osorio. Esposa de Misionero en Bélgica<br><br>"
+            },
+            "audio": {
+                "idBtn": "btnAudio51",
+                "id": "audio51",
+                "textAudio": "Escuche este audio",
+                "url": "audio/AudioVivenciasenlaObraMisionera.mp3"
+            }
+        }]
     },
     {
         "page": 53,
-        "pageContent": [{}]
+        "pageContent": [{
+            "section": "<h3>EVANGELISMO Y MISIONES</h3>"
+        }]
     }, {
 
         "page": 54,
-        "pageContent": [{ "tittle": "<h1>TU ME ELEGISTE A MI</h1>" }]
+        "pageContent": [{
+            "section": "<h3>EVANGELISMO Y MISIONES</h3>",
+            "tittle": "<h1>TU ME ELEGISTE A MI</h1>",
+            "author": {
+                "name": " Hortencia de Valencia",
+                "charge": "Esposa de Misionero Distrito No5",
+                "photo": "./photos/HortenciaCorrea.jpg",
+                "profilePhoto": "./photos/HortenciaCorrea.jpg"
+            },
+            "modal": {
+                "id": "modalPage53",
+                "class": "btn-modal",
+                "tittle": "TU ME ELEGISTE A MI",
+                "textModal": "<span>“Te he puesto por luz para las naciones, a fin de que lleves mi salvación hasta los confines de la tierra” (Hebreos 13:47). </span><br><br>Mi saludo en el Nombre del Señor Jesús, soy la hermana Hortensia Correa, esposa del pastor misionero, José Luis Valencia; por la gracia del Señor tenemos veinte años de casados y dieciocho años apoyándolo  en el ministerio.  De esta unión Dios nos ha regalado una hija, Isabella Valencia de catorce años.<br><br>Hoy recuerdo cuando mi esposo y yo, fuimos llamados a servir en la obra misionera del sur de Cali. Enfrentándonos a nuevos desafíos, que a veces nos hacían sentir como Moisés: Inferiores a los demás, incapaces, insuficientes; en ese momento noté que no existía nada especial en mí humanidad, en ella solo veía las barreras sociales, económicas, culturales y religiosas a las que me enfrentaba, pero con una certeza en lo que Él nos dice: <em> “No me elegisteis vosotros a mí; sino que yo os elegí a vosotros; y os he puesto para que vayáis y llevéis fruto, y vuestro fruto permanezca; para que todo lo que pidiereis al Padre en mi nombre; Él os lo dé”</em>(Juan 15:16.)<br><br>Aunque en el momento del llamado a servir, la iglesia ya tenía ochenta años de evangelización en Colombia, no habíamos avanzado en este sector del Sur de Cali. Me pregunté entonces: ¿Cómo llegar a ellos?, ¿cómo, sí las viviendas estaban tan amuralladas, si los círculos sociales eran tan cerrados y la desconfianza tan fuerte?, ¿cómo podríamos cumplir con la gran comisión? Eran tantos interrogantes.<br><br>Hablar de la experiencia del Espíritu Santo era algo que ellos nunca habían entendido, hablar que Jesucristo es Dios manifestado en carne, era incomprensible; hablar de la Santidad en el hogar era una misión imposible, y hablar de transformación de las adicciones, era algo casi fantasioso.<br><br>En medio de todos estos interrogantes entendí que:<em> “El obedecer es mejor que los sacrificios”.</em>Cuando nos enfrentamos a algo incierto, pero en el Señor, tenemos la certeza de que Él nos llamó y envió, por lo tanto, Él tiene control total. Confirmé que cuando el Evangelio es predicado, la Biblia me dice que es creído en el mundo, y lo estamos viviendo, se necesita tener la sana semilla que entra al ser humano y discierne las intenciones del corazón, y quebranta y derriba todo orgullo.<br><br>Para la gloria de Dios, hoy ya son cuatro años en la experiencia misionera en el sur de Cali, llevando la valiosa semilla del Evangelio, que da libertad, que transforma, que llena de gozo, paz y esperanza la vida humana. ¡Qué labor más hermosa! Ha sido todo un honor. Es la experiencia que me confirma cada día que para Dios no hay nada imposible. Hemos sentido ese respaldo de Dios, obrando de maneras sorprendentes.<br><br>No hay nada más impactante y fascinante, que saber que eres parte del plan de Dios para el cambio, y que la luz de Jesucristo, del Evangelio de verdad, está alumbrando en el sur de esta ciudad; solo porque Él se enamoró de esta población y no quiere que ninguno perezca, sino que todos sean salvos.<br><br>Muchas veces creemos que estas personas a las que llamamos “gente de bien”, están rodeados de privilegios; entonces, ¿por qué debería pensar en ellos? A ellos no les falta nada… Y por este pensamiento, a veces les negamos la oportunidad de escuchar las verdades del Evangelio, olvidando que las riquezas materiales solo dan satisfacciones banales y superficiales, pero la riqueza del Evangelio es la que da verdadera satisfacción al alma. En estos sectores hay una profunda pobreza en este sentido, la necesidad es demasiada.<br><br>Se necesita de las oraciones que tú haces desde tu cuarto secreto y desde cada congregación, cuando se ora por las misiones en todo lugar. Hemos sentido ese respaldo de Dios obrando en maneras sorprendentes, y esto apenas inicia, pero sé que en el Nombre de Jesús viene un poderoso avivamiento, porque estamos a las puertas de la venida de nuestro Señor Jesucristo y este Evangelio será predicado en todas las naciones, y entonces vendrá el fin.<br><br><span>Por Hortencia de Valencia. Esposa de Misionero Distrito No5</span><br><br>"
+            },
+            "audio": {
+                "idBtn": "btnAudio53",
+                "id": "audio53",
+                "textAudio": "Escuche este audio",
+                "url": "audio/TúmeElegisteaMi.mp3"
+            }
+        }]
     },
     {
         "page": 55,
-        "pageContent": [{}]
+        "pageContent": [{
+            "section": "<h3>EVANGELISMO Y MISIONES</h3>"
+        }]
     },
     {
         "page": 56,

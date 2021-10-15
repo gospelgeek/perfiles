@@ -34,9 +34,9 @@ function createHtml(pageContent) {
                             $('<div/>', { 'class': 'containerTooltip' }).append(
                                 $('<p/>', {}).html('<span>Escrito por: </span>' + jsonData.name),
                                 $('<img/>', { 'src': jsonData.photo, 'class': 'photo' }),
-                                $('<span/>', { 'class': 'tool tooltiptext' }).append(
-                                    $('<img/>', { 'src': jsonData.photo, 'class': 'photo' }),
-                                    $('<p/>', {}).html(jsonData.name + '<br>' + jsonData.charge)))))
+                                $('<span/>', { 'id': jsonData.id, 'class': 'tooltiptext' }).append(
+                                    $('<div/>', { 'class': 'contentPhoto' }).append($('<img/>', { 'src': jsonData.profilePhoto, 'class': 'profilePhoto' })),
+                                    $('<p/>', { 'class': 'textAuthor' }).html(jsonData.name + '<br>' + jsonData.charge)))))
                     break;
 
                 case 'section':
@@ -70,13 +70,23 @@ function createHtml(pageContent) {
 
                 case 'audio':
                     jsonData = region.audio;
-                    struct[pos] = element.append($('<div/>', { 'class': jsonData.class }).append(
-                        $('<em/>').text(jsonData.textAudio),
-                        $('<audio/>', {
-                            'controls': 'true',
-                            'class': 'audio'
+
+                    console.log(jsonData.id + ' ' + jsonData.idBtn);
+                    struct[pos] = element.append(
+                        $('<a/>', {
+                            'href': '#',
+                            'onclick': 'mostrarAudio(' + jsonData.id + ',' + jsonData.idBtn + ')',
+                            'id': jsonData.idBtn,
+                            'class': 'audioBtnLink'
                         }).append(
-                            $('<source/>', { 'src': jsonData.url }))))
+                            $('<img/>', { 'class': 'imgAudio', 'src': './pics/escucharAudio.png' })),
+                        $('<audio/>', {
+                            'id': jsonData.id,
+                            'controls': 'true',
+                            'class': 'audioPage'
+                        }).append(
+                            $('<source/>', { 'src': jsonData.url }))
+                    )
                     break;
 
                 case 'video':
@@ -104,6 +114,21 @@ function createHtml(pageContent) {
                                 'src': './pics/Group 4.png'
                             }))))
                     break;
+
+                case 'videoPrueba':
+                    jsonData = region.videoPrueba;
+                    struct[pos] = element.append(
+                        $('<iframe/>', {
+                            width: '560',
+                            height: '315',
+                            src: 'https://www.youtube.com/embed/' + jsonData.idSrc,
+                            title: 'YouTube video player',
+                            frameborder: '0',
+                            allow: 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture',
+                            allowfullscreen: true
+                        })
+                    )
+                    break
 
                 case 'wordsGame':
                     struct[pos] = element.append($('<div/>', { 'class': 'div-words' }).html("<div id='puzzle'> </div>" +

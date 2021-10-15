@@ -231,26 +231,16 @@ body {
 }
 
 
-/*Page 2*/
+/*Boton audio*/
 
-.flipbook .p2 {
-    position: relative;
-    width: 100%;
+.imgAudio {
+    width: 28%;
+    margin-left: 28px !important;
+    height: 52px;
 }
 
-.btn-video {
-    text-align: center;
-    margin-top: 60%;
-}
-
-.imgVideo {
-    width: 25%;
-}
-
-.p2 .close-modal {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+.audioPage {
+    margin-left: 28px;
 }
 
 .modal a {
@@ -260,29 +250,6 @@ body {
 
 
 /*Page 3*/
-
-.flipbook .p3 {
-    position: relative;
-    width: 100%;
-}
-
-.audioContent {
-    width: 50%;
-    position: absolute;
-    right: 8%;
-    top: 10%;
-}
-
-.audioContent em {
-    width: 100%;
-    font-size: 1.1vw;
-    margin-bottom: 10px;
-}
-
-.audioContent audio {
-    width: 80% !important;
-    display: block;
-}
 
 .btn-modal {
     margin: 0;
@@ -777,8 +744,8 @@ span {
 }
 
 .photo {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
 }
 
 .tooltip {
@@ -795,10 +762,16 @@ span {
     align-items: center;
 }
 
+.contentPhoto {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
 .tooltip div p {
     margin: 0;
     font-size: 16px;
-    margin-right: 10px;
+    padding: 10px;
 }
 
 .tooltiptext {
@@ -811,18 +784,22 @@ span {
     padding: 5px 0;
     position: absolute;
     z-index: 1;
-    bottom: -440%;
+    bottom: -715%;
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
     transition: opacity 0.3s;
 }
 
+.tooltipBig {
+    bottom: -770% !important;
+}
+
 .tooltip div .tooltiptext::after {
     content: "";
     position: absolute;
     transform: rotate(179deg);
-    top: -22%;
+    top: -8%;
     left: 49%;
     margin-left: -5px;
     border-width: 10px;
@@ -859,6 +836,15 @@ span {
     border-color: #555 transparent transparent transparent;
 }
 
+.profilePhoto {
+    width: 46%;
+    height: 150px;
+}
+
+.photo {
+    border-radius: 30px;
+}
+
 .tooltip div:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
@@ -869,11 +855,23 @@ span {
     opacity: 1;
 }
 
+
+/*Tittlr of the section*/
+
 .div-section {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
     margin-right: 50px;
+}
+
+.odd .div-section {
+    justify-content: flex-end;
+}
+
+.even .div-section {
+    justify-content: flex-start;
+    margin-right: 0;
+    margin-left: 30px;
 }
 
 .name-section {
@@ -896,4 +894,9 @@ span {
 .bx-book-reader {
     font-size: 26px;
     padding: 5px;
+}
+
+.centerSpan {
+    display: flex;
+    justify-content: center;
 }
