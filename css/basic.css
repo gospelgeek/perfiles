@@ -243,13 +243,13 @@ body {
     margin-left: 28px;
 }
 
+
+/*Modal*/
+
 .modal a {
     padding: 0px 10px;
     float: right;
 }
-
-
-/*Page 3*/
 
 .btn-modal {
     margin: 0;
@@ -275,9 +275,12 @@ body {
     overflow-y: auto;
     height: 450px;
     padding: 0 20px;
+}
+
+.modal-p p {
     font-size: 15px;
-    text-align: justify;
     line-height: 22px;
+    text-align: justify;
 }
 
 
@@ -339,11 +342,6 @@ body {
 
 tr .fila-thum td {
     padding-bottom: 10px;
-}
-
-.fila-thum .page-1 {
-    float: right;
-    padding-right: 5px;
 }
 
 .pag {
@@ -414,6 +412,7 @@ tr .fila-thum td {
 
 .modal {
     padding: 10px 10px !important;
+    max-width: 50% !important;
 }
 
 #hiddenPag {
@@ -502,7 +501,7 @@ tr .fila-thum td {
     top: 15%;
     position: absolute !important;
     left: 50%;
-    margin-left: -250px;
+    transform: translate(-50%, 50%);
 }
 
 #resultado td {
@@ -624,9 +623,9 @@ h2 {
     text-align: center;
 }
 
-.text7 {
+.textPage {
     font-size: 15px;
-    padding: 15px 24px;
+    padding: 5px 24px;
     text-align: justify;
 }
 
@@ -637,6 +636,9 @@ span {
 .bxs-quote-alt-left {
     font-size: 25px;
 }
+
+
+/*Modal Games*/
 
 #gameModal {
     display: flex;
@@ -743,9 +745,13 @@ span {
     font-family: sans-serif;
 }
 
+
+/*Tooltip*/
+
 .photo {
     width: 50px;
     height: 50px;
+    border-radius: 30px;
 }
 
 .tooltip {
@@ -775,8 +781,8 @@ span {
 }
 
 .tooltiptext {
+    position: relative;
     visibility: hidden;
-    width: 100%;
     background-color: #555;
     color: #fff;
     text-align: center;
@@ -784,7 +790,7 @@ span {
     padding: 5px 0;
     position: absolute;
     z-index: 1;
-    bottom: -715%;
+    bottom: -1310%;
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
@@ -795,54 +801,21 @@ span {
     bottom: -770% !important;
 }
 
-.tooltip div .tooltiptext::after {
+.tooltiptext::after {
     content: "";
     position: absolute;
-    transform: rotate(179deg);
-    top: -8%;
-    left: 49%;
-    margin-left: -5px;
-    border-width: 10px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-}
-
-.tooltiptextMobile {
-    visibility: hidden;
-    width: 100%;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: -474%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.tooltiptextMobile::after {
-    content: "";
-    position: absolute;
-    transform: rotate(179deg);
-    top: -50%;
+    transform: rotate(180deg);
+    top: -9%;
     left: 45%;
     margin-left: -5px;
-    border-width: 38px;
+    border-width: 20px;
     border-style: solid;
     border-color: #555 transparent transparent transparent;
 }
 
 .profilePhoto {
-    width: 46%;
-    height: 150px;
-}
-
-.photo {
-    border-radius: 30px;
+    width: 400px;
+    height: 400px;
 }
 
 .tooltip div:hover .tooltiptext {
@@ -850,13 +823,15 @@ span {
     opacity: 1;
 }
 
-.tooltip div:hover .tooltiptextMobile {
-    visibility: visible;
-    opacity: 1;
+.textAuthor {
+    position: absolute;
+    bottom: 4%;
+    left: 0;
+    right: 0;
 }
 
 
-/*Tittlr of the section*/
+/*Tittle of the section*/
 
 .div-section {
     display: flex;
@@ -899,4 +874,26 @@ span {
 .centerSpan {
     display: flex;
     justify-content: center;
+}
+
+
+/*Bacground Jesús fuente de agua viva*/
+
+.p50 {
+    background-image: url(/pics/FuenteAgua.gif) !important;
+    background-size: 195% 100% !important;
+}
+
+.p50 .textPage {
+    background-color: #d6d6d6b0;
+}
+
+.p50 .containerTooltip {
+    background-color: #d6d6d6b0;
+}
+
+.p51 {
+    background-image: url(/pics/FuenteAgua.gif) !important;
+    background-size: 204% 100% !important;
+    background-position-x: right;
 }

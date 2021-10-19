@@ -50,6 +50,7 @@
 
         var puzInit = {
 
+
             init: function() {
                 currOri = 'across'; // app's init orientation could move to config object
 
@@ -58,6 +59,7 @@
                     return a.position - b.position;
                 });
 
+                console.log(puzz.data[0].answer);
                 // Set keyup handlers for the 'entry' inputs that will be added presently
                 puzzEl.delegate('input', 'keyup', function(e) {
                     mode = 'interacting';
@@ -261,13 +263,13 @@
                 };
 
                 // Put entry number in first 'light' of each entry, skipping it if already present
-                for (var i = 1, p = entryCount; i < p; ++i) {
-                    $groupedLights = $('.entry-' + i);
-                    if (!$('.entry-' + i + ':eq(0) span').length) {
-                        $groupedLights.eq(0)
-                            .append('<span>' + puzz.data[i].position + '</span>');
-                    }
-                }
+                // for (var i = 1, p = entryCount; i < p; ++i) {
+                //     $groupedLights = $('.entry-' + i);
+                //     if (!$('.entry-' + i + ':eq(0) span').length) {
+                //         $groupedLights.eq(0)
+                //             .append('<span>' + puzz.data[i].position + '</span>');
+                //     }
+                // }
 
                 util.highlightEntry();
                 util.highlightClue();
@@ -299,6 +301,7 @@
                     .get()
                     .join('');
 
+                console.log(puzz.data);
                 //console.log(currVal + " " + valToCheck);
                 if (valToCheck === currVal) {
                     $('.active')
@@ -310,7 +313,6 @@
                         solved.push(valToCheck);
                     }
 
-                    console.log(solved)
                     solvedToggle = true;
                     $('.puzzleSquare').addClass('complete');
                     if (solved.length == 4) {

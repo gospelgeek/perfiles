@@ -47,25 +47,28 @@ function createHtml(pageContent) {
 
                 case 'modal':
                     jsonData = region.modal;
-                    struct[pos] = element.append($('<div/>', {
-                        'id': jsonData.id,
-                        'class': 'modal'
-                    }).append(
-                        $('<div/>', { 'class': 'close-modal' }).append(
-                            $('<a/>', {
-                                'id': 'closePlayer',
-                                'href': '#',
-                                'rel': 'modal:close'
-                            }).append(
-                                $('<i/>', { 'class': 'bx bx-x closeT' }))),
-                        $('<h2/>').text(jsonData.tittle),
-                        $('<p/>', { 'class': 'modal-p' }).html(jsonData.textModal)
-                    ), $('<p/>', { 'class': jsonData.class }).append(
-                        $('<a/>', {
-                            'href': '#' + jsonData.id,
-                            'rel': 'modal:open'
+                    $.each(jsonData, function(key, region) {
+                        struct[pos] = element.append($('<div/>', {
+                            'id': region.id,
+                            'class': 'modal'
                         }).append(
-                            $('<img/>', { 'src': './pics/leermas.png' }))))
+                            $('<div/>', { 'class': 'close-modal' }).append(
+                                $('<a/>', {
+                                    'id': 'closePlayer',
+                                    'href': '#',
+                                    'rel': 'modal:close'
+                                }).append(
+                                    $('<i/>', { 'class': 'bx bx-x closeT' }))),
+                            $('<h2/>').text(region.tittle),
+                            $('<div/>', { 'class': 'modal-p' }).html(region.textModal)
+                        ), $('<p/>', { 'class': region.class }).append(
+                            $('<a/>', {
+                                'href': '#' + region.id,
+                                'rel': 'modal:open'
+                            }).append(
+                                $('<img/>', { 'src': region.src }))))
+                        pos++;
+                    })
                     break;
 
                 case 'audio':

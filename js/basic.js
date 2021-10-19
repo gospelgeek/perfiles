@@ -297,6 +297,13 @@
        });
    });
 
+   $(document).on('click', '#closePlayer', function() {
+       $('audio').each(function() {
+           this.pause(); // Stop playing
+           this.currentTime = 0; // Reset time
+       });
+   });
+
    /*Events that allow to hide the navegation bar */
    var btnNav = document.querySelector('.btn-nav');
    var menu = document.querySelector('.navigation');
