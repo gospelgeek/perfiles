@@ -4,8 +4,11 @@ var pos;
 
 function createHtml(pageContent) {
     struct = [];
+    pines = [];
     element = $('<div/>', { 'class': 'divMagazine' })
+    mapElement = $('<div/>', { 'class': 'containerMap' }).append($('<img/>', { 'class': 'mapaImg', 'src': './pics/mapaColombia.png' }))
     pos = 0;
+    posPines = 0;
     $.each(pageContent, function(key, region) {
         for (var tag in region) {
             switch (tag) {
@@ -114,7 +117,7 @@ function createHtml(pageContent) {
                         }).append(
                             $('<img/>', {
                                 'class': 'imgVideo',
-                                'src': './pics/Group 4.png'
+                                'src': './pics/verVideo.png'
                             }))))
                     break;
 
@@ -141,7 +144,6 @@ function createHtml(pageContent) {
 
                 case 'crossword':
                     struct[pos] = element.append('<div id="puzzle-wrapper"></div>')
-                    console.log('primero se ejecuto el structHtml');
                     break
 
                 case 'imgs':
@@ -169,6 +171,19 @@ function createHtml(pageContent) {
                         pos++;
                     })
                     break;
+
+                case 'mapa':
+                    jsonData = region.mapa;
+                    $.each(jsonData, function(key, region) {
+                        struct[pos] =
+                            element.append(mapElement.append(
+                                $('<a/>', { 'href': '#', 'id': region.id, 'class': 'pinLink' }).css({ 'top': region.top, 'left': region.left }).append(
+                                    $('<img/>', { 'src': './pics/pin.png' }),
+                                    $('<span/>', { 'class': 'tooltiptextDistrito' }).css({ 'bottom': region.bottomTool, 'left': region.leftTool }).append(
+                                        $('<div/>', { 'class': 'contentPhoto' }).append($('<img/>', { 'src': region.distrito, 'class': 'distritoPhoto' }))))))
+
+                    })
+                    break
             }
             pos++;
         }

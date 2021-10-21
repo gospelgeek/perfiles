@@ -106,11 +106,12 @@
                }
 
            } else if (page == 26) {
+               var y = 0
                for (let i = 0; i < element.length; i++) {
                    $('.p' + page).append(element[i]);
-
                }
                crosswordGame();
+
            }
        }
        //Reset variables of audio
@@ -176,6 +177,15 @@
        } else if ($('#flipbook').turn("page") == 12 || $('#flipbook').turn("page") == 13) {
            createWordsGame(words)
        }
+
+       // if (($('#flipbook').turn("page") == 26 || $('#flipbook').turn("page") == 27) && checkMobile()) {
+       //     crosswordGame();
+       //     stylesMobile()
+       // } else if ($('#flipbook').turn("page") == 26 || $('#flipbook').turn("page") == 27) {
+       //     crosswordGame();
+       // }
+
+
 
    }
 

@@ -897,3 +897,60 @@ span {
     background-size: 204% 100% !important;
     background-position-x: right;
 }
+
+
+/*Mapa Interactivo*/
+
+.containerMap {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.pinLink {
+    position: absolute;
+}
+
+.mapaImg {
+    width: 93%;
+    height: 90vh;
+}
+
+.distritoPhoto {
+    width: 400px;
+    height: 220px;
+}
+
+.tooltiptextDistrito {
+    position: relative;
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -1310%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltiptextDistrito::after {
+    content: "";
+    position: absolute;
+    transform: rotate(180deg);
+    top: -15%;
+    left: 45%;
+    margin-left: -5px;
+    border-width: 20px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.pinLink:hover .tooltiptextDistrito {
+    visibility: visible;
+    opacity: 1;
+}

@@ -362,6 +362,14 @@
                 "photo": "./photos/NubiaAriza.jpg",
                 "profilePhoto": "./photos/NubiaAriza.jpg"
             },
+            "textResaltado": {
+                "class": "textPage",
+                "p": "No somos viejos, estamos llenos de vida; no estamos enfermos, hemos usado nuestra salud; no somos lentos, cada estación nos enseñó la sabiduría de la paciencia; no estamos atrasados, qué sería de la primavera sin el trabajo del otoño y el invierno.  Somos un legado de fe y esperanza, una prueba viva de la fidelidad de Dios, un regalo a lavgeneración del presente, un estandarte firme que reposa en las promesas de un Dios vivo que no nos defraudó, sino que cumplió cada una de sus promesas."
+            },
+            "textBiblico": {
+                "class": "textPage",
+                "p": "<em>“Porque yo sé que mandará a sus hijos y a su casa después de sí, que guarden el camino de Jehová, haciendo justicia y juicio, para que haga venir Jehová sobre Abraham lo que ha hablado acerca de él”</em> Génesis 18: 19"
+            },
             "modal": [{
                 "id": "modalPage27",
                 "class": "btn-modal",
@@ -805,7 +813,270 @@
     },
     {
         "page": 58,
-        "pageContent": [{ "tittle": "<h1>MAPA INTERACTIVO DISTRITOS</h1>" }]
+        "pageContent": [{
+            "tittle": "<h1>MAPA INTERACTIVO DISTRITOS</h1>",
+            "mapa": [{
+                    "id": "pin1",
+                    "top": "2%",
+                    "left": "51%",
+                    "bottomTool": "-1150%",
+                    "leftTool": "70%",
+                    "distrito": "./distritos/comiteDistrito1.jpg"
+                },
+                {
+                    "id": "pin2",
+                    "top": "7%",
+                    "left": "43%",
+                    "bottomTool": "-1150%",
+                    "leftTool": "71%"
+                },
+                {
+                    "id": "pin3",
+                    "top": "12%",
+                    "left": "33%",
+                    "bottomTool": "-1150%",
+                    "leftTool": "71%"
+                },
+                {
+                    "id": "pin4",
+                    "top": "17%",
+                    "left": "40%",
+                    "bottomTool": "-1150%",
+                    "leftTool": "71%"
+                },
+                {
+
+                    "id": "pin5",
+                    "top": "16%",
+                    "left": "28%",
+                    "bottomTool": "-1150%",
+                    "leftTool": "71%"
+                },
+                {
+                    "id": "pin6",
+                    "top": "24%",
+                    "left": "35%",
+                    "bottomTool": "-1150%",
+                    "leftTool": "71%"
+                },
+                {
+                    "id": "pin7",
+                    "top": "29%",
+                    "left": "47%",
+                    "bottomTool": "-1150%",
+                    "leftTool": "71%"
+                },
+                {
+                    "id": "pin8",
+                    "top": "28%",
+                    "left": "25%",
+                    "bottomTool": "-1150%",
+                    "leftTool": "71%"
+                },
+                {
+                    "id": "pin9",
+                    "top": "36%",
+                    "left": "29%",
+                    "bottomTool": "-1150%",
+                    "leftTool": "71%",
+                    "distrito": "./distritos/comiteDistrito9.jpg"
+                },
+                {
+                    "id": "pin10",
+                    "top": "35%",
+                    "left": "41%",
+                    "bottomTool": "-1150%",
+                    "leftTool": "71%",
+                    "distrito": "./distritos/comiteDistrito10.jpg"
+                },
+                {
+                    "id": "pin11",
+                    "top": "32%",
+                    "left": "61%",
+                    "bottomTool": "-1150%",
+                    "leftTool": "71%",
+                    "distrito": "./distritos/comiteDistrito11.jpg"
+                },
+                {
+                    "id": "pin12",
+                    "top": "39%",
+                    "left": "55%",
+                    "bottomTool": "-1150%",
+                    "leftTool": "71%",
+                    "distrito": "./distritos/comiteDistrito12.jpg"
+                },
+                {
+                    "id": "pin13",
+                    "top": "43%",
+                    "left": "44%",
+                    "bottomTool": "-1150%",
+                    "leftTool": "71%"
+                },
+                {
+                    "id": "pin14",
+                    "top": "47%",
+                    "left": "36%",
+                    "bottomTool": "-1150%",
+                    "leftTool": "71%"
+                },
+                {
+                    "id": "pin15",
+                    "top": "32%",
+                    "left": "15%",
+                    "bottomTool": "-1150%",
+                    "leftTool": "71%"
+                },
+                {
+                    "id": "pin16",
+                    "top": "40%",
+                    "left": "21%",
+                    "bottomTool": "-1150%",
+                    "leftTool": "71%"
+                },
+                {
+                    "id": "pin17",
+                    "top": "46%",
+                    "left": "27%",
+                    "bottomTool": "-1150%",
+                    "leftTool": "71%",
+                    "distrito": "./distritos/comiteDistrito17.jpg"
+                },
+                {
+                    "id": "pin18",
+                    "top": "34%",
+                    "left": "78%",
+                    "bottomTool": "-1150%",
+                    "leftTool": "71%",
+                    "distrito": "./distritos/comiteDistrito18.jpg"
+                },
+                {
+                    "id": "pin19",
+                    "top": "41%",
+                    "left": "69%",
+                    "bottomTool": "-1150%",
+                    "leftTool": "71%"
+                },
+                {
+                    "id": "pin20",
+                    "top": "52%",
+                    "left": "60%",
+                    "bottomTool": "-1150%",
+                    "leftTool": "71%"
+                },
+                {
+                    "id": "pin21",
+                    "top": "48%",
+                    "left": "51%",
+                    "bottomTool": "-1150%",
+                    "leftTool": "71%",
+                    "distrito": "./distritos/comiteDistrito21.png"
+                },
+                {
+                    "id": "pin22",
+                    "top": "49%",
+                    "left": "17%",
+                    "bottomTool": "-1150%",
+                    "leftTool": "71%"
+                },
+                {
+                    "id": "pin23",
+                    "top": "55%",
+                    "left": "22%",
+                    "bottomTool": "-1150%",
+                    "leftTool": "71%"
+                },
+                {
+                    "id": "pin24",
+                    "top": "63%",
+                    "left": "31%",
+                    "bottomTool": "-1150%",
+                    "leftTool": "71%",
+                    "distrito": "./distritos/comiteDistrito24.png"
+                },
+                {
+                    "id": "pin25",
+                    "top": "59%",
+                    "left": "41%",
+                    "bottomTool": "-1150%",
+                    "leftTool": "71%"
+                },
+                {
+                    "id": "pin26",
+                    "top": "51%",
+                    "left": "43%",
+                    "bottomTool": "-1150%",
+                    "leftTool": "71%"
+                },
+                {
+                    "id": "pin27",
+                    "top": "47%",
+                    "left": "81%",
+                    "bottomTool": "-1150%",
+                    "leftTool": "71%"
+                },
+                {
+                    "id": "pin28",
+                    "top": "54%",
+                    "left": "72%",
+                    "bottomTool": "-1150%",
+                    "leftTool": "71%",
+                    "distrito": "./distritos/comiteDistrito28.jpg"
+                },
+                {
+                    "id": "pin29",
+                    "top": "61%",
+                    "left": "53%",
+                    "bottomTool": "-1150%",
+                    "leftTool": "71%",
+                    "distrito": "./distritos/comiteDistrito29.jpg"
+                },
+                {
+                    "id": "pin30",
+                    "top": "31%",
+                    "left": "32%",
+                    "bottomTool": "-1150%",
+                    "leftTool": "71%"
+                },
+                {
+                    "id": "pin31",
+                    "top": "62%",
+                    "left": "11%",
+                    "bottomTool": "-1150%",
+                    "leftTool": "71%",
+                    "distrito": "./distritos/comiteDistrito31.jpg"
+                },
+                {
+                    "id": "pin32",
+                    "top": "70%",
+                    "left": "19%",
+                    "bottomTool": "-1150%",
+                    "leftTool": "71%"
+                },
+                {
+                    "id": "pin33",
+                    "top": "70%",
+                    "left": "66%",
+                    "bottomTool": "-1150%",
+                    "leftTool": "71%"
+                },
+                {
+                    "id": "pin34",
+                    "top": "72%",
+                    "left": "47%",
+                    "bottomTool": "-1150%",
+                    "leftTool": "71%",
+                    "distrito": "./distritos/comiteDistrito34.png"
+                },
+                {
+                    "id": "pin35",
+                    "top": "79%",
+                    "left": "61%",
+                    "bottomTool": "-1150%",
+                    "leftTool": "71%",
+                    "distrito": "./distritos/comiteDistrito35.jpeg"
+                }
+            ]
+        }]
     },
     {
         "page": 59,

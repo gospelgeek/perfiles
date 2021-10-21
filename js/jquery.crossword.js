@@ -2,6 +2,7 @@
  * Jesse Weisbeck's Crossword Puzzle (for all 3 people left who want to play them)
  *
  */
+
 (function($) {
     $.fn.crossword = function(entryData) {
         /*
@@ -21,6 +22,7 @@
 
         var puzz = {}; // put data array in object literal to namespace it into safety
         puzz.data = entryData;
+
 
 
         // append clues markup after puzzle wrapper div
@@ -316,6 +318,7 @@
                     solvedToggle = true;
                     $('.puzzleSquare').addClass('complete');
                     if (solved.length == 4) {
+                        alert('gano juego')
                         var audio2 = new Audio('audio/wordComplete.mpeg');
                         audio2.volume = 0.5;
                         audio2.play();
@@ -565,10 +568,11 @@
 
         }; // end util object
 
+
+
         puzInit.init();
 
-
-
     }
+
 
 })(jQuery);
