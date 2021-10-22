@@ -27,7 +27,7 @@ function createHtml(pageContent) {
 
                 case 'textBiblico':
                     jsonData = region.textBiblico
-                    struct[pos] = element.append($('<p/>', { 'class': jsonData.class }).html(jsonData.p))
+                    struct[pos] = element.append($('<div/>', { 'class': jsonData.class }).html(jsonData.p))
                     break;
 
                 case 'author':
@@ -35,8 +35,8 @@ function createHtml(pageContent) {
                     struct[pos] = element.append(
                         $('<a/>', { 'href': '#', 'class': 'tooltip' }).append(
                             $('<div/>', { 'class': 'containerTooltip' }).append(
-                                $('<p/>', {}).html('<span>Escrito por: </span>' + jsonData.name),
-                                $('<img/>', { 'src': jsonData.photo, 'class': 'photo' }),
+                                $('<img/>', { 'src': './pics/iconAutor.png', 'class': 'photo' }),
+                                $('<p/>', {}).html('Por: ' + jsonData.name),
                                 $('<span/>', { 'id': jsonData.id, 'class': 'tooltiptext' }).append(
                                     $('<div/>', { 'class': 'contentPhoto' }).append($('<img/>', { 'src': jsonData.profilePhoto, 'class': 'profilePhoto' })),
                                     $('<p/>', { 'class': 'textAuthor' }).html(jsonData.name + '<br>' + jsonData.charge)))))
@@ -44,7 +44,7 @@ function createHtml(pageContent) {
 
                 case 'section':
                     struct[pos] = element.append($('<div/>', { 'class': 'div-section' }).append(
-                        $('<i/>', { 'class': 'bx bx-book-reader' }),
+                        $('<img/>', { 'src': './pics/PERFILES.png', 'class': 'iconSection' }),
                         $('<div/>', { 'class': 'name-section' }).html('<h3>' + region.section + '</h3>')))
                     break;
 
@@ -52,24 +52,26 @@ function createHtml(pageContent) {
                     jsonData = region.modal;
                     $.each(jsonData, function(key, region) {
                         struct[pos] = element.append($('<div/>', {
-                            'id': region.id,
-                            'class': 'modal'
-                        }).append(
-                            $('<div/>', { 'class': 'close-modal' }).append(
-                                $('<a/>', {
-                                    'id': 'closePlayer',
-                                    'href': '#',
-                                    'rel': 'modal:close'
-                                }).append(
-                                    $('<i/>', { 'class': 'bx bx-x closeT' }))),
-                            $('<h2/>').text(region.tittle),
-                            $('<div/>', { 'class': 'modal-p' }).html(region.textModal)
-                        ), $('<p/>', { 'class': region.class }).append(
+                                'id': region.id,
+                                'class': 'modal'
+                            }).append(
+                                $('<div/>', { 'class': 'close-modal' }).append(
+                                    $('<a/>', {
+                                        'id': 'closePlayer',
+                                        'href': '#',
+                                        'rel': 'modal:close'
+                                    }).append(
+                                        $('<i/>', { 'class': 'bx bx-x closeT' }))),
+                                $('<h2/>').text(region.tittle),
+                                $('<div/>', { 'class': 'modal-p' }).html(region.textModal)
+                            ),
                             $('<a/>', {
                                 'href': '#' + region.id,
-                                'rel': 'modal:open'
+                                'rel': 'modal:open',
+                                'class': 'LeerMas'
                             }).append(
-                                $('<img/>', { 'src': region.src }))))
+                                $('<img/>', { 'src': './pics/iconoLeer.png' }),
+                                $('<p/>', {}).html('LEER MAS')))
                         pos++;
                     })
                     break;
@@ -84,8 +86,9 @@ function createHtml(pageContent) {
                             'onclick': 'mostrarAudio(' + jsonData.id + ',' + jsonData.idBtn + ')',
                             'id': jsonData.idBtn,
                             'class': 'audioBtnLink'
-                        }).append(
-                            $('<img/>', { 'class': 'imgAudio', 'src': './pics/escucharAudio.png' })),
+                        }).append($('<div/>', { 'class': 'containerBtnLink' }).append(
+                            $('<img/>', { 'class': 'imgAudio', 'src': './pics/IconoescucharAudio.png' }),
+                            $('<p/>', {}).html('ESCUCHAR AUDIO'))),
                         $('<audio/>', {
                             'id': jsonData.id,
                             'controls': 'true',
