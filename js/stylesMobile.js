@@ -14,7 +14,10 @@ function stylesMobile() {
 
     /*Tittles and text of each page*/
     $('h1').css({ 'font-size': '50px' })
-    $('.textPage').css({ 'font-size': '35px', padding: '16px 90px' })
+    $('.textResaltado').css({ 'font-size': '2.9vw', padding: '16px 90px' })
+    $('.textBiblico').css({ 'font-size': '2.9vw', padding: '16px 100px' })
+    $('.quotesTop img').css({ width: '5.5vw' })
+    $('.quotesBottom img').css({ width: '5.5vw' })
 
     /*Modal content*/
     $('.modal h2').css({ 'padding-top': '30px', 'font-size': '50px' })
@@ -76,10 +79,8 @@ function stylesMobile() {
     /*Page numbering*/
     $('.pagesMagazine').css({ 'font-size': '35px', padding: '30px 50px', right: 0 })
     $('.even .pagesMagazine').css({ left: 'unset' })
-    $('.even .numberPage').css({ position: 'unset' })
-    $('.even .spaceDate').css({ position: 'unset', 'margin': '0 20px' })
+    $('.even .spaceDate').css({ margin: '0 20px' })
     $('.odd .spaceDate').css({ margin: '0 20px' })
-
 
     /*Table content*/
     $('.li-tablecontent').css({ 'line-height': '5.3vw' })
@@ -91,14 +92,20 @@ function stylesMobile() {
     $('.tooltip div p').css({ 'font-size': '35px' })
     $('.photo').css({ width: '54px', height: '54px' })
     $('.profilePhoto').css({ width: '800px', height: '800px' })
-    $('.tooltiptext').css({ bottom: '-2124%', left: '70%', 'margin-left': '-149px' })
-
-
+    $('.tooltiptext').css({ bottom: '-2399%', left: '79%', 'margin-left': '-149px' })
 
     /*Section to each page*/
     $('.name-section h3').css({ 'font-size': '30px' })
-    $('.bx-book-reader ').css({ 'font-size': '60px' })
+    $('.iconSection').css({ width: '16vw' })
 
-    /*Buuton Audio*/
-    $('.imgAudio').css({ height: '111px' })
+    /*Button LeerMas*/
+    $('.LeerMas img').css({ width: '12.5vw', 'border-radius': '65px' })
+    $('.LeerMas p').css({ 'font-size': '2.8vw' })
+
+    /*Button Audio*/
+    $('.imgAudio').css({ width: '12.5vw', 'border-radius': '65px' })
+    $('.audioBtnLink p').css({ 'font-size': '2.8vw' })
+
+    /*Interactive Map*/
+    $('.mapaImg').css({ height: '62vh' })
 }
