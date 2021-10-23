@@ -14,8 +14,10 @@ function stylesMobile() {
 
     /*Tittles and text of each page*/
     $('h1').css({ 'font-size': '50px' })
-    $('.textResaltado').css({ 'font-size': '2.9vw', padding: '16px 90px' })
-    $('.textBiblico').css({ 'font-size': '2.9vw', padding: '16px 100px' })
+    $('.textResaltado').css({ 'font-size': '2em', padding: '16px 90px' })
+    $('.p51 .textResaltado').css({ width: '54%', padding: '0 0 0 18px' })
+    $('.textBiblico').css({ 'font-size': '2em', padding: '16px 100px' })
+    $('.p50 .textBiblico').css({ width: '72%', top: '35vh', padding: '15px 29px 15px 36px' })
     $('.quotesTop img').css({ width: '5.5vw' })
     $('.quotesBottom img').css({ width: '5.5vw' })
 
@@ -89,13 +91,13 @@ function stylesMobile() {
     $('.ul-containerTable').css({ padding: '70px 80px' })
 
     /*Tooltip*/
-    $('.tooltip div p').css({ 'font-size': '35px' })
-    $('.photo').css({ width: '54px', height: '54px' })
-    $('.profilePhoto').css({ width: '800px', height: '800px' })
-    $('.tooltiptext').css({ bottom: '-2399%', left: '79%', 'margin-left': '-149px' })
+    $('.tooltip div p').css({ 'font-size': '2.4em', bottom: '5%' })
+    $('.photo').css({ width: '90px', height: '90px', 'padding-left': '26px' })
+    $('.profilePhoto').css({ width: '650px', height: '650px' })
+    $('.tooltiptext').css({ bottom: '-1178%', left: '50%', 'margin-left': '-9px' })
 
     /*Section to each page*/
-    $('.name-section h3').css({ 'font-size': '30px' })
+    $('.name-section h3').css({ 'font-size': '2em', padding: '14px 20px 10px 20px' })
     $('.iconSection').css({ width: '16vw' })
 
     /*Button LeerMas*/

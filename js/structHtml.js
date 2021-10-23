@@ -35,8 +35,8 @@ function createHtml(pageContent) {
                     struct[pos] = element.append(
                         $('<a/>', { 'href': '#', 'class': 'tooltip' }).append(
                             $('<div/>', { 'class': 'containerTooltip' }).append(
-                                $('<img/>', { 'src': './pics/iconAutor.png', 'class': 'photo' }),
                                 $('<p/>', {}).html('Por: ' + jsonData.name),
+                                $('<img/>', { 'src': jsonData.photo, 'class': 'photo' }),
                                 $('<span/>', { 'id': jsonData.id, 'class': 'tooltiptext' }).append(
                                     $('<div/>', { 'class': 'contentPhoto' }).append($('<img/>', { 'src': jsonData.profilePhoto, 'class': 'profilePhoto' })),
                                     $('<p/>', { 'class': 'textAuthor' }).html(jsonData.name + '<br>' + jsonData.charge)))))

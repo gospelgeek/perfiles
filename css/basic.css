@@ -240,7 +240,7 @@ body {
 
 .LeerMas img,
 .imgAudio {
-    width: 2.5vw;
+    width: 35px;
     border-radius: 40px;
     -webkit-box-shadow: 8px 16px 21px -10px rgba(0, 0, 0, 0.74);
     -moz-box-shadow: 8px 16px 21px -10px rgba(0, 0, 0, 0.74);
@@ -249,7 +249,7 @@ body {
 
 .LeerMas p,
 .audioBtnLink p {
-    font-size: .8vw;
+    font-size: .8em;
     color: #000000;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -631,14 +631,14 @@ h2 {
 }
 
 .textResaltado {
-    font-size: .9vw;
+    font-size: .85em;
     padding: 5px 24px;
     text-align: justify;
     font-family: 'Montserrat', sans-serif;
 }
 
 .textBiblico {
-    font-size: .9vw;
+    font-size: .85em;
     display: flex;
     padding: 5px 45px;
     text-align: justify;
@@ -680,11 +680,12 @@ span {
     display: flex;
     position: absolute;
     bottom: 0;
-    font-size: .9vw;
-    margin: 20px 50px;
+    font-size: .85em;
+    margin: 45px 40px;
     font-weight: bold;
     cursor: pointer;
     z-index: 10;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .pagesMagazine:hover {
@@ -711,14 +712,16 @@ span {
     margin-left: 28px;
 }
 
-.datePage {
+.datePage,
+.numberPage,
+.spaceDate {
     font-weight: 300;
 }
 
 .even .spaceDate,
 .odd .spaceDate {
     position: absolute;
-    left: 16px;
+    left: 20px;
 }
 
 
@@ -761,8 +764,10 @@ span {
 /*Tooltip*/
 
 .photo {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    padding-left: 10px;
 }
 
 .tooltip {
@@ -776,7 +781,7 @@ span {
 .tooltip div {
     position: relative;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .contentPhoto {
@@ -787,7 +792,7 @@ span {
 
 .tooltip div p {
     margin: 0;
-    font-size: .8vw;
+    font-size: .85em;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -801,8 +806,8 @@ span {
     padding: 5px 0;
     position: absolute;
     z-index: 1;
-    bottom: -2236%;
-    left: 50%;
+    bottom: -1250%;
+    left: 46%;
     transform: translate(-50%, -50%);
     opacity: 0;
     transition: opacity 0.3s;
@@ -825,8 +830,8 @@ span {
 }
 
 .profilePhoto {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
 }
 
 .tooltip div:hover .tooltiptext {
@@ -836,7 +841,7 @@ span {
 
 .textAuthor {
     position: absolute;
-    bottom: 4%;
+    bottom: 7%;
     left: 0;
     right: 0;
 }
@@ -863,14 +868,15 @@ span {
 .name-section {
     background-image: linear-gradient(to right, #fde7c0 25%, #b8732b 100%);
     color: #000000;
-    padding: 2%;
-    display: flex;
-    align-items: flex-end;
+}
+
+.p51 .name-section {
+    background: #517178e3;
 }
 
 .name-section h3 {
-    font-size: .8vw;
-    padding-top: 4%;
+    font-size: .7em;
+    padding: 6px 8px 8px 6px;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -894,22 +900,39 @@ span {
 
 .p50 {
     background-image: url(/pics/FuenteAgua.gif) !important;
-    background-size: 195% 100% !important;
+    background-size: 217% 137% !important;
+    background-position-x: 8%;
 }
 
-.p50 .textResaltado,
+.p51 .textResaltado {
+    width: 51%;
+    padding: 0 0 0 14px;
+    font-weight: bold;
+    line-height: 1.4em;
+}
+
+.p51 .LeerMas {
+    position: fixed;
+    right: 41%;
+}
+
 .p50 .textBiblico {
-    background-color: #d6d6d6b0;
+    width: 61%;
+    position: absolute;
+    top: 45vh;
+    padding: 10px 18px 10px 36px;
+    background-color: #ffffffa8;
 }
 
-.p50 .containerTooltip {
-    background-color: #d6d6d6b0;
+.p50 .pagesMagazine,
+.p51 .pagesMagazine {
+    color: #ffffff;
 }
 
 .p51 {
     background-image: url(/pics/FuenteAgua.gif) !important;
-    background-size: 204% 100% !important;
-    background-position-x: right;
+    background-size: 217% 137% !important;
+    background-position-x: 93%;
 }
 
 
@@ -974,7 +997,7 @@ span {
 
 .quotesTop img,
 .quotesBottom img {
-    width: 1.5vw;
+    width: 2em;
     padding: 0px 4px;
 }
 
